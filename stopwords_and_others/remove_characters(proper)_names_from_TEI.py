@@ -3,8 +3,9 @@ import re
 
 infolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/' \
            'github desktop/dracor-rusdracor/tei/'
-outfolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/' \
-            'github desktop/RusDraCor/Ira_Scripts/TopicModelling/tei_without_proper_names/'
+outfolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
+            'Programming/github desktop/RusDraCor/Ira_Scripts/' \
+            'TopicModelling/rusdracor_topic_modeling/tei_without_proper_names/'
 
 
 proper_names_stopwords = open('characters(proper)_names.txt', 'r', encoding='utf-8').read().split('\n')

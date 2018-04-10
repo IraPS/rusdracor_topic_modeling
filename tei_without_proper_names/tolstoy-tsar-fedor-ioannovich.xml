@@ -73,14 +73,14 @@
             <persName>Князь Василий Иванович Шуйский</persName>
             <persName xml:lang="de">Fürst Vasilij Ivanovič Šujskij</persName>
           </person>
-          <person xml:id="bojare" sex="MALE">
-            <persName>Бояре</persName>
-            <persName xml:lang="de">Die Bojaren</persName>
-          </person>
-          <person xml:id="kuptsy" sex="MALE">
-            <persName>Купцы</persName>
-            <persName xml:lang="de">Die Kaufleute</persName>
-          </person>
+          <personGrp xml:id="bojare" sex="MALE">
+            <name>Бояре</name>
+            <name xml:lang="de">Die Bojaren</name>
+          </personGrp>
+          <personGrp xml:id="kuptsy" sex="MALE">
+            <name>Купцы</name>
+            <name xml:lang="de">Die Kaufleute</name>
+          </personGrp>
           <person xml:id="shahovskoj" sex="MALE">
             <persName>Шаховской</persName>
             <persName type="variant">Голос Шаховского</persName>
@@ -90,10 +90,10 @@
             <persName>Василиса Волохова</persName>
             <persName xml:lang="de">Vasilisa Volohova</persName>
           </person>
-          <person xml:id="vse_1-1" sex="UNKNOWN">
-            <persName>Все (I/1)</persName>
-            <persName xml:lang="de">Alle (I/1)</persName>
-          </person>
+          <personGrp xml:id="vse_1-1" sex="UNKNOWN">
+            <name>Все (I/1)</name>
+            <name xml:lang="de">Alle (I/1)</name>
+          </personGrp>
           <person xml:id="hvorostinin" sex="MALE">
             <persName>Князь Хворостинин</persName>
             <persName xml:lang="de">Fürst Hvorostinin</persName>
@@ -180,10 +180,10 @@
             <persName>Князь Мстиславский</persName>
             <persName xml:lang="de">Fürst Mstislavskij</persName>
           </person>
-          <person xml:id="vse_3-1" sex="UNKNOWN">
-            <persName>Все (III/1)</persName>
-            <persName xml:lang="de">Alle (III/1)</persName>
-          </person>
+          <personGrp xml:id="vse_3-1" sex="UNKNOWN">
+            <name>Все (III/1)</name>
+            <name xml:lang="de">Alle (III/1)</name>
+          </personGrp>
           <person xml:id="duhovnik" sex="MALE">
             <persName>Духовник царя Федора</persName>
             <persName xml:lang="de">Fedors Beichtvater</persName>
@@ -192,10 +192,10 @@
             <persName>Стольник (III/2)</persName>
             <persName xml:lang="de">Ein Kämmerling (III/2)</persName>
           </person>
-          <person xml:id="vse_4-1" sex="UNKNOWN">
-            <persName>Все (IV/1)</persName>
-            <persName xml:lang="de">Alle (IV/1)</persName>
-          </person>
+          <personGrp xml:id="vse_4-1" sex="UNKNOWN">
+            <name>Все (IV/1)</name>
+            <name xml:lang="de">Alle (IV/1)</name>
+          </personGrp>
           <person xml:id="sluga_godunova" sex="MALE">
             <persName>Слуга Бориса Годунова</persName>
             <persName xml:lang="de">Ein Diener Godunovs</persName>
@@ -208,10 +208,10 @@
             <persName>Сенная девушка</persName>
             <persName xml:lang="de">Eine Dienerin</persName>
           </person>
-          <person xml:id="slugi" sex="UNKNOWN">
-            <persName>Слуги</persName>
-            <persName xml:lang="de">Die Diener</persName>
-          </person>
+          <personGrp xml:id="slugi" sex="UNKNOWN">
+            <name>Слуги</name>
+            <name xml:lang="de">Die Diener</name>
+          </personGrp>
           <person xml:id="posadskij_4-4a" sex="MALE">
             <persName>Посадский</persName>
             <persName xml:lang="de">Ein Bürger</persName>
@@ -272,10 +272,10 @@
             <persName>Другой</persName>
             <persName xml:lang="de">Zweiter</persName>
           </person>
-          <person xml:id="vse_4-4" sex="UNKNOWN">
-            <persName>Все (IV/4)</persName>
-            <persName xml:lang="de">Alle (IV/4)</persName>
-          </person>
+          <personGrp xml:id="vse_4-4" sex="UNKNOWN">
+            <name>Все (IV/4)</name>
+            <name xml:lang="de">Alle (IV/4)</name>
+          </personGrp>
           <person xml:id="odin_4-4f" sex="MALE">
             <persName>Один</persName>
             <persName xml:lang="de">Einer</persName>
@@ -308,14 +308,14 @@
             <persName>Четвертый</persName>
             <persName xml:lang="de">Vierter</persName>
           </person>
-          <person xml:id="narod" sex="UNKNOWN">
-            <persName>Народ</persName>
-            <persName xml:lang="de">Das Volk</persName>
-          </person>
-          <person xml:id="golosa_v_narode" sex="UNKNOWN">
-            <persName>Голоса в народе</persName>
-            <persName xml:lang="de">Stimmen im Volk</persName>
-          </person>
+          <personGrp xml:id="narod" sex="UNKNOWN">
+            <name>Народ</name>
+            <name xml:lang="de">Das Volk</name>
+          </personGrp>
+          <personGrp xml:id="golosa_v_narode" sex="UNKNOWN">
+            <name>Голоса в народе</name>
+            <name xml:lang="de">Stimmen im Volk</name>
+          </personGrp>
           <person xml:id="odin_iz_naroda_4-4b" sex="MALE">
             <persName>Один из народа</persName>
             <persName xml:lang="de">Einer aus dem Volk</persName>
@@ -324,10 +324,10 @@
             <persName>Другой</persName>
             <persName xml:lang="de">Ein Anderer</persName>
           </person>
-          <person xml:id="govor_v_narode" sex="UNKNOWN">
-            <persName>Говор в народе</persName>
-            <persName xml:lang="de">Stimmen des Volkes</persName>
-          </person>
+          <personGrp xml:id="govor_v_narode" sex="UNKNOWN">
+            <name>Говор в народе</name>
+            <name xml:lang="de">Stimmen des Volkes</name>
+          </personGrp>
           <person xml:id="sluga_v_tsarskom_tereme" sex="MALE">
             <persName>Слуга</persName>
             <persName xml:lang="de">Ein Diener</persName>
@@ -348,10 +348,10 @@
             <persName>Четвертый нищий</persName>
             <persName xml:lang="de">Vierter Bettler</persName>
           </person>
-          <person xml:id="vse_5-2" sex="UNKNOWN">
-            <persName>Все (V/2)</persName>
-            <persName xml:lang="de">Alle (V/2)</persName>
-          </person>
+          <personGrp xml:id="vse_5-2" sex="UNKNOWN">
+            <name>Все (V/2)</name>
+            <name xml:lang="de">Alle (V/2)</name>
+          </personGrp>
           <person xml:id="gonets_5-2" sex="MALE">
             <persName>Гонец из Углича</persName>
             <persName xml:lang="de">Ein Eilbote aus Uglič</persName>
@@ -373,6 +373,7 @@
         <change who="#MatveyKolbasov" when="2017-12-17">convert from source</change>
         <change who="#ff" when="2018-01-05">formalities; (a lot of) work on IDs</change>
         <change who="#ff" when="2018-01-07">some ID corrections; add gender info</change>
+        <change who="#zh" when="2018-04-07">group tag</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -453,7 +454,7 @@
             СТАРКОВ, дворецкий князя  .</stage>
           <sp who="#andrej_shujskij">
             <speaker> </speaker>
-            <stage type="delivery">— к духовным.</stage>
+            <stage>— к духовным.</stage>
             <l>Да, да, отцы! На это дело крепко</l>
             <l>Надеюсь я. Своей сестрой, царицей,</l>
             <l>Сидит правитель . Он ею</l>
@@ -514,8 +515,7 @@
             <l>проще б сделал, да теперь, вишь, нам</l>
             <l>Не время толковать об этом. Шш!</l>
             <l>Вот он идет!</l>
-            <stage type="delivery">Входит ИВАН ПЕТРОВИЧ ШУЙСКИЙ с ВАСИЛИЕМ ШУЙСКИМ, который держит
-              бумагу.</stage>
+            <stage>Входит ИВАН ПЕТРОВИЧ ШУЙСКИЙ с ВАСИЛИЕМ ШУЙСКИМ, который держит бумагу.</stage>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Князь  </speaker>
@@ -531,7 +531,7 @@
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker> </speaker>
-            <stage type="delivery">— читает.</stage>
+            <stage>— читает.</stage>
             <l>«Великому всея Русии князю,</l>
             <l>«Царю и самодержцу, государю</l>
             <l>«  — от всех</l>
@@ -558,7 +558,7 @@
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker> </speaker>
-            <stage type="delivery">— продолжает.</stage>
+            <stage>— продолжает.</stage>
             <l>«Неплодную ж царицу отпусти,</l>
             <l>Царь-государь, во иноческий чин,</l>
             <l>Как то твой дед покойный учинил,</l>
@@ -569,7 +569,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к боярам.</stage>
+            <stage>— к боярам.</stage>
             <l>Все ли</l>
             <l>гласны подписаться?</l>
           </sp>
@@ -579,7 +579,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к духовным.</stage>
+            <stage>— к духовным.</stage>
             <l>А вы, отцы?</l>
           </sp>
           <sp who="#blagoveschenskij_protopop">
@@ -595,7 +595,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к купцам.</stage>
+            <stage>— к купцам.</stage>
             <l>А вы?</l>
           </sp>
           <sp who="#kuptsy">
@@ -607,7 +607,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— берет перо.</stage>
+            <stage>— берет перо.</stage>
             <l>Прости ж мне Бог, что я для блага всех</l>
             <l>Грех на душу беру!</l>
           </sp>
@@ -637,10 +637,10 @@
             <l> пятиться не стану. чше пусть</l>
             <l>Безвинная царица пропадает,</l>
             <l>Чем вся земля!</l>
-            <stage type="delivery">дписывается.</stage>
+            <stage>дписывается.</stage>
             <l>Прикладывайте руки!</l>
-            <stage type="delivery">Все начинают подписываться. Кн. ИВАН ПЕТРОВИЧ отходит в сторону.
-              К нему подходит КН. ШАХОВСКОЙ.</stage>
+            <stage>Все начинают подписываться. Кн. ИВАН ПЕТРОВИЧ отходит в сторону. К нему подходит
+              КН. ШАХОВСКОЙ.</stage>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
@@ -680,15 +680,15 @@
             <l>Не красная был девица ,</l>
             <l>Я ж не жених. Глаз на глаз со врагом</l>
             <l>Быть не зазор.</l>
-            <stage type="delivery">ШАХОВСКОЙ отходит. дходит ГОЛОВИН.</stage>
+            <stage>ШАХОВСКОЙ отходит. дходит ГОЛОВИН.</stage>
           </sp>
           <sp who="#golovin">
             <speaker></speaker>
-            <stage type="delivery">вполголоса.</stage>
-            <l>гда б ты захотел,</l>
+            <stage>вполголоса.</stage>
+            <l>Когда б ты захотел,</l>
             <l>Князь-государь, короче б можно дело</l>
             <l>И лучше кончить. Углицкие люди</l>
-            <l>   мыслят.</l>
+            <l>Ко   мыслят.</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
@@ -717,12 +717,12 @@
             <l> если ты его мне повторишь,</l>
             <l>Как свят Господь, я выдам головою</l>
             <l>Тебя царю!</l>
-            <stage type="delivery">Входит КНЯЖНА МСТИСЛАВСКАЯ в большом наряде; за ней две девушки и
-              ВОЛОХОВА с подносом, на котором чары. — Все кланяются княжне в пояс.</stage>
+            <stage>Входит КНЯЖНА МСТИСЛАВСКАЯ в большом наряде; за ней две девушки и ВОЛОХОВА с
+              подносом, на котором чары. — Все кланяются княжне в пояс.</stage>
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker> </speaker>
-            <stage type="delivery">— тихо у.</stage>
+            <stage>— тихо у.</stage>
             <l>Нашел кого поднять</l>
             <l>На прирожденного на государя!</l>
             <l>Да он себя на мелкие куски</l>
@@ -744,25 +744,24 @@
             <l>Ну, гости дорогие,</l>
             <l>Теперь из рук племянницы моей</l>
             <l>Примайте чары!</l>
-            <stage type="delivery">ВОЛОХОВА передает поднос княжне, которая обносит гостей с
-              поклонами.</stage>
+            <stage>ВОЛОХОВА передает поднос княжне, которая обносит гостей с поклонами.</stage>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— ко  шепотом, принимая от нее чару.</stage>
+            <stage>— ко  шепотом, принимая от нее чару.</stage>
             <l>Скоро ли поволишь</l>
             <l>Мне свидеться с тобою?</l>
-            <stage type="delivery">Княжна отворачивается.</stage>
+            <stage>Княжна отворачивается.</stage>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery"> — шепотом Шаховскому.</stage>
+            <stage> — шепотом Шаховскому.</stage>
             <l>Завтра ночью,</l>
             <l>В садовую калитку!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— подымая кубок, который поднес ему СТАРКОВ.</stage>
+            <stage>— подымая кубок, который поднес ему СТАРКОВ.</stage>
             <l>Наперед</l>
             <l>Во здравье пьем царя и государя</l>
             <l> ! Пусть много</l>
@@ -817,24 +816,24 @@
           </sp>
           <sp who="#vse_1-1">
             <speaker>Все</speaker>
-            <stage type="delivery">— пьют.</stage>
+            <stage>— пьют.</stage>
             <l>Во здравье удалому жениху</l>
             <l>И дорогой невесте!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
             <l>Всем спасибо!</l>
-            <stage type="delivery"> .</stage>
+            <stage>Ко .</stage>
             <l>Теперь ступай, . Непривычна</l>
             <l>Ты, дитятко, еще казаться в люди,</l>
             <l>Вишь, раскраснелась, словно маков цвет.</l>
-            <stage type="delivery">Целует ее в голову.</stage>
+            <stage>Целует ее в голову.</stage>
             <l>Ступай себе!</l>
-            <stage type="delivery">КНЯЖНА, ВОЛОХОВА и девушки уходят.</stage>
+            <stage>КНЯЖНА, ВОЛОХОВА и девушки уходят.</stage>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">— уходя, к Шаховскому.</stage>
+            <stage>— уходя, к Шаховскому.</stage>
             <l>Смотри же, не забудь:</l>
             <l>В садовую калитку! Да гостинчик</l>
             <l>Мне принеси, смотри же!</l>
@@ -857,8 +856,8 @@
             <speaker>Кн.  </speaker>
             <l>Простите ж, государи,</l>
             <l>Простите все! Владыко даст нам знать</l>
-            <l>гда к царю сбираться с челобитьем!</l>
-            <stage type="delivery">Все расходятся.</stage>
+            <l>Когда к царю сбираться с челобитьем!</l>
+            <stage>Все расходятся.</stage>
             <l>Мой путь не прям. Сегодня понял я,</l>
             <l>Что чистым тот не может оставаться,</l>
             <l>Кто борется с лукавством. Правды с кривдой</l>
@@ -879,11 +878,11 @@
             <l>Да будет же — нет выбора иного —</l>
             <l>Неправдою неправда сражена,</l>
             <l>И да падут на совесть </l>
-            <l>Мой вольный грех и вольная вина! <stage type="delivery">Уходят.</stage></l>
+            <l>Мой вольный грех и вольная вина! <stage>Уходят.</stage></l>
           </sp>
           <sp who="#starkov">
             <speaker>Старков</speaker>
-            <stage type="delivery">— глядя ему вслед.</stage>
+            <stage>— глядя ему вслед.</stage>
             <l>Неправда за неправду! Ну, добро!</l>
             <l>Так и меня уж не вини, боярин,</l>
             <l>Что пред тобой неправду учиню я,</l>
@@ -896,7 +895,7 @@
             ТУРЕНИН. — У двери дожидается СТАРКОВ.</stage>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>И ты во всем свидетельствовать будешь?</l>
           </sp>
           <sp who="#starkov">
@@ -908,21 +907,21 @@
             <speaker></speaker>
             <l>Добро!</l>
             <l>Ступай себе, голубчик, с нас довольно!</l>
-            <stage type="delivery">СТАРКОВ уходит.</stage>
+            <stage>СТАРКОВ уходит.</stage>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Что? Каково? Сестру, мол, в монастырь,</l>
             <l>А брата побоку! И со владыкой</l>
             <l>Идут к царю!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— в раздумье.</stage>
+            <stage>— в раздумье.</stage>
             <l>Семь лет прошло с тех пор,</l>
             <l>Как царь  преставился. И ныне,</l>
-            <l>гда удара я не отведу,</l>
+            <l>Когда удара я не отведу,</l>
             <l>Земли едва окрепшее строенье,</l>
             <l>Все, что для царства сделать я успел —</l>
             <l>Все рушится — и снова станем мы</l>
@@ -940,7 +939,7 @@
           </sp>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Боярин, не давай</l>
             <l>Им с челобитием идти к царю!</l>
             <l>Его ты знаешь; супротив попов,</l>
@@ -952,7 +951,7 @@
             <l>Рассчитывать нельзя. койный царь</l>
             <l> его не даром звал.</l>
             <l>Эх, батюшка ты наш,  !</l>
-            <l>гда б ты здравствовал, уж как бы ты</l>
+            <l>Когда б ты здравствовал, уж как бы ты</l>
             <l>И  и Нагих поуспокоил!</l>
           </sp>
           <sp who="#boris_godunov">
@@ -979,7 +978,7 @@
             <l>Твоими бы устами</l>
             <l>Пришлося мед пить. У меня ж со князем</l>
             <l>  старинный счет:</l>
-            <l>гда во Пскове с голоду мы мерли,</l>
+            <l>Когда во Пскове с голоду мы мерли,</l>
             <l>А день и ночь нас осыпали ядра</l>
             <l>, я в жалости души,</l>
             <l>И не хотя сидельцев погубленья,</l>
@@ -998,13 +997,13 @@
           </sp>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Твоя судьба висит на волоске —</l>
             <l>Тебе решиться надо!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— вставая.</stage>
+            <stage>— вставая.</stage>
             <l>Я решился.</l>
           </sp>
           <sp who="#turenin">
@@ -1017,7 +1016,7 @@
           </sp>
           <sp who="#turenin #kleshnin">
             <speaker>Туренин и </speaker>
-            <stage type="delivery">— вместе.</stage>
+            <stage>— вместе.</stage>
             <l>Как? С  на мир?</l>
           </sp>
           <sp who="#boris_godunov">
@@ -1038,7 +1037,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <l>гда, шумя, в морскую бурю волны</l>
+            <l>Когда, шумя, в морскую бурю волны</l>
             <l>Грозят корабль со грузом поглотить, —</l>
             <l>Безумен тот, кто из своих сокровищ</l>
             <l>Не бросит часть, чтоб целое спасти.</l>
@@ -1054,17 +1053,17 @@
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>м царь.</l>
-            <stage type="delivery">Стольник отворяет дверь.</stage>
+            <stage>Стольник отворяет дверь.</stage>
           </sp>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
             <l>А вот и царь!</l>
-            <stage type="delivery">Входить цар ФЕДОР. — За ним СТРЕМЯННЫЙ.</stage>
+            <stage>Входить цар ФЕДОР. — За ним СТРЕМЯННЫЙ.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Стремянный! Отчего</l>
-            <l>нь подо мной вздыбился?</l>
+            <l>Конь подо мной вздыбился?</l>
           </sp>
           <sp who="#stremjannyj">
             <speaker>Стремянный</speaker>
@@ -1110,7 +1109,7 @@
             <l> ездить я на нем не буду боле.</l>
             <l>В табун его! И полный корм ему</l>
             <l>Давать по смерть!</l>
-            <stage type="delivery">Из другой двери входит ЦАРИЦА ИРИНА.</stage>
+            <stage>Из другой двери входит ЦАРИЦА ИРИНА.</stage>
             <l>, здорово!</l>
           </sp>
           <sp who="#irina">
@@ -1121,7 +1120,7 @@
             <speaker></speaker>
             <l>Да, да, устал. От самого </l>
             <l>Все ехал рысью. Здесь же, у крыльца,</l>
-            <l>нь захотел меня сшибить, да я</l>
+            <l>Конь захотел меня сшибить, да я</l>
             <l>Дал знать себя! Бока ему как стиснул,</l>
             <l>Так он и стих. , я чаю,</l>
             <l>Обед готов?</l>
@@ -1172,7 +1171,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— лукаво.</stage>
+            <stage>— лукаво.</stage>
             <l>А что ж,</l>
             <l>? Ведь я еще не стар,</l>
             <l>Ведь я еще поправиться могу!</l>
@@ -1196,7 +1195,7 @@
             <speaker></speaker>
             <l>Шурин, даже грустно</l>
             <l>Мне слышать это: тот сторонник ,</l>
-            <l>А этот твой! гда ж я доживу,</l>
+            <l>А этот твой! Когда ж я доживу,</l>
             <l>Что вместе все одной Руси лишь будут</l>
             <l>Сторонники?</l>
           </sp>
@@ -1226,7 +1225,7 @@
             <l>Здесь надо ведать сердце человека!…</l>
             <l>Я завтра ж помирю вас. А теперь</l>
             <l>йдем к столу.</l>
-            <stage type="delivery">Направляется в двери и останавливается.</stage>
+            <stage>Направляется в двери и останавливается.</stage>
             <l>, послушай:</l>
             <l>А ведь Мстиславская-то на меня</l>
             <l>Смотрела в церкви!</l>
@@ -1239,18 +1238,18 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— обнимая ее.</stage>
+            <stage>— обнимая ее.</stage>
             <l>Родимая моя!</l>
             <l>Бесценная! Я пошутил с тобою!</l>
             <l>Да есть ли в целом мире кто-нибудь,</l>
-            <l>го б ты краше не была? йдем же,</l>
+            <l>Кого б ты краше не была? йдем же,</l>
             <l>йдем к столу, а то обед простынет!</l>
-            <stage type="delivery">Уходит. — ИРИНА следует за ним. — ГОДУНОВ, КЛЕШНИН и ТУРЕНИН идут
-              за обоими.</stage>
+            <stage>Уходит. — ИРИНА следует за ним. — ГОДУНОВ, КЛЕШНИН и ТУРЕНИН идут за
+              обоими.</stage>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— к , уходя.</stage>
+            <stage>— к , уходя.</stage>
             <l>ришься ты? В товарищи возьмешь ты</l>
             <l>Исконного, заклятого врага?</l>
           </sp>
@@ -1262,7 +1261,7 @@
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>А после — мы увидим!</l>
-            <stage type="delivery">Уходят.</stage>
+            <stage>Уходят.</stage>
           </sp>
         </div>
       </div>
@@ -1323,7 +1322,7 @@
             <l>И бердышей!  он благочестив,</l>
             <l>И верно уж на ласковую речь</l>
             <l>датлив будет.</l>
-            <stage type="delivery">К Дионисию.</stage>
+            <stage>К Дионисию.</stage>
             <l>Ты ж, святой владыко,</l>
             <l>ь только за руки они возьмутся,</l>
             <l>Их поскорей благослови, и слово</l>
@@ -1348,7 +1347,7 @@
             <l>Великий царь, усердие твое</l>
             <l>Нам ведомо; дела же, к сожаленью,</l>
             <l>Не все исходят от тебя.</l>
-            <stage type="delivery">Смотрит на .</stage>
+            <stage>Смотрит на .</stage>
             <l>Намедни</l>
             <l>вогородские купцы, которых</l>
             <l>За ересь мы собором осудили,</l>
@@ -1379,7 +1378,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <l>нечно, шурин!</l>
+            <l>Конечно, шурин!</l>
             <l> самых соблазнителей, владыко,</l>
             <l>Ни истязать не надо, ни казнить!</l>
             <l>Им перед Богом отвечать придется!</l>
@@ -1403,7 +1402,7 @@
             <l>Великий царь предупредил твое</l>
             <l>Печалованье. Что нас крайность сделать</l>
             <l>Заставила, уж то не повторится.</l>
-            <stage type="delivery">дает ему грамоту.</stage>
+            <stage>дает ему грамоту.</stage>
             <l>Вот грамота, владыко, о невъезде</l>
             <l>В именья церкви никаким чинам;</l>
             <l>И о решении всяких дел не царским,</l>
@@ -1417,9 +1416,9 @@
           </sp>
           <sp who="#dionisij">
             <speaker></speaker>
-            <stage type="delivery">— пробегает грамоту.</stage>
+            <stage>— пробегает грамоту.</stage>
             <l>Блаженны миротворцы!</l>
-            <l>гда правитель обещает мне</l>
+            <l>Когда правитель обещает мне</l>
             <l>И в остальных статьях все льготы церкви,</l>
             <l>Ее права и выгоды блюсти —</l>
             <l>То прошлое да будет позабыто!</l>
@@ -1561,23 +1560,23 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— отходя к окну.</stage>
+            <stage>— отходя к окну.</stage>
             <l>Ну, что ж? И замолчу!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Не позволяй ему в другой раз, шурин,</l>
             <l>рочить мачиху и брата!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Царь,</l>
-            <l>Он человек усердный и простой! <stage type="delivery">— Крики на площади.</stage></l>
+            <l>Он человек усердный и простой! <stage>— Крики на площади.</stage></l>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— глядя в окно.</stage>
+            <stage>— глядя в окно.</stage>
             <l>Ну, вон идут!</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -1586,18 +1585,18 @@
           </sp>
           <sp who="#bojare">
             <speaker>Бояре</speaker>
-            <stage type="delivery">— смотрят в окно.</stage>
+            <stage>— смотрят в окно.</stage>
             <l> идут!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— подходит к окну.</stage>
+            <stage>— подходит к окну.</stage>
             <l>Как? Уж пришли?</l>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
             <l>Да, вот уж у крыльца!</l>
-            <stage type="delivery">Крики слышны громче.</stage>
+            <stage>Крики слышны громче.</stage>
             <l>Вишь, впереди идет  ,</l>
             <l>А круг его валит с купцами чернь!</l>
             <l>Ишь, голосят и шапки вверх кидают!</l>
@@ -1612,25 +1611,25 @@
             <l>Смотри же, шурин,</l>
             <l>Не забывай, что ты мне обещал!</l>
             <l> — смотри же, замечай!</l>
-            <l>ль, неравно, у них пойдет не гладко,</l>
+            <l>Коль, неравно, у них пойдет не гладко,</l>
             <l>Ты помоги! Отцы мои — я паче</l>
             <l>На вас надеюсь!</l>
-            <stage type="delivery">Возвращается поспешно на свое место.</stage>
+            <stage>Возвращается поспешно на свое место.</stage>
           </sp>
           <sp who="#stolnik_2-1">
             <speaker>Стольник</speaker>
-            <stage type="delivery">— отворяя дверь.</stage>
+            <stage>— отворяя дверь.</stage>
             <l>Князь  !</l>
-            <stage type="delivery">Входят ШУЙСКИЕ; за ними МСТИСЛАВСКИЙ, ШАХОВСКОЙ и другие.</stage>
+            <stage>Входят ШУЙСКИЕ; за ними МСТИСЛАВСКИЙ, ШАХОВСКОЙ и другие.</stage>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— тихо к Туренину, глядя на .</stage>
+            <stage>— тихо к Туренину, глядя на .</stage>
             <l>Ишь, как идут! И шеи-то не гнутся!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— опускаясь на колени.</stage>
+            <stage>— опускаясь на колени.</stage>
             <l>Великий царь!  твоему указу</l>
             <l>Пред очи мы явилися твои!</l>
           </sp>
@@ -1638,7 +1637,7 @@
             <speaker></speaker>
             <l>Встань, князь  ! Встань скорее!</l>
             <l>Тебе так быть негоже!</l>
-            <stage type="delivery">— днимает его.</stage>
+            <stage>— днимает его.</stage>
             <l>Мы с царицей</l>
             <l>Давно тебя не видим. Ты, должно быть,</l>
             <l>Семейным делом занят? Мне сказали:</l>
@@ -1714,14 +1713,14 @@
             <l>Он чтит тебя — мы все твои заслуги</l>
             <l>Высоко чтим — так, видишь ли — когда бы</l>
             <l>Ты захотел — когда бы ты с  —</l>
-            <stage type="delivery">тихо к .</stage>
-            <l>нчай же, шурин!</l>
+            <stage>тихо к .</stage>
+            <l>Кончай же, шурин!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Князь  !</l>
             <l>Уже давно о нашей долгой распре</l>
-            <l> я. ль ты забыть согласен</l>
+            <l> я. Коль ты забыть согласен</l>
             <l>Все прошлое, я также все забуду,</l>
             <l>И рад с тообой и с братьями твоими</l>
             <l>Быть за один. И с тем на примиренье</l>
@@ -1729,7 +1728,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— отступая.</stage>
+            <stage>— отступая.</stage>
             <l>Боярин,</l>
             <l>Упорно слишком враждовали мы,</l>
             <l>Чтобы могли теперь без договора</l>
@@ -1820,7 +1819,7 @@
             <l>Мы договор, быть может, неугодный</l>
             <l>Гостям московским, но обильный выгод</l>
             <l>Для всей земли. И в самое то время,</l>
-            <l>гда уж  от смут и тяжких бедствий</l>
+            <l>Когда уж  от смут и тяжких бедствий</l>
             <l>В устройство начинала приходить,</l>
             <l>Ты, князь — я то тебе не в укоризну</l>
             <l>Теперь скажу — ты, с братьями своими,</l>
@@ -1830,9 +1829,9 @@
           </sp>
           <sp who="#andrej_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— выступает вперед.</stage>
+            <stage>— выступает вперед.</stage>
             <l>Не за себя мы поднялись, боярин!</l>
-            <l>гда ломать ты начал государство,</l>
+            <l>Когда ломать ты начал государство,</l>
             <l>За старину с народом встали мы!</l>
           </sp>
           <sp who="#dmitrij_shujskij">
@@ -1851,7 +1850,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <l>гда земля, по долгом неустройстве,</l>
+            <l>Когда земля, по долгом неустройстве,</l>
             <l>В порядок быть должна приведена,</l>
             <l>Болезненно свершается целенье</l>
             <l>Старинных ран. Чтоб здание исправить,</l>
@@ -1908,12 +1907,12 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— продолжая вышивать.</stage>
+            <stage>— продолжая вышивать.</stage>
             <l>Не верится мне вправду,</l>
             <l>Что долго так князь  заставляет</l>
             <l>Себя просить о том, что государь</l>
             <l>Ему велеть единым может словом.</l>
-            <stage type="delivery">Смотрит на .</stage>
+            <stage>Смотрит на .</stage>
             <l>Скажи мне, князь, когда бы ты теперь</l>
             <l>Не пред царем  стоял,</l>
             <l> пред отцом его, царем ,</l>
@@ -1936,7 +1935,7 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <l>гда во Пскове, князь  ,</l>
+            <l>Когда во Пскове, князь  ,</l>
             <l>Ты, окружен литовцами, сидел,</l>
             <l>И мужеством своим непобедимым</l>
             <l>Так долго был оплотом для Руси —</l>
@@ -1950,7 +1949,7 @@
             <l>Начатая во здравие того,</l>
             <l>Кто землю спас, окончится когда</l>
             <l>Противником он станет государству?</l>
-            <stage type="delivery">Встает и подходит к .</stage>
+            <stage>Встает и подходит к .</stage>
             <l>Ужели тот, за чье спасенье я</l>
             <l>Так горячо со всей молилась ю,</l>
             <l>Ее покой упорством возмутит?</l>
@@ -1958,13 +1957,13 @@
             <l>Своей великой славы! корись</l>
             <l>Святителям и царскому веленью!</l>
             <l>Князь-государь —</l>
-            <stage type="delivery">Кланяется ему в пояс.</stage>
+            <stage>Кланяется ему в пояс.</stage>
             <l>Моим большим поклоном</l>
             <l>Прошу тебя, забудь свою вражду!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— в волнении.</stage>
+            <stage>— в волнении.</stage>
             <l>Царица-матушка! Ты на меня</l>
             <l>веяла как будто тихим летом!</l>
             <l>Своим нежданным, милостивым словом</l>
@@ -1973,7 +1972,7 @@
             <l>Веленье государево исполнить</l>
             <l>Я рад душой — но наперед дозволь мне</l>
             <l>Сказать два слова брату твоему.</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>Не в первый раз, боярин, хитрой речью</l>
             <l>Обходишь ты противников своих.</l>
             <l>Какой залог нам дашь ты, что не хочешь</l>
@@ -1993,7 +1992,7 @@
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
             <l>Какая участь ожидает тех,</l>
-            <l>торые, защите нашей веря,</l>
+            <l>Которые, защите нашей веря,</l>
             <l>К нам мыслили?</l>
           </sp>
           <sp who="#boris_godunov">
@@ -2013,7 +2012,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к боярам пришедшим с ним.</stage>
+            <stage>— к боярам пришедшим с ним.</stage>
             <l>Как мыслите?</l>
           </sp>
           <sp who="#bojare">
@@ -2023,7 +2022,7 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Вот моя рука!</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -2032,8 +2031,7 @@
             <l>, вот это в целой жизни</l>
             <l>Мой лучший день! Владыко  —</l>
             <l>Крест им скорее! Крест!</l>
-            <stage type="delivery"> берет со стола крест и подает сперва , потом
-              .</stage>
+            <stage> берет со стола крест и подает сперва , потом .</stage>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
@@ -2045,7 +2043,7 @@
             <l>И за сторонников за наших всех,</l>
             <l>За всех бояр, и всех людей торговых,</l>
             <l>Целую крест Спасителя Христа!</l>
-            <stage type="delivery">Прикладывается ко кресту.</stage>
+            <stage>Прикладывается ко кресту.</stage>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
@@ -2055,7 +2053,7 @@
             <l>Не начинать, сторонникам же их:</l>
             <l>Князьям, боярам и торговым людям,</l>
             <l>Ничем не мстить за прежние вины!</l>
-            <stage type="delivery">Прикладывается ко кресту.</stage>
+            <stage>Прикладывается ко кресту.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -2063,7 +2061,7 @@
             <l>Писание исполнить! Обнимитесь!</l>
             <l>Вот так! Ну, что? Ведь легче стало? Легче?</l>
             <l>Не правда ли?</l>
-            <stage type="delivery">Крики на площади.</stage>
+            <stage>Крики на площади.</stage>
             <l>О чем они кричат?</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
@@ -2077,7 +2075,7 @@
             <l>Нет, нет, останься! ми пусть они</l>
             <l>Сюда прийдут. Пусть умилятся, глядя</l>
             <l>На ваше примиренье!</l>
-            <stage type="delivery">— К у.</stage>
+            <stage>— К у.</stage>
             <l>Выдь, ,</l>
             <l>Выдь на крыльцо и приведи их!</l>
           </sp>
@@ -2091,10 +2089,10 @@
             <speaker></speaker>
             <l>Зачем же всех? Зачем?</l>
             <l>Пусть выборных пришлют!</l>
-            <stage type="delivery">КЛЕШНИН уходить.</stage>
+            <stage>КЛЕШНИН уходить.</stage>
             <l>Я с ними, шурин,</l>
             <l>И не охотник, правда, говорить,</l>
-            <l>гда они обступят вдруг меня</l>
+            <l>Когда они обступят вдруг меня</l>
             <l>На выходе, кто с жалобой, кто с просьбой,</l>
             <l>И стукотня такая в голове</l>
             <l>От них пойдет, как словно тулумбасы</l>
@@ -2112,7 +2110,7 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— возвращаясь.</stage>
+            <stage>— возвращаясь.</stage>
             <l>Царь! Выборные люди!</l>
             <l>От всех купцов, лабазников, ткачей,</l>
             <l>И шорников, и мясников, которых</l>
@@ -2120,7 +2118,7 @@
           </sp>
           <sp who="#vybornye">
             <speaker>Выборные</speaker>
-            <stage type="delivery">— входят и становятся на колени.</stage>
+            <stage>— входят и становятся на колени.</stage>
             <l>Царь-государь! Спаси тебя Господь,</l>
             <l>Что светлые свои повидеть очи</l>
             <l>Ты нас пожаловал!</l>
@@ -2131,7 +2129,7 @@
             <l>Я рад вас видеть. Я послал за вами</l>
             <l>Чтоб вам сказать — да что ж вы не встаете?</l>
             <l>Я осерчаю!</l>
-            <stage type="delivery">Выборные встают, исключая одного старика.</stage>
+            <stage>Выборные встают, исключая одного старика.</stage>
             <l>Что же ты, старик?</l>
             <l>Что ж не встаешь?</l>
           </sp>
@@ -2145,10 +2143,10 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к другим.</stage>
+            <stage>— к другим.</stage>
             <l>Возьмите ж</l>
             <l>Его под руки, люди!</l>
-            <stage type="delivery">Двое купцов поднимают старика.</stage>
+            <stage>Двое купцов поднимают старика.</stage>
             <l>Ну, вот так!</l>
             <l>Ты, дедушка, себя не утрудил ли?</l>
             <l>Кто ты?</l>
@@ -2160,7 +2158,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <l>торый год тебе?</l>
+            <l>Который год тебе?</l>
           </sp>
           <sp who="#kurjukov">
             <speaker></speaker>
@@ -2264,7 +2262,7 @@
           </sp>
           <sp who="#krasilnikov">
             <speaker>Молодой купец</speaker>
-            <stage type="delivery">— дергая его за полу.</stage>
+            <stage>— дергая его за полу.</stage>
             <l> !</l>
             <l>Царь говорит с тобой!</l>
           </sp>
@@ -2276,7 +2274,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к молодому.</stage>
+            <stage>— к молодому.</stage>
             <l>Так ты — ему племянник?</l>
           </sp>
           <sp who="#krasilnikov">
@@ -2291,12 +2289,12 @@
           </sp>
           <sp who="#krasilnikov">
             <speaker>Молодой</speaker>
-            <stage type="delivery">— дергая его за полу.</stage>
+            <stage>— дергая его за полу.</stage>
             <l> ! Что ты?</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к молодому.</stage>
+            <stage>— к молодому.</stage>
             <l>Твое лицо мне кажется знакомо?</l>
           </sp>
           <sp who="#kurjukov">
@@ -2305,7 +2303,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к молодому.</stage>
+            <stage>— к молодому.</stage>
             <l>Где видел я тебя?</l>
           </sp>
           <sp who="#krasilnikov">
@@ -2326,7 +2324,7 @@
             <l>Что, в самом деле? Что тут вспоминать?</l>
             <l>С секирами! С секирами! Не дашь</l>
             <l>Мне слова вымолвить!</l>
-            <stage type="delivery">К молодому.</stage>
+            <stage>К молодому.</stage>
             <l>Так ты тот самый,</l>
             <l>Что запорол медведя? мню, помню!</l>
             <l>! Вот это тот купец,</l>
@@ -2344,7 +2342,7 @@
             <l>Красильников! , представь:</l>
             <l>Медведь к нему так близко подошел,</l>
             <l>Так близко — вот как ты теперь, владыко,</l>
-            <l> мне стоишь, а он шагнул вот этак,</l>
+            <l>Ко мне стоишь, а он шагнул вот этак,</l>
             <l>Да изловчил рогатину, да разом</l>
             <l>Вот так ее всадил ему в живот!</l>
             <l>Медведь-то прет, да все ревет: уу!</l>
@@ -2361,7 +2359,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к Красильникову.</stage>
+            <stage>— к Красильникову.</stage>
             <l>У тебя</l>
             <l>Был брат еще, который </l>
             <l>В бою кулачном одолел?</l>
@@ -2371,10 +2369,10 @@
             <l>Он мне</l>
             <l>Двоюродный есть брат, царь-государь,</l>
             <l> Голубем зовут.</l>
-            <stage type="delivery">Оборачивается к своим.</stage>
+            <stage>Оборачивается к своим.</stage>
             <l>!</l>
             <l>Слышь, выходи к царю!</l>
-            <stage type="delivery">Голубь выступает вперед и кланяется.</stage>
+            <stage>Голубь выступает вперед и кланяется.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -2391,7 +2389,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к Шаховскому.</stage>
+            <stage>— к Шаховскому.</stage>
             <l>Князь!</l>
             <l>Узнал его?</l>
           </sp>
@@ -2404,7 +2402,7 @@
           </sp>
           <sp who="#golub_syn">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— кланяясь.</stage>
+            <stage>— кланяясь.</stage>
             <l>Усердно, князь </l>
             <l>, здравствуем тебе! Даст Бог,</l>
             <l>В Великий ст мы на Москве-реке</l>
@@ -2431,14 +2429,14 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Свет-государь, не позволяй им биться;</l>
             <l>Час неровен, не долго до беды!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Ты думаешь, ?</l>
-            <stage type="delivery">К Шаховскому и Голубю.</stage>
+            <stage>К Шаховскому и Голубю.</stage>
             <l>Смотрите ж,</l>
             <l>Не крепко бейтесь! Паче же всего,</l>
             <l>д ложку берегитесь бить друг друга,</l>
@@ -2468,7 +2466,7 @@
           </sp>
           <sp who="#golub_otets">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— отец.</stage>
+            <stage>— отец.</stage>
             <l>Князь  !</l>
             <l>Да вак же это? Мы с тобою шли,</l>
             <l>А ты нас бросил?</l>
@@ -2487,12 +2485,12 @@
           </sp>
           <sp who="#golub_syn">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— сын.</stage>
+            <stage>— сын.</stage>
             <l>Эй, не мирися, князь!</l>
           </sp>
           <sp who="#golub_otets">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— отец.</stage>
+            <stage>— отец.</stage>
             <l>Не выдавай нас, князь  !</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
@@ -2503,7 +2501,7 @@
           </sp>
           <sp who="#golos_2-1">
             <speaker>Голос</speaker>
-            <stage type="delivery">— позади других.</stage>
+            <stage>— позади других.</stage>
             <l>Дать-то клятву,</l>
             <l>Он даст ее, да сдержит ли?</l>
           </sp>
@@ -2512,7 +2510,7 @@
             <l>воль</l>
             <l>Худое слово, князь  ,</l>
             <l>Мне, старику, по старому сказать!</l>
-            <l>гда твои нас деды подымали</l>
+            <l>Когда твои нас деды подымали</l>
             <l>На Телепня-Овчину, при Олёне</l>
             <l>, при бабке государя,</l>
             <l>Они за нас, а мы за них тогда</l>
@@ -2523,33 +2521,32 @@
           </sp>
           <sp who="#golub_otets">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— отец.</stage>
-            <l>гда ты, князь, с врагом, своим исконным</l>
+            <stage>— отец.</stage>
+            <l>Когда ты, князь, с врагом, своим исконным</l>
             <l>Хотел мириться, незачем нас было</l>
             <l>И подымать!</l>
           </sp>
           <sp who="#golub_syn">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— сын.</stage>
+            <stage>— сын.</stage>
             <l>Эх, князь  !</l>
             <l>Вы нашими миритесь головами!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— гневно.</stage>
+            <stage>— гневно.</stage>
             <l>Молчи, щенок! Знай, бейся на кулачках,</l>
             <l>О деле ж дай старейшим говорить!</l>
             <l>Как смеете не верить вы ему,</l>
-            <l>гда он крест — вы слышите ли? крест —</l>
+            <l>Когда он крест — вы слышите ли? крест —</l>
             <l>В том целовал?</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— тихо к у.</stage>
+            <stage>— тихо к у.</stage>
             <l>Заметь их имена</l>
             <l>И запиши.</l>
-            <stage type="delivery">Выборные между тем совещались между собой, и все разом подходят к
-              .</stage>
+            <stage>Выборные между тем совещались между собой, и все разом подходят к .</stage>
           </sp>
           <sp who="#vybornye">
             <speaker>Выборные</speaker>
@@ -2567,13 +2564,13 @@
           </sp>
           <sp who="#golub_otets">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— отец.</stage>
+            <stage>— отец.</stage>
             <l>От шурина твого!</l>
             <l>От , государь!</l>
           </sp>
           <sp who="#golub_syn">
             <speaker>Голубь</speaker>
-            <stage type="delivery">— сын.</stage>
+            <stage>— сын.</stage>
             <l>Твой шурин</l>
             <l>Ведь нас теперь совсем заест!</l>
           </sp>
@@ -2585,7 +2582,7 @@
             <l>Вот он сейчас вам скажет! Он вам все,</l>
             <l>Все растолкует! Мне же самому,</l>
             <l>Мне некогда теперь!</l>
-            <stage type="delivery">Хочет уйти; выборные обступают его.</stage>
+            <stage>Хочет уйти; выборные обступают его.</stage>
           </sp>
           <sp who="#vybornye">
             <speaker>Выборные</speaker>
@@ -2611,12 +2608,12 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— затыкая уши.</stage>
+            <stage>— затыкая уши.</stage>
             <l>Ай-ай, ай-ай, ай-ай!</l>
             <l>Скажите все ! Все !</l>
             <l>Мне некогда! Скажите все !</l>
-            <stage type="delivery">Уходит, держа пальцы в ушах. — Выборные с недоумением смотрят
-              друг на друга.</stage>
+            <stage>Уходит, держа пальцы в ушах. — Выборные с недоумением смотрят друг на
+              друга.</stage>
           </sp>
         </div>
       </div>
@@ -2626,22 +2623,22 @@
           <head>чь. д князя   .</head>
           <sp who="#volohova">
             <speaker> Волохова</speaker>
-            <stage type="delivery">— выходит из дому.</stage>
+            <stage>— выходит из дому.</stage>
             <l>Ну, темь, так темь! Ни звездочки не видно!</l>
             <l>ра б ему прийти! Уж он не там ли,</l>
             <l>Не за оградой ли стоит?</l>
-            <stage type="delivery">дходит к калитке и говорит шепотом.</stage>
+            <stage>дходит к калитке и говорит шепотом.</stage>
             <l>Князь! Князь!</l>
             <l>Нет никого! Прислушаться, нейдет ли?</l>
             <l>Эх, соловьи проклятые мешают!</l>
             <l>Расщелкались! Не слышно ничего!</l>
             <l>Вот что-то хрустнуло! Идет, должно быть!</l>
-            <stage type="delivery">Оборачивается назад и говорит шепотом.</stage>
+            <stage>Оборачивается назад и говорит шепотом.</stage>
             <l>Княжна! жалуй!</l>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна Мстиславская</speaker>
-            <stage type="delivery">— шепотом.</stage>
+            <stage>— шепотом.</stage>
             <l>Где ты, </l>
             <l>?</l>
           </sp>
@@ -2721,7 +2718,7 @@
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">— прислушивается.</stage>
+            <stage>— прислушивается.</stage>
             <l>зволь-ка!</l>
             <l>Никак плеснула рыбица в пруду....</l>
             <l>Уж эти соловьи мне! Пши, пши, пши!</l>
@@ -2739,15 +2736,15 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— за оградой, вполголоса.</stage>
+            <stage>— за оградой, вполголоса.</stage>
             <l>Ау!</l>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
             <l>Ну, наконец!</l>
-            <stage type="delivery">Бежит к калитке и отворяет ее.</stage>
+            <stage>Бежит к калитке и отворяет ее.</stage>
             <l>Войди же, князь!</l>
-            <stage type="delivery">казывается на ограде ШАХОВСКОЙ и спрыгивает в сад.</stage>
+            <stage>казывается на ограде ШАХОВСКОЙ и спрыгивает в сад.</stage>
             <l>стрел!</l>
             <l>Ведь я ж тебе калитку отворила!</l>
           </sp>
@@ -2757,7 +2754,7 @@
             <l>С кремлевской я бы соскочил стены,</l>
             <l>Чтоб поскорей мою увидеть радость!</l>
             <l>На силу-то мне удалось!</l>
-            <stage type="delivery">Хочет обнять княжну.</stage>
+            <stage>Хочет обнять княжну.</stage>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
@@ -2767,7 +2764,7 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— отступая.</stage>
+            <stage>— отступая.</stage>
             <l>Княжна, не бойся!</l>
             <l>Не подойду, доколе не поволишь!</l>
           </sp>
@@ -2778,17 +2775,17 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— подавая ей кошелек.</stage>
+            <stage>— подавая ей кошелек.</stage>
             <l>На!</l>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">— потряхивая деньгами.</stage>
+            <stage>— потряхивая деньгами.</stage>
             <l>Сердечные! Звенят! Эх, жаль темно!</l>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— к княжне.</stage>
+            <stage>— к княжне.</stage>
             <l>Да что ж ты отвернулась от меня!</l>
             <l>Иль нелюб я тебе?</l>
           </sp>
@@ -2829,8 +2826,8 @@
           <sp who="#shahovskoj">
             <speaker></speaker>
             <l>А что же делать мне,</l>
-            <l>гда тебя мне видеть не дают?</l>
-            <l>й-раз увидишь, а поговорить</l>
+            <l>Когда тебя мне видеть не дают?</l>
+            <l>Кой-раз увидишь, а поговорить</l>
             <l>И думать нечего!</l>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
@@ -2892,13 +2889,13 @@
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
             <l>Ха, ха!</l>
-            <l>Моржевые!<stage type="delivery">Оба смеются.</stage></l>
+            <l>Моржевые!<stage>Оба смеются.</stage></l>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
             <l>А вот ведь рассмеялась!</l>
             <l>И смех-то твой — что рокот соловьиный!</l>
-            <l>Краса моя! гда ты засмеешься,</l>
+            <l>Краса моя! Когда ты засмеешься,</l>
             <l>Весь темный сад как будто просиял!</l>
             <l>Смотри, вон там и звездочка явилась!</l>
             <l>А вон другая! Третья! Вон еще!</l>
@@ -2914,7 +2911,7 @@
           <sp who="#volohova">
             <speaker>Волохова</speaker>
             <l>Ну, вот пошла!</l>
-            <stage type="delivery">Слышен стук в калитку.</stage>
+            <stage>Слышен стук в калитку.</stage>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
@@ -2923,16 +2920,16 @@
           <sp who="#volohova">
             <speaker>Волохова</speaker>
             <l>Стучат никак в калитку!</l>
-            <stage type="delivery">Прячется с княжной за дерево.</stage>
+            <stage>Прячется с княжной за дерево.</stage>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— подходит к калитке.</stage>
+            <stage>— подходит к калитке.</stage>
             <l>Кто там стучит?</l>
           </sp>
           <sp who="#krasilnikov">
             <speaker>Голос</speaker>
-            <stage type="delivery">— извне.</stage>
+            <stage>— извне.</stage>
             <l>Впустите, ради Бога!</l>
           </sp>
           <sp who="#shahovskoj">
@@ -2944,8 +2941,7 @@
             <l>То я! Красильников, купец!</l>
             <l>Беда случилась! скорей впустите!</l>
           </sp>
-          <stage type="delivery">ШАХОВСКОЙ отворяет калитку. — КРАСИЛЬНИКОВ вбегает. Одежда его
-            изорвана.</stage>
+          <stage>ШАХОВСКОЙ отворяет калитку. — КРАСИЛЬНИКОВ вбегает. Одежда его изорвана.</stage>
           <sp who="#krasilnikov">
             <speaker>Красильников</speaker>
             <l>Где  князь? Где князь  ?</l>
@@ -2957,8 +2953,8 @@
           <sp who="#krasilnikov">
             <speaker>Красильников</speaker>
             <l>Князь! Князь  !</l>
-            <stage type="delivery">В окнах дома показываются огни. КН. ИВАН ПЕТРОВИЧ и гости его
-              сходят с крыльца. ШАХОВСКОЙ скрывается меж дерев.</stage>
+            <stage>В окнах дома показываются огни. КН. ИВАН ПЕТРОВИЧ и гости его сходят с крыльца.
+              ШАХОВСКОЙ скрывается меж дерев.</stage>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
@@ -3100,12 +3096,12 @@
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— строго.</stage>
+            <stage>— строго.</stage>
             <l>!</l>
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к у.</stage>
+            <stage>— к у.</stage>
             <l>Так, зря, нельзя.</l>
           </sp>
           <sp who="#golovin">
@@ -3139,7 +3135,7 @@
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к у.</stage>
+            <stage>— к у.</stage>
             <l>Накличешь ты беду на нас, боярин!</l>
           </sp>
           <sp who="#dmitrij_shujskij">
@@ -3167,7 +3163,7 @@
             <speaker>Кн.  </speaker>
             <l>Да, так вот и убьешь!</l>
             <l>Он караул теперь, небось, удвоил!</l>
-            <stage type="delivery">Вынимает из кармана челобитню.</stage>
+            <stage>Вынимает из кармана челобитню.</stage>
             <l>Вот подписи владыки и властей;</l>
             <l>А вот дворян и всех людей торговых;</l>
             <l>Все выдали себя — отстать не могут,</l>
@@ -3184,7 +3180,7 @@
             <l>казывать его</l>
             <l>Нам и не след. Он — что заряд в пищали:</l>
             <l>Страшон пока не выпущен! Заставит,</l>
-            <l>ль захотим, всех на  встать!</l>
+            <l>Коль захотим, всех на  встать!</l>
           </sp>
           <sp who="#andrej_shujskij">
             <speaker>Кн.  </speaker>
@@ -3221,17 +3217,17 @@
             <l>Царь слышал клятву!</l>
             <l>Все слышали ее! Себя очистить</l>
             <l>Ничем не может !</l>
-            <stage type="delivery">К Красильникову.</stage>
+            <stage>К Красильникову.</stage>
             <l>Иди,</l>
             <l>Скажи купцам, что государь велит</l>
             <l>Их выборных вернуть, а что </l>
             <l>Он отрешит сегодня же!</l>
-            <stage type="delivery">Звон к заутрени.</stage>
+            <stage>Звон к заутрени.</stage>
             <l>Светает!</l>
             <l>Иду к царю! Не нужно много слов —</l>
             <l>Наружу ложь! И згинет </l>
             <l>ь солнце там, в востоке, засияет!</l>
-            <stage type="delivery">Уходит. — КРАСИЛЬНИКОВ также. Молчание.</stage>
+            <stage>Уходит. — КРАСИЛЬНИКОВ также. Молчание.</stage>
           </sp>
           <sp who="#dmitrij_shujskij">
             <speaker>Кн.  </speaker>
@@ -3250,14 +3246,14 @@
           </sp>
           <sp who="#andrej_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к кн. .</stage>
+            <stage>— к кн. .</stage>
             <l>Зачем его не удержал ты?</l>
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
             <l>Дядю?</l>
             <l>Да нешто вы не знаете его?</l>
-            <l>гда что раз он в голову втемяшил —</l>
+            <l>Когда что раз он в голову втемяшил —</l>
             <l>Не вышибешь. Знай, думает, я прав,</l>
             <l>Так съем неправого — младенец сущий!</l>
           </sp>
@@ -3405,19 +3401,19 @@
           </sp>
           <sp who="#golovin">
             <speaker></speaker>
-            <stage type="delivery">— к  .</stage>
+            <stage>— к  .</stage>
             <l>зволь взглянуть мне, князь  !</l>
-            <stage type="delivery">Берет челобитню и, пока другие разговаривают, достает с пояса
-              перо и чернилицу и вписывает что-то в бумагу.</stage>
+            <stage>Берет челобитню и, пока другие разговаривают, достает с пояса перо и чернилицу и
+              вписывает что-то в бумагу.</stage>
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к Мстиславскому.</stage>
+            <stage>— к Мстиславскому.</stage>
             <l>Решайся, князь!</l>
           </sp>
           <sp who="#mstislavskij">
             <speaker></speaker>
-            <l>гда б на нем какую</l>
+            <l>Когда б на нем какую</l>
             <l>Вину найти!</l>
           </sp>
           <sp who="#vasilij_shujskij">
@@ -3430,7 +3426,7 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— является между ними.</stage>
+            <stage>— является между ними.</stage>
             <l>Князь! Спроси сперва меня,</l>
             <l>гласен ли невесту уступить</l>
             <l>Другому я?</l>
@@ -3439,14 +3435,13 @@
             <speaker>Все</speaker>
             <l>Откуда он? Как смел он</l>
             <l>Здесь тайно быть?</l>
-            <stage type="delivery">Слышен крик КНЯЖНЫ.</stage>
+            <stage>Слышен крик КНЯЖНЫ.</stage>
           </sp>
           <sp who="#mstislavskij">
             <speaker></speaker>
             <l>То вскрикнула сестра!</l>
             <l>Они здесь вместе были!</l>
-            <stage type="delivery">Идет в глубину сада и выводит КНЯЖНУ за руку. казывается
-              ВОЛОХОВА.</stage>
+            <stage>Идет в глубину сада и выводит КНЯЖНУ за руку. казывается ВОЛОХОВА.</stage>
             <l>Вот и сваха!</l>
             <l>Ты помогала им?</l>
           </sp>
@@ -3472,7 +3467,7 @@
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">— наступая на .</stage>
+            <stage>— наступая на .</stage>
             <l>А почему ж и не бывать? Смотри,</l>
             <l>Как расходился! Невидаль какая,</l>
             <l>Что он жених! Царь -то </l>
@@ -3482,10 +3477,10 @@
           <sp who="#shahovskoj">
             <speaker></speaker>
             <l>Прочь, ведьма, прочь! сторонитесь все!</l>
-            <l> мне, княжна! Она моя пред Богом —</l>
+            <l>Ко мне, княжна! Она моя пред Богом —</l>
             <l>Ее сейчас веду я под венец —</l>
             <l>И первый, кто из вас —</l>
-            <stage type="delivery">Вынимает кинжал.</stage>
+            <stage>Вынимает кинжал.</stage>
           </sp>
           <sp who="#vse_3-1">
             <speaker>Все</speaker>
@@ -3493,7 +3488,7 @@
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— к Мстиславскому.</stage>
+            <stage>— к Мстиславскому.</stage>
             <l>Хорош жених! На брата замахнулся!</l>
           </sp>
           <sp who="#mstislavskij">
@@ -3536,7 +3531,7 @@
           </sp>
           <sp who="#mstislavskij">
             <speaker></speaker>
-            <stage type="delivery">— к сестре.</stage>
+            <stage>— к сестре.</stage>
             <l>Ни с места!</l>
           </sp>
           <sp who="#shahovskoj">
@@ -3549,19 +3544,19 @@
           </sp>
           <sp who="#golovin">
             <speaker></speaker>
-            <stage type="delivery">— к Шаховскому.</stage>
+            <stage>— к Шаховскому.</stage>
             <l>Князь, покорись, ты силой не возьмешь!</l>
             <l>Все кончено меж ними и тобой!</l>
             <l>Иль думаешь, тебе  </l>
             <l>Простит, что ты сегодня учинил?</l>
             <l>Все кончено.</l>
-            <stage type="delivery">казывает ему челобитню.</stage>
+            <stage>казывает ему челобитню.</stage>
             <l>Смотри: княжны </l>
             <l>Здесь имя вписано!</l>
           </sp>
           <sp who="#vasilij_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— про себя.</stage>
+            <stage>— про себя.</stage>
             <l>Ай да боярин!</l>
           </sp>
           <sp who="#golovin">
@@ -3571,7 +3566,7 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— выхватывая у него грамоту.</stage>
+            <stage>— выхватывая у него грамоту.</stage>
             <l>Дай!</l>
           </sp>
           <sp who="#golovin">
@@ -3588,11 +3583,11 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— грозя кинжалом.</stage>
+            <stage>— грозя кинжалом.</stage>
             <l>Назад! Тот ляжет в прах,</l>
             <l>Кто подойдет! Иду на суд великой</l>
             <l>К царице я — вот с этою уликой!</l>
-            <stage type="delivery">Убегает с грамотой.</stage>
+            <stage>Убегает с грамотой.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -3601,7 +3596,7 @@
             государственные печати, большую и малую. — Из другой двери входит КЛЕШНИН.</stage>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— к у.</stage>
+            <stage>— к у.</stage>
             <l>Ты все ль исполнил?</l>
           </sp>
           <sp who="#kleshnin">
@@ -3615,7 +3610,7 @@
             <speaker></speaker>
             <l>Ты мне ее, немедля,</l>
             <l>Тогда подашь.</l>
-            <stage type="delivery">— КЛЕШНИН уходит. — Входит ЦАРИЦА ИРИНА.</stage>
+            <stage>— КЛЕШНИН уходит. — Входит ЦАРИЦА ИРИНА.</stage>
             <l>Сестра-царица, здравствуй!</l>
             <l>Еще не вышел государь?</l>
           </sp>
@@ -3624,7 +3619,7 @@
             <l>Недавно</l>
             <l>С иконой духовник в опочивальню</l>
             <l>К нему вошел.</l>
-            <stage type="delivery">Входит из другой двери ФЕДОР. За ним ДУХОВНИК с иконой.</stage>
+            <stage>Входит из другой двери ФЕДОР. За ним ДУХОВНИК с иконой.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -3662,7 +3657,7 @@
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Брр! Скверный сон!</l>
-            <stage type="delivery">Увидя бумаги.</stage>
+            <stage>Увидя бумаги.</stage>
             <l>А это что такое?</l>
             <l>Надоедать мне хочешь снова, шурин?</l>
             <l>Надоедать?</l>
@@ -3701,14 +3696,14 @@
             <l>Его в  перечту, лишь только</l>
             <l>Меня  отпустит; а теперь</l>
             <l>Благослови меня заняться делом.</l>
-            <stage type="delivery">ДУХОВНИК благословляет его и уходит. ФЕДОР садится. ГОДУНОВ
-              развязывает бумаги.</stage>
+            <stage>ДУХОВНИК благословляет его и уходит. ФЕДОР садится. ГОДУНОВ развязывает
+              бумаги.</stage>
             <l>Ну, что там, шурин, в связке у тебя?</l>
             <l>Уж так и быть, вытаскивай!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— вынимая из связей несколько листов.</stage>
+            <stage>— вынимая из связей несколько листов.</stage>
             <l>Нам пишут</l>
             <l>Украинские воеводы, царь,</l>
             <l>Что хан опять орду на север двинул.</l>
@@ -3720,18 +3715,17 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— кладет перед ним бумаги.</stage>
+            <stage>— кладет перед ним бумаги.</stage>
             <l>Вот, государь, наказы воеводам.</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Прихлопни их!</l>
-            <stage type="delivery"> передает бумаги дьяку, который прикладывает к ним
-              печать.</stage>
+            <stage> передает бумаги дьяку, который прикладывает к ним печать.</stage>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— подавая другую бумагу.</stage>
+            <stage>— подавая другую бумагу.</stage>
             <l>А это, государь,</l>
             <l>Царь  землей своею бьет</l>
             <l>Тебе челом, и просит у тебя,</l>
@@ -3784,14 +3778,14 @@
             <speaker></speaker>
             <l>Ну, хорошо, привешивай печать,</l>
             <l>Привешивай!</l>
-            <stage type="delivery">Дьяк привешивает печать.</stage>
+            <stage>Дьяк привешивает печать.</stage>
             <l>А это что такое?</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>То князю  наказ,</l>
             <l>Как говорить ему на польском сейме,</l>
-            <l>гда начнется выбор короля.</l>
+            <l>Когда начнется выбор короля.</l>
             <l>Ты знаешь, царь, что щедростью твоею,</l>
             <l> смерти нашего врага ,</l>
             <l>Мы многих привлекли к себе панов,</l>
@@ -3836,7 +3830,7 @@
             <l>Привольней было жить, чем у чужих;</l>
             <l>Так не зачем от нас и бегать будет!</l>
             <l>Ты знаешь что? Ты написал бы к ним</l>
-            <l> всем в Литву, что я им обещаю</l>
+            <l>Ко всем в Литву, что я им обещаю</l>
             <l>Земли и денег, если пожелают</l>
             <l>Вернуться к нам.</l>
           </sp>
@@ -3853,7 +3847,7 @@
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Все, государь.</l>
-            <stage type="delivery">Дьяк берет печати, собирает бумаги и уходит.</stage>
+            <stage>Дьяк берет печати, собирает бумаги и уходит.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -3890,7 +3884,7 @@
             <speaker></speaker>
             <l>, помилуй! Разве я</l>
             <l>Не рад вернуть их?</l>
-            <stage type="delivery">казывая на .</stage>
+            <stage>казывая на .</stage>
             <l>Вот кому скажи!</l>
           </sp>
           <sp who="#irina">
@@ -3909,21 +3903,21 @@
             <l>И шагу мне ни в чем не дашь ступить!</l>
             <l>На что это похоже? Я хочу,</l>
             <l>Хочу вернуть ! Ты знаешь,</l>
-            <l>гда я так сказал, уж я от слова</l>
+            <l>Когда я так сказал, уж я от слова</l>
             <l>Не отступлю!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Не дельно ты, сестра,</l>
             <l>Вмешалася во что не разумеешь.</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>Царевича вернуть нельзя.</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Как? Как?</l>
-            <l>гда уж я сказал, что я хочу?</l>
+            <l>Когда уж я сказал, что я хочу?</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
@@ -3933,17 +3927,17 @@
             <speaker></speaker>
             <l>Нет, это слишком!</l>
             <l>Я не ребенок! Это...</l>
-            <stage type="delivery">Начинает ходить по комнате.</stage>
+            <stage>Начинает ходить по комнате.</stage>
           </sp>
           <sp who="#stolnik_3-2">
             <speaker>Стольник</speaker>
-            <stage type="delivery">— отворяя дверь.</stage>
+            <stage>— отворяя дверь.</stage>
             <l>Князь </l>
             <l> !</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— к стольнику.</stage>
+            <stage>— к стольнику.</stage>
             <l>Царь его сегодня</l>
             <l>Принять не может!</l>
           </sp>
@@ -3951,10 +3945,10 @@
             <speaker></speaker>
             <l>Кто тебе сказал?</l>
             <l>Впустить, его!</l>
-            <stage type="delivery">Продолжает ходить по комнате.</stage>
+            <stage>Продолжает ходить по комнате.</stage>
             <l>Я скоро у себя</l>
             <l>Не властен в доме стану!</l>
-            <stage type="delivery">Входит Кн. ИВАН ПЕТРОВИЧ ШУЙСКИЙ.</stage>
+            <stage>Входит Кн. ИВАН ПЕТРОВИЧ ШУЙСКИЙ.</stage>
             <l>Здравствуй, князь!</l>
             <l>Спасибо, что пожаловал! С тобою</l>
             <l>Я буду говорить, с тобою, князь,</l>
@@ -3996,7 +3990,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <l>нечно слышал! Ну?</l>
+            <l>Конечно слышал! Ну?</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
@@ -4160,7 +4154,7 @@
             <l>Ты слышала, ? Князь, ты слышать?</l>
             <l>Он согласился, что я царь! Теперь уж</l>
             <l>Не может спорить он! Теперь он — цыц!</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>Ты знаешь что такое царь? Ты знаешь?</l>
             <l>Ты помнишь батюшку-царя? Ты, ты —</l>
             <l>Князь, будь спокоен!  к себе</l>
@@ -4169,8 +4163,7 @@
             <l>Всех выпишу! Что это в самом деле?</l>
             <l>На что это похоже? Даже в пот</l>
             <l>Меня он бросил! смотри, !</l>
-            <stage type="delivery">Ходит по комнате и потом останавливается перед ШУЙСКИМ и
-              ГОДУНОВЫМ.</stage>
+            <stage>Ходит по комнате и потом останавливается перед ШУЙСКИМ и ГОДУНОВЫМ.</stage>
             <l>Ну, а теперь, как я вас помирил,</l>
             <l>Так полно вам сердиться друг на друга!</l>
             <l>Ну, полно, шурин! лно, князь! Довольно!</l>
@@ -4225,7 +4218,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <l>му прикажешь, государь, дела</l>
+            <l>Кому прикажешь, государь, дела</l>
             <l>Мне передать?</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -4241,7 +4234,7 @@
             <l>Вернуть назад. Тебе Нагих угодно,</l>
             <l>С царевичем, в Москву перевести,</l>
             <l>Хоть есть причины важные оставить</l>
-            <l>Их в . гда, великий царь,</l>
+            <l>Их в . Когда, великий царь,</l>
             <l>Ты так решил — твоя святая воля</l>
             <l>Исполнится, но на себя ответа</l>
             <l>Я не беру!</l>
@@ -4274,7 +4267,7 @@
             <l>Царь</l>
             <l>Всея Руси,   —</l>
             <l>Мне стыдно за тебя — прости!</l>
-            <stage type="delivery">Уходит.</stage>
+            <stage>Уходит.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -4286,7 +4279,7 @@
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Великий царь, могу ль тебе служить я,</l>
-            <l>гда ты руки связываешь мне?</l>
+            <l>Когда ты руки связываешь мне?</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -4308,25 +4301,25 @@
             <l>Нам  бы надо успокоить!</l>
             <l>Ведь он тебя не понял; я ведь тоже</l>
             <l>Тебя вчера не понял!</l>
-            <stage type="delivery">Входит КЛЕШНИН, подает ГОДУНОВУ бумаги и уходит. — ГОДУНОВ
-              пробегает их и передает ФЕДОРУ.</stage>
+            <stage>Входит КЛЕШНИН, подает ГОДУНОВУ бумаги и уходит. — ГОДУНОВ пробегает их и
+              передает ФЕДОРУ.</stage>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Государь,</l>
             <l>Сперва прочти вот это донесенье</l>
             <l>Из , и тайное письмо,</l>
-            <l>торое  ,</l>
+            <l>Которое  ,</l>
             <l>Сторонник , написал к Нагим;</l>
             <l>Его прислал с нарочным Битяговсвий.</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— смотрит в бумаги.</stage>
+            <stage>— смотрит в бумаги.</stage>
             <l>Ну, что же тут? «И в пьяном виде часто</l>
             <l>«Ругаются негодными словами....»</l>
             <l>Да кто же слов не говорит негодных,</l>
-            <l>гда он пьян? «И деньги вымогают</l>
+            <l>Когда он пьян? «И деньги вымогают</l>
             <l>«С угрозами....» Да ты уж им не мало ль</l>
             <l>Назначил, шурин? Ведь они привыкли</l>
             <l>Жить широко при батюшке! Ты им бы</l>
@@ -4340,7 +4333,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— читает про себя, останавливается и качает головой.</stage>
+            <stage>— читает про себя, останавливается и качает головой.</stage>
             <l>Меня согнать с престола? Боже мой,</l>
             <l>Зачем бы им не подождать немного?</l>
             <l>Всем ведомо, что я недолговечен;</l>
@@ -4403,7 +4396,7 @@
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Как? Князь  ? Тот, который</l>
-            <l>Был здесь сейчас? торого сейчас я</l>
+            <l>Был здесь сейчас? Которого сейчас я</l>
             <l>Брал за руку?</l>
           </sp>
           <sp who="#boris_godunov">
@@ -4460,20 +4453,20 @@
             <speaker></speaker>
             <l>ь только так могу я, государь,</l>
             <l>Тебе за целость царства отвечать.</l>
-            <l>гда тебе мне верить не угодно,</l>
+            <l>Когда тебе мне верить не угодно,</l>
             <l>Раз навсегда, дозволь мне удалиться,</l>
             <l>А на себя за все возьми ответ!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— после долгой борьбы.</stage>
+            <stage>— после долгой борьбы.</stage>
             <l>Да, шурин, да! Я в этом на себя</l>
             <l>Возьму ответ! Вот видишь ли, я знаю,</l>
             <l>Что не умею править государством.</l>
             <l>Какой я царь? Меня, во всех делах,</l>
             <l>И с толку сбить, и обмануть не трудно.</l>
             <l>В одном лишь только я не обманусь:</l>
-            <l>гда меж тем, что бело, иль черно,</l>
+            <l>Когда меж тем, что бело, иль черно,</l>
             <l>Избрать я должен — я не обманусь.</l>
             <l>Тут мудрости не нужно, шурин, тут</l>
             <l> совести приходится лишь делать.</l>
@@ -4515,8 +4508,8 @@
             <speaker></speaker>
             <l>Я ухожу, великий государь!...</l>
           </sp>
-          <stage type="delivery">Направляется медленно к двери, но прежде, чем отворить ее,
-            оборачивается на ФЕДОРА. — ФЕДОР дает ему уйти, и кидается на шею ИРИНЕ.</stage>
+          <stage>Направляется медленно к двери, но прежде, чем отворить ее, оборачивается на
+            ФЕДОРА. — ФЕДОР дает ему уйти, и кидается на шею ИРИНЕ.</stage>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>! Родимая моя!</l>
@@ -4551,7 +4544,7 @@
             <l>Дай на руку твою мне опереться;</l>
             <l>Вот так! йдем, ; на Бога</l>
             <l>Надеюсь я, Он не оставит нас!</l>
-            <stage type="delivery">Уходит, опираясь на руку ИРИНЫ.</stage>
+            <stage>Уходит, опираясь на руку ИРИНЫ.</stage>
           </sp>
         </div>
       </div>
@@ -4574,10 +4567,10 @@
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
             <l>С -то? Да в гору, чай, пойдет,</l>
-            <l>гда захочет выдать нас. Два раза</l>
+            <l>Когда захочет выдать нас. Два раза</l>
             <l>Я посылал за ним, чтобы его</l>
             <l>Усовестить, да не могли найти.</l>
-            <l>Вот голова! гда б меня дождался,</l>
+            <l>Вот голова! Когда б меня дождался,</l>
             <l>Так не дошло б до этого.</l>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
@@ -4641,17 +4634,17 @@
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
-            <stage type="delivery">— про себя.</stage>
+            <stage>— про себя.</stage>
             <l>Господи, ужели</l>
             <l>Не даром сердцу чуется беда!</l>
-            <stage type="delivery">Уходит. — Входят братья кн.  ; купцы ГОЛУБЬ и
-              КРАСИЛЬНИКОВ, с другими сторонниками . — Все останавливаются перед ним в
-              почтительном молчании. — КН. ИВАН ПЕТРОВИЧ смотрит на них, некоторое время, не говоря
-              ни слова.</stage>
+            <stage>Уходит. — Входят братья кн.  ; купцы ГОЛУБЬ и КРАСИЛЬНИКОВ, с
+              другими сторонниками . — Все останавливаются перед ним в почтительном
+              молчании. — КН. ИВАН ПЕТРОВИЧ смотрит на них, некоторое время, не говоря ни
+              слова.</stage>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— сидя.</stage>
+            <stage>— сидя.</stage>
             <l>Вам ведомо, как дело повернулось:</l>
             <l>Схватить нас могут каждый миг. Хотите ль</l>
             <l>гибнуть все, или со мной идти?</l>
@@ -4683,14 +4676,14 @@
             <l>Я со  и со князь </l>
             <l>Останусь здесь, чтоб  взять</l>
             <l>д караул.</l>
-            <stage type="delivery">К дворецкому.</stage>
+            <stage>К дворецкому.</stage>
             <l>Федюк, подай братину!</l>
             <l>Во здравье каждому и в добрый путь —</l>
             <l>И да живет царь  !</l>
           </sp>
           <sp who="#vse_4-1">
             <speaker>Все</speaker>
-            <stage type="delivery">— кроме  .</stage>
+            <stage>— кроме  .</stage>
             <l>Да здравствует царь  !</l>
           </sp>
           <sp who="#vasilij_shujskij">
@@ -4741,12 +4734,12 @@
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
             <l>ь смеркнется, готовы будьте все;</l>
-            <l>гда ж раздастся выстрел из царь-пушки —</l>
+            <l>Когда ж раздастся выстрел из царь-пушки —</l>
             <l>Входите в Кремль!</l>
-            <stage type="delivery">К дворецкому.</stage>
+            <stage>К дворецкому.</stage>
             <l>Федюк, подай стопу!</l>
             <l>Во здравье всем!</l>
-            <stage type="delivery">Отпивает, и передает купцам.</stage>
+            <stage>Отпивает, и передает купцам.</stage>
           </sp>
           <sp who="#kuptsy">
             <speaker>Купцы</speaker>
@@ -4758,11 +4751,11 @@
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
             <l>Аминь!</l>
-            <stage type="delivery">КУПЦЫ уходят.</stage>
+            <stage>КУПЦЫ уходят.</stage>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— ко Мстиславскому.</stage>
+            <stage>— ко Мстиславскому.</stage>
             <l>Ты, князь, сейчас же выбери надежных</l>
             <l>Пять сот жильцов. Пусть крест они целуют</l>
             <l>Царю ; когда ж стемнеет,</l>
@@ -4803,7 +4796,7 @@
             <l>За ним смотреть еще кого нибудь.</l>
             <l>Я принужден — я не могу иначе —</l>
             <l>Меня теснят —</l>
-            <stage type="delivery">К у.</stage>
+            <stage>К у.</stage>
             <l>Ты хорошо ли знаешь</l>
             <l>Ту женщину?</l>
           </sp>
@@ -4826,21 +4819,21 @@
           <sp who="#kleshnin">
             <speaker></speaker>
             <l>Над кипой тех бумаг,</l>
-            <l>торые отнесть ему велел ты;</l>
+            <l>Которые отнесть ему велел ты;</l>
             <l>То лоб потрет, то за ухом почешет,</l>
             <l>И ничего, сердечный, не поймет!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Не выдержит.</l>
-            <stage type="delivery">Задумывается.</stage>
+            <stage>Задумывается.</stage>
             <l>Мне все на ум приходит</l>
             <l>Что в оный день, когда царя </l>
             <l>стигла смерть, предсказано мне было.</l>
             <l>Оно теперь свершается: помеха</l>
             <l>Моя во всем, вредитель мой и враг —</l>
             <l>Он в  —</l>
-            <stage type="delivery">Опомнившись.</stage>
+            <stage>Опомнившись.</stage>
             <l>Скажи ей, чтоб она</l>
             <l>Блюла царевича!</l>
           </sp>
@@ -4852,17 +4845,17 @@
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Не нужно!</l>
-            <stage type="delivery">Про себя.</stage>
+            <stage>Про себя.</stage>
             <l>«Слаб, но могуч — безвинен, но виновен —</l>
             <l>«м и не сам — потом — убит!»</l>
-            <stage type="delivery">К у.</stage>
+            <stage>К у.</stage>
             <l>Скажи ей,</l>
             <l>Чтобы она царевича блюла!</l>
-            <stage type="delivery">Уходит.</stage>
+            <stage>Уходит.</stage>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— один.</stage>
+            <stage>— один.</stage>
             <l>Чтобы блюла! Гм! Нешто я не знаю,</l>
             <l>Чего б хотелось милости твоей?</l>
             <l>жалуй—что ж! Грех на душу возьму!</l>
@@ -4870,15 +4863,15 @@
             <l>ка он жив, от  и Нагих</l>
             <l>Не будет нам покоя. Вишь, как крылья</l>
             <l>дрезали! Не ждал я этой рыси</l>
-            <l>От  ! нечно,</l>
+            <l>От  ! Конечно,</l>
             <l>Не выдержит — а если, между тем,</l>
             <l>Случится что?</l>
-            <stage type="delivery">Отворяет дверь.</stage>
+            <stage>Отворяет дверь.</stage>
             <l>Сударыня, войди!</l>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">—входит с просвирой в руках.</stage>
+            <stage>—входит с просвирой в руках.</stage>
             <l>Благослови, Владычица святая!</l>
             <l>клон тебе, боярин, принесла</l>
             <l>От Трех Святителей, просвирку вот</l>
@@ -4886,14 +4879,14 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— ласково.</stage>
+            <stage>— ласково.</stage>
             <l>дись сюда, голубушка, спасибо!</l>
             <l>Тебе сказали, для чего послал</l>
             <l>Я за тобой?</l>
           </sp>
           <sp who="#volohova">
             <speaker>Волохова</speaker>
-            <stage type="delivery">— садясь.</stage>
+            <stage>— садясь.</stage>
             <l>Сказали, государь,</l>
             <l>Сказали, свет: боярин </l>
             <l>Сменяет, мол, царевичеву мамку,</l>
@@ -4929,7 +4922,7 @@
             <l>Не долго до греха: как раз подсыплет</l>
             <l>Чего нибудь, отпел, похоронил,</l>
             <l>Наследство взял — и поминай как звали!</l>
-            <l>му в такое время разбирать!</l>
+            <l>Кому в такое время разбирать!</l>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
@@ -4967,7 +4960,7 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— грозно.</stage>
+            <stage>— грозно.</stage>
             <l>Молчи, старуха! Цыц!</l>
             <l>Мы знаем все! койный государь,</l>
             <l>Блаженной памяти  ,</l>
@@ -4975,7 +4968,7 @@
             <l>Изволил сжечь!  жалостлив боярин</l>
             <l>  :</l>
             <l>Он вместо казни, даст тебе награду,</l>
-            <l>гда свою исполнить службу ты</l>
+            <l>Когда свою исполнить службу ты</l>
             <l>Сумеешь при царевиче.</l>
           </sp>
           <sp who="#volohova">
@@ -4998,10 +4991,10 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— значительно.</stage>
+            <stage>— значительно.</stage>
             <l>Он тебе того</l>
             <l>В вину бы не поставил!</l>
-            <stage type="delivery">Волохова смотрит в удивлении.</stage>
+            <stage>Волохова смотрит в удивлении.</stage>
             <l>Слушай, баба:</l>
             <l>Никто не властен в животе и смерти —</l>
             <l>А у него падучая болезнь!</l>
@@ -5042,22 +5035,22 @@
           <sp who="#volohova">
             <speaker>Волохова</speaker>
             <l>Прости же, государь; уж будешь нами</l>
-            <l>Доволен! Так! нечно так, конечно!</l>
+            <l>Доволен! Так! Конечно так, конечно!</l>
             <l>Час не ровен, случиться может всяко!</l>
             <l>Один лишь Бог силён и всемогущ,</l>
             <l>Один Господь, а наше дело вдовье!</l>
           </sp>
-          <stage type="delivery">Уходит.</stage>
+          <stage>Уходит.</stage>
           <sp who="#sluga_godunova">
             <speaker>Слуга</speaker>
-            <stage type="delivery">— докладывает.</stage>
+            <stage>— докладывает.</stage>
             <l>Федюк Старков!</l>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
             <l>Зови его сюда!</l>
           </sp>
-          <stage type="delivery">СТАРКОВ входит, занавес опускается.</stage>
+          <stage>СТАРКОВ входит, занавес опускается.</stage>
         </div>
         <div type="scene">
           <head>Царский терем. ловина Царицы.</head>
@@ -5106,7 +5099,7 @@
             <l>Л вновь послал: челом-де бью ему,</l>
             <l>Такое-де есть дело, о котором</l>
             <l>Не знает он!</l>
-            <stage type="delivery">Входит КЛЕШНИН.</stage>
+            <stage>Входит КЛЕШНИН.</stage>
             <l>А, это ты, !</l>
             <l>Откуда ты?</l>
           </sp>
@@ -5142,7 +5135,7 @@
             <l>Да что тут говорить!</l>
             <l>Ты, батюшка, был от младых ногтей</l>
             <l>Суров и крут, и сердцем непреклонен.</l>
-            <l>гда себе что положил на мысль,</l>
+            <l>Когда себе что положил на мысль,</l>
             <l>Так уж поставишь на своем, хоть там</l>
             <l>Весь свет трещи!</l>
           </sp>
@@ -5202,7 +5195,7 @@
           </sp>
           <sp who="#stolnik_4-3">
             <speaker>Стольник</speaker>
-            <stage type="delivery">— докладывает.</stage>
+            <stage>— докладывает.</stage>
             <l>Князь </l>
             <l> !</l>
           </sp>
@@ -5212,7 +5205,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— радостно.</stage>
+            <stage>— радостно.</stage>
             <l>Пришел!</l>
             <l>Пришел, !</l>
           </sp>
@@ -5224,15 +5217,15 @@
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Стыдись, стыдись, !</l>
-            <stage type="delivery">К стольнику.</stage>
+            <stage>К стольнику.</stage>
             <l>Пускай войдет!</l>
-            <stage type="delivery">К у.</stage>
+            <stage>К у.</stage>
             <l>Я при тебе его</l>
             <l>Сейчас спрошу.</l>
-            <stage type="delivery">Входит КН. ИВАН ПЕТРОВИЧ.</stage>
+            <stage>Входит КН. ИВАН ПЕТРОВИЧ.</stage>
             <l>Здорово, князь !</l>
             <l>Вообрази: есть на тебя донос —</l>
-            <stage type="delivery">КН. ИВАН ПЕТРОВИЧ смущается.</stage>
+            <stage>КН. ИВАН ПЕТРОВИЧ смущается.</stage>
             <l> я ему не верю. Я хочу,</l>
             <l>Чтоб ты мне сам сказал, что предо мною</l>
             <l>Ты чист теперь, как ты пред целым светом</l>
@@ -5284,7 +5277,7 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">—которая не спускала глаз с .</stage>
+            <stage>—которая не спускала глаз с .</stage>
             <l>Свет-государь,</l>
             <l>Зачем таким вопросом оскорблять</l>
             <l>Того, чья доблесть всем давно известна?</l>
@@ -5304,12 +5297,12 @@
           <sp who="#kleshnin">
             <speaker></speaker>
             <l> чести! Слышишь, князь?</l>
-            <stage type="delivery">Про себя.</stage>
+            <stage>Про себя.</stage>
             <l>А по иконе было бы вернее!</l>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>Свет-государь —</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -5342,7 +5335,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— с испугом.</stage>
+            <stage>— с испугом.</stage>
             <l>Что? Что ты хочешь?...</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
@@ -5364,9 +5357,9 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— вполголоса.</stage>
+            <stage>— вполголоса.</stage>
             <l>Тс! !</l>
-            <stage type="delivery">Указывая на а.</stage>
+            <stage>Указывая на а.</stage>
             <l>Не при нем!</l>
             <l>Не говори при нем —  он</l>
             <l>Расскажет все!</l>
@@ -5417,13 +5410,13 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— про себя.</stage>
+            <stage>— про себя.</stage>
             <l>Вишь, княжеская честь!</l>
             <l>И подгонять не надо!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— берет  в сторону.</stage>
+            <stage>— берет  в сторону.</stage>
             <l>Князь, послушай:</l>
             <l>ь потерпи немного —  только</l>
             <l>Дай подрости — и я с престола сам</l>
@@ -5432,7 +5425,7 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— подходит к столу и берет печать.</stage>
+            <stage>— подходит к столу и берет печать.</stage>
             <l>Прихлопнуть, что ль, приказ?</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -5448,14 +5441,14 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— на ухо .</stage>
+            <stage>— на ухо .</stage>
             <l>Ступай! Да ну, ступай же!</l>
             <l>Все на себя беру я, на себя!</l>
             <l>Да ну, иди ж, иди!</l>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
             <speaker>Кн.  </speaker>
-            <stage type="delivery">— в сильном волнении.</stage>
+            <stage>— в сильном волнении.</stage>
             <l>Нет, он святой!</l>
             <l>Бог не велит подняться на него —</l>
             <l>Бог не велит! Я вижу, простота</l>
@@ -5465,11 +5458,11 @@
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Иди, иди! Разделай что ты сделал!</l>
-            <stage type="delivery">Вытесняет его из комнаты.</stage>
+            <stage>Вытесняет его из комнаты.</stage>
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— подымая печать над приказом.</stage>
+            <stage>— подымая печать над приказом.</stage>
             <l>Царь-батюшка, вели скрепить приказ!</l>
             <l>Не дай ему собрать войска! Царица —</l>
             <l>Скажи ему, что участь государства</l>
@@ -5486,7 +5479,7 @@
             <l>, ты ангел! От тебя</l>
             <l>Ничто не скроется, ты все заметишь</l>
             <l>И все поймешь! Да,  нам не враг!</l>
-            <stage type="delivery">Шум за дверью. — СЕННАЯ ДЕВУШКА вбегает в испуге.</stage>
+            <stage>Шум за дверью. — СЕННАЯ ДЕВУШКА вбегает в испуге.</stage>
           </sp>
           <sp who="#sennaja_devushka">
             <speaker>ная девушка</speaker>
@@ -5495,11 +5488,11 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker>Голос </speaker>
-            <stage type="delivery">— за сценой.</stage>
+            <stage>— за сценой.</stage>
             <l>Прочь!</l>
             <l>Прочь! Не держите! Я хочу к царице!</l>
-            <stage type="delivery">В дверях показывается ШАХОВСКОЙ, удерживаемый несколькими
-              слугами. Он их отталкивает и бросается ИРИНЕ в ноги.</stage>
+            <stage>В дверях показывается ШАХОВСКОЙ, удерживаемый несколькими слугами. Он их
+              отталкивает и бросается ИРИНЕ в ноги.</stage>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
@@ -5513,14 +5506,14 @@
           </sp>
           <sp who="#slugi">
             <speaker>Слуги</speaker>
-            <stage type="delivery">— вбегают со стрельцами.</stage>
+            <stage>— вбегают со стрельцами.</stage>
             <l>Хватайте вора!</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>, тише, люди!</l>
             <l>Здесь вора нет!</l>
-            <stage type="delivery">К Шаховскому.</stage>
+            <stage>К Шаховскому.</stage>
             <l>Скажи мне, растолкуй,</l>
             <l>Чего ты хочешь?</l>
           </sp>
@@ -5536,9 +5529,9 @@
           </sp>
           <sp who="#kleshnin">
             <speaker></speaker>
-            <stage type="delivery">— про себя.</stage>
+            <stage>— про себя.</stage>
             <l>Так вот оно в чем дело!</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>Царь, выслушай его!</l>
           </sp>
           <sp who="#shahovskoj">
@@ -5561,7 +5554,7 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— встает и подает бумагу.</stage>
+            <stage>— встает и подает бумагу.</stage>
             <l>Вот, вот</l>
             <l>Их челобитня! -царица!</l>
             <l>Вели невесту мне отдать! Вели,</l>
@@ -5572,7 +5565,7 @@
             <speaker></speaker>
             <l>Об этой челобитне</l>
             <l>Слыхали мы. зволь-ка поглядеть!</l>
-            <stage type="delivery">Берет бумагу в руки, и просмотрев, обращается к .</stage>
+            <stage>Берет бумагу в руки, и просмотрев, обращается к .</stage>
             <l>Вот, батюшка, ты говорил сейчас,</l>
             <l>Твоя царица знает князь  —</l>
             <l>А на поверку вышло, что не знает!</l>
@@ -5583,11 +5576,11 @@
             <l>Как блудницу, с тобою развести,</l>
             <l>Тебе ж свою племянницу посватать!</l>
             <l>Не веришь, батюшка? Смотри, читай!</l>
-            <stage type="delivery">дает  бумагу.</stage>
+            <stage>дает  бумагу.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— читает.</stage>
+            <stage>— читает.</stage>
             <l>«Ты новый брак прийми, великий царь,</l>
             <l>« возьми себе в царицы....</l>
             <l>« ж  отпусти</l>
@@ -5600,16 +5593,16 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— читает.</stage>
+            <stage>— читает.</stage>
             <l>«И в том тебе соборне бьем челом</l>
             <l>«И руки прилагаем: </l>
             <l>«трополит всея Руси.... Крутицкий</l>
             <l>« .... Князь....» Что?</l>
-            <stage type="delivery">Дрожащим голосом.</stage>
+            <stage>Дрожащим голосом.</stage>
             <l>«Князь.... Князь ....   !»</l>
             <l>Его рука! Он также подписался!</l>
             <l> — он подписался!</l>
-            <stage type="delivery">Падает в кресла и закрывает лицо руками.</stage>
+            <stage>Падает в кресла и закрывает лицо руками.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
@@ -5619,7 +5612,7 @@
             <speaker></speaker>
             <l>Он! Он! Пускай бы кто другой, но он!</l>
             <l>Нас разлучить с тобой!</l>
-            <stage type="delivery">Плачет.</stage>
+            <stage>Плачет.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
@@ -5649,7 +5642,7 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— вскакивая.</stage>
+            <stage>— вскакивая.</stage>
             <l>Не будет! Нет! Не дам тебя в обиду!</l>
             <l>Пускай прийдут! Пусть с пушками прийдут!</l>
             <l>Пусть попытаются!</l>
@@ -5665,7 +5658,7 @@
             <l>Да, я царь!</l>
             <l>Они забыли, что я царь!  —</l>
             <l>Где тот приказ?</l>
-            <stage type="delivery">Бежит к столу и прикладывает печать к приказу.</stage>
+            <stage>Бежит к столу и прикладывает печать к приказу.</stage>
             <l>На! На! Отдай !</l>
           </sp>
           <sp who="#irina">
@@ -5686,7 +5679,7 @@
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— выходя из оцепенения.</stage>
+            <stage>— выходя из оцепенения.</stage>
             <l>Царь-государь, помилуй!</l>
             <l>Я не того просил! Я о невесте</l>
             <l>Тебя просил!</l>
@@ -5716,7 +5709,7 @@
             <speaker></speaker>
             <l>Боже!</l>
             <l>Что сделал я!</l>
-            <stage type="delivery">Убегает.</stage>
+            <stage>Убегает.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
@@ -5735,7 +5728,7 @@
             <l>Я их прощу — а им нужна наука!</l>
             <l>Пусть посидят! Пусть ведают, что значит</l>
             <l>Нас разлучать! Пусть посидят в тюрьме!</l>
-            <stage type="delivery">Уходит.</stage>
+            <stage>Уходит.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -5747,14 +5740,14 @@
             <speaker></speaker>
             <p>— Стой здесь, парень, налаживай гусли, а как соберется народ, зачинай песню про князь
                ! Господи, благослови! Господи, помоги! Вот до чего дожить довелось!</p>
-            <stage type="delivery">ГУСЛЯР строит гусли; КУРЮКОВ осматривает бердыш.</stage>
+            <stage>ГУСЛЯР строит гусли; КУРЮКОВ осматривает бердыш.</stage>
             <p>Ишь, старый приятель! От самого от блаженной памяти от   не сымал тебя
               со стены, аж всего ржавчина съела. А вот сегодня еще послужишь. Ну, перебирай лады,
               парень, вона народ подходит!</p>
           </sp>
           <sp who="#posadskij_4-4a">
             <speaker>садский</speaker>
-            <stage type="delivery">— подходить к у.</stage>
+            <stage>— подходить к у.</stage>
             <p>— Доброго здоровья дедушке  у! Что это у тебя за бердыш?</p>
           </sp>
           <sp who="#kurjukov">
@@ -5789,7 +5782,7 @@
           </sp>
           <sp who="#kurjukov">
             <speaker></speaker>
-            <stage type="delivery">— злобно.</stage>
+            <stage>— злобно.</stage>
             <p>— А что? Чем  вам не воевода?</p>
           </sp>
           <sp who="#tretij_posadskij">
@@ -5798,11 +5791,11 @@
           </sp>
           <sp who="#kurjukov">
             <speaker></speaker>
-            <p>— Ой ли? <stage type="delivery">К гусляру.</stage> Ну, что ж песня-то? Песня?</p>
+            <p>— Ой ли? <stage>К гусляру.</stage> Ну, что ж песня-то? Песня?</p>
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— поет.</stage>
+            <stage>— поет.</stage>
             <l>ил король, копил силушку,</l>
             <l>дходил он под -город,</l>
             <l>дошедши, похваляется:</l>
@@ -5821,12 +5814,12 @@
           </sp>
           <sp who="#kurjukov">
             <speaker></speaker>
-            <stage type="delivery">— к гусляру.</stage>
+            <stage>— к гусляру.</stage>
             <p>— Ну, парень!</p>
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— продолжает.</stage>
+            <stage>— продолжает.</stage>
             <l>То не Божий гром над  гремит,</l>
             <l>Бьют о стены то ломы железные,</l>
             <l>Ядра то каленые сыплются!</l>
@@ -5837,7 +5830,7 @@
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— продолжает.</stage>
+            <stage>— продолжает.</stage>
             <l>А не млад-то светёл месяц зарождается,</l>
             <l>Государь-то   князь</l>
             <l>На стене городской проявляется.</l>
@@ -5850,7 +5843,7 @@
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— продолжает.</stage>
+            <stage>— продолжает.</stage>
             <l>Целовали мы крест сидеть до смерти —</l>
             <l>Не сдадим по смерть а-города!</l>
           </sp>
@@ -5880,7 +5873,7 @@
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— продолжает.</stage>
+            <stage>— продолжает.</stage>
             <l>И пять месяцов король облегает Псков,</l>
             <l>На шестой повесил голову.</l>
             <l>А тем часом князь сделать вылазку</l>
@@ -5897,7 +5890,7 @@
           </sp>
           <sp who="#gusljar">
             <speaker>Гусляр</speaker>
-            <stage type="delivery">— заканчивает.</stage>
+            <stage>— заканчивает.</stage>
             <l>Слава на небе солнцу высокому!</l>
             <l>Слава на земле  у!</l>
             <l>Слава всему народу христианскому!</l>
@@ -5908,14 +5901,14 @@
           </sp>
           <sp who="#drugoj_4-4b">
             <speaker>Другой</speaker>
-            <p>— Воздал честь кому честь подобает! <stage type="delivery">Кладет ему деньги в шапку.
-                НаАкут</stage> тебе, добрый человек!</p>
+            <p>— Воздал честь кому честь подобает! <stage>Кладет ему деньги в шапку. НаАкут</stage>
+              тебе, добрый человек!</p>
           </sp>
           <sp who="#vse_4-4">
             <speaker>Все</speaker>
             <p>— Прими ж и от нас! И от меня! И от меня!</p>
           </sp>
-          <stage type="delivery">Все бросают деньги в шапку гусляра.</stage>
+          <stage>Все бросают деньги в шапку гусляра.</stage>
           <sp who="#odin_4-4f">
             <speaker>Один</speaker>
             <p>— Братцы, смотри, кто это сюда скачет?</p>
@@ -5926,7 +5919,7 @@
           </sp>
           <sp who="#gonets_4-4">
             <speaker>Гонец</speaker>
-            <stage type="delivery">— верхом.</stage>
+            <stage>— верхом.</stage>
             <p>— Место! Место! Раздайтесь на мосту!</p>
           </sp>
           <sp who="#posadskij_4-4b">
@@ -5937,14 +5930,14 @@
             <speaker>Гонец</speaker>
             <p>— От Тешлова! Татары Оку перешли, на Москву идут! Место! Место!</p>
           </sp>
-          <stage type="delivery">Все раздаются. — Гонец скачет поАкут мосту в город.</stage>
+          <stage>Все раздаются. — Гонец скачет поАкут мосту в город.</stage>
           <sp who="#odin_4-4g">
             <speaker>Один</speaker>
             <p>— Ишь, притча ваная! Чай скоро подступят!</p>
           </sp>
           <sp who="#zhenschina_4-4c">
             <speaker>Женщина</speaker>
-            <stage type="delivery">— голосит.</stage>
+            <stage>— голосит.</stage>
             <p>— Ой, Господи-светы! Ой, батюшки мои! Опять выжгут наши слободы!</p>
           </sp>
           <sp who="#tretij_4-4">
@@ -5962,7 +5955,7 @@
           </sp>
           <sp who="#kurjukov">
             <speaker></speaker>
-            <stage type="delivery">— выступает вперед.</stage>
+            <stage>— выступает вперед.</stage>
             <p>— Родился, православные, родился! Родился он окаянный! Сломил он  !
               Сковал его, света нашего!  рукам и по ногам сковал!</p>
           </sp>
@@ -5973,13 +5966,12 @@
           <sp who="#kurjukov">
             <speaker></speaker>
             <p>— , православные, !  хочет извести его! Сейчас его, отца нашего,
-              в слободскую тюрьму поведут, здесь по мосту поведут! <stage type="delivery">Шум и
-                говор в народе.</stage> Вспомяните, детушки, кто всегда стоял за вас! Кто вас от
-              лихих судей боронил? От старост и воевод? От приставов и от целовальников? Кто не
-              пустил короля на Москву? Кто татар столько раз отгонял?  стояли за нас,
-              православные! Да есть ли на целом свете супротив ? А к кому ноне примкнулись
-              князья и бояре, нашему ворогу, , отпор дать? Пропадем мы без ,
-              детушки!</p>
+              в слободскую тюрьму поведут, здесь по мосту поведут! <stage>Шум и говор в
+                народе.</stage> Вспомяните, детушки, кто всегда стоял за вас! Кто вас от лихих судей
+              боронил? От старост и воевод? От приставов и от целовальников? Кто не пустил короля на
+              Москву? Кто татар столько раз отгонял?  стояли за нас, православные! Да есть ли
+              на целом свете супротив ? А к кому ноне примкнулись князья и бояре, нашему
+              ворогу, , отпор дать? Пропадем мы без , детушки!</p>
           </sp>
           <sp who="#golosa_v_narode">
             <speaker>Голоса в народе</speaker>
@@ -5998,12 +5990,11 @@
             <p>— стоим за , как при Олёне  стояли! Вот он, православные! Вот он,
               отец наш,  ! Вот он, с братьями, в кандалах идет!</p>
           </sp>
-          <stage type="delivery">Из городских ворот выезжают бубенщики. За ними едет КН. ТУРЕНИН. За
-            Турениным стрельцы ведут КН. ИВАНА ПЕТРОВИЧА и других ШУЙСКИХ (кроме ) в
-            кандалах.</stage>
+          <stage>Из городских ворот выезжают бубенщики. За ними едет КН. ТУРЕНИН. За Турениным
+            стрельцы ведут КН. ИВАНА ПЕТРОВИЧА и других ШУЙСКИХ (кроме ) в кандалах.</stage>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
-            <stage type="delivery">— к народу.</stage>
+            <stage>— к народу.</stage>
             <p>— Раздайтесь на мосту! Что дорогу загородили!</p>
           </sp>
           <sp who="#kurjukov">
@@ -6025,7 +6016,7 @@
           </sp>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
-            <stage type="delivery">— к стрельцам.</stage>
+            <stage>— к стрельцам.</stage>
             <p>— Разогнать народ!</p>
           </sp>
           <sp who="#kurjukov">
@@ -6040,21 +6031,21 @@
             <speaker></speaker>
             <p>— Ну, теперь за мной, как при Олёне ! ! !</p>
           </sp>
-          <stage type="delivery">Бросается с бердышем на стрельцов.</stage>
+          <stage>Бросается с бердышем на стрельцов.</stage>
           <sp who="#narod">
             <speaker>Народ</speaker>
-            <stage type="delivery">— бросаясь за ним.</stage>
+            <stage>— бросаясь за ним.</stage>
             <p>— ! !</p>
           </sp>
           <sp who="#turenin">
             <speaker>Туренин</speaker>
-            <stage type="delivery">— к стрельцам.</stage>
+            <stage>— к стрельцам.</stage>
             <p>— Руби воров! Кидай их в воду!</p>
           </sp>
-          <stage type="delivery">Свалка.</stage>
+          <stage>Свалка.</stage>
           <sp who="#kurjukov">
             <speaker></speaker>
-            <stage type="delivery">— падая с моста.</stage>
+            <stage>— падая с моста.</stage>
             <p>— ! — Господи прийми мою душу!</p>
           </sp>
           <sp who="#ivan_petrovich_shujskij">
@@ -6084,7 +6075,7 @@
               в том, что кривым путем пошел, хотел царицу с царем развести. А потом и хуже того
               учинил, на самого царя поднялся! Он — святой царь, детушки, он — от Бога царь, и
               царица его святая. Дай им, Господи, много лет здравствовать!</p>
-            <stage type="delivery">К Туренину.</stage>
+            <stage>К Туренину.</stage>
             <p>Ну, теперь, князь, идем. Простите, московские люди!</p>
           </sp>
           <sp who="#narod">
@@ -6094,13 +6085,13 @@
           <sp who="#turenin">
             <speaker>Туренин</speaker>
             <p>— Бейте в бубны!</p>
-            <stage type="delivery">Бубенщики бьют в бубны. — Народ расступается. — ШУЙСКИХ проводят
-              через сцену. — Из городских ворот выбегает ШАХОВСКОЙ, без шапки, в одной руке сабля, в
-              другой пистолет. — За ним КРАСИЛЬНИКОВ и ГОЛУБЬ с рогатинами.</stage>
+            <stage>Бубенщики бьют в бубны. — Народ расступается. — ШУЙСКИХ проводят через сцену. —
+              Из городских ворот выбегает ШАХОВСКОЙ, без шапки, в одной руке сабля, в другой
+              пистолет. — За ним КРАСИЛЬНИКОВ и ГОЛУБЬ с рогатинами.</stage>
           </sp>
           <sp who="#shahovskoj">
             <speaker></speaker>
-            <stage type="delivery">— вне себя.</stage>
+            <stage>— вне себя.</stage>
             <p>— Где князь  ?</p>
           </sp>
           <sp who="#odin_iz_naroda_4-4b">
@@ -6109,7 +6100,7 @@
           </sp>
           <sp who="#drugoj_iz_naroda_4-4b">
             <speaker>Другой</speaker>
-            <stage type="delivery">— указывая за сцену.</stage>
+            <stage>— указывая за сцену.</stage>
             <p>— , сейчас тюремные ворота за ним захлопнулись!</p>
           </sp>
           <sp who="#shahovskoj">
@@ -6137,7 +6128,7 @@
             <speaker>Народ</speaker>
             <p>— ! !</p>
           </sp>
-          <stage type="delivery">Все бегут за ШАХОВСКИМ.</stage>
+          <stage>Все бегут за ШАХОВСКИМ.</stage>
         </div>
       </div>
       <div type="act">
@@ -6159,16 +6150,16 @@
           </sp>
           <sp who="#sluga_v_tsarskom_tereme">
             <speaker>Слуга</speaker>
-            <stage type="delivery">— докладывает .</stage>
+            <stage>— докладывает .</stage>
             <l> твоему боярскому указу,</l>
             <l>   приведен.</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
             <l>Впустить его.</l>
-            <stage type="delivery">К у.</stage>
+            <stage>К у.</stage>
             <l>Ты нас одних оставишь.</l>
-            <stage type="delivery">КЛЕШНИН и слуга уходят. — ВАСИЛИЙ ШУЙСКИЙ входить.</stage>
+            <stage>КЛЕШНИН и слуга уходят. — ВАСИЛИЙ ШУЙСКИЙ входить.</stage>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
@@ -6201,7 +6192,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— показывая ему бумагу.</stage>
+            <stage>— показывая ему бумагу.</stage>
             <l>Ты сознаешься в подписи своей?</l>
           </sp>
           <sp who="#vasilij_shujskij">
@@ -6210,7 +6201,7 @@
             <l>Что челобитня эта мной самим</l>
             <l>Затеяна. Зачем мне запираться?</l>
             <l>Тебе хотел я службу сослужить:</l>
-            <l>гда дядья в союз вошли с владыкой,</l>
+            <l>Когда дядья в союз вошли с владыкой,</l>
             <l>А к ним Москва пристала, каждый свой</l>
             <l>Давал совет: нашлися и такие,</l>
             <l>Что в  признать царем хотели</l>
@@ -6246,15 +6237,15 @@
             <l>Мы поняли друг друга.</l>
             <l>Прости ж теперь, на деле я увижу,</l>
             <l>Ты искренно ли говорил.</l>
-            <stage type="delivery">ВАСИЛИЙ ШУЙСКИЙ уходит.</stage>
+            <stage>ВАСИЛИЙ ШУЙСКИЙ уходит.</stage>
           </sp>
           <sp who="#sluga_v_tsarskom_tereme">
             <speaker>Слуга</speaker>
-            <stage type="delivery">— докладывает.</stage>
+            <stage>— докладывает.</stage>
             <l>Боярин,</l>
             <l>Царица в милости твоей идет!</l>
-            <stage type="delivery">Входит ИРИНА, в сопровождении нескольких боярынь. ГОДУНОВ
-              опускается перед ней на колени.</stage>
+            <stage>Входит ИРИНА, в сопровождении нескольких боярынь. ГОДУНОВ опускается перед ней на
+              колени.</stage>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
@@ -6263,15 +6254,15 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— к боярыням.</stage>
+            <stage>— к боярыням.</stage>
             <l>Оставьте нас.</l>
-            <stage type="delivery">Боярыни уходят.</stage>
+            <stage>Боярыни уходят.</stage>
             <l>Брат, не тебе — мне на коленях быть</l>
             <l>Пред тобой приходится!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— вставая.</stage>
+            <stage>— вставая.</stage>
             <l>Сестра,</l>
             <l>Зачем ко мне пришла ты без доклада?</l>
           </sp>
@@ -6334,7 +6325,7 @@
             <l>Живет любовь, и благость, и молитва,</l>
             <l>И словно тихий слышится в ней звон.</l>
             <l> для чего вся благость и вся святость,</l>
-            <l>ль нет на них опоры никакой!</l>
+            <l>Коль нет на них опоры никакой!</l>
             <l>Семь лет прошло, что над землею русской,</l>
             <l>Как Божий гнев, пронесся царь .</l>
             <l>Семь лет с тех пор, кладя за камнем камень,</l>
@@ -6435,7 +6426,7 @@
             <l>Его бессилье видишь. Будь же ныне</l>
             <l>мощницей, а не помехой мне.</l>
             <l>Не даром ты приставлена от Бога</l>
-            <l> слабому царю. Ответ тяжелый</l>
+            <l>Ко слабому царю. Ответ тяжелый</l>
             <l>Есть на тебе. Ты быть должна царицей —</l>
             <l>Не женщиной! Ты  должна</l>
             <l>Склонить теперь, чтоб отказался он</l>
@@ -6443,7 +6434,7 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <l>гда б могла я думать, что нужна</l>
+            <l>Когда б могла я думать, что нужна</l>
             <l>гибель их для блага государства,</l>
             <l>Быть может, я в себе нашла бы силу</l>
             <l>Рыданье сердца подавить; но я</l>
@@ -6468,10 +6459,10 @@
             <speaker></speaker>
             <l>Придет пора, и ты поймешь, ,</l>
             <l>Что нам один с тобою путь.</l>
-            <stage type="delivery">Отворяет дверь и говорит за кулисы.</stage>
+            <stage>Отворяет дверь и говорит за кулисы.</stage>
             <l>Царица</l>
             <l>Зовет своих боярынь!</l>
-            <stage type="delivery">Боярыни входят.</stage>
+            <stage>Боярыни входят.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
@@ -6479,7 +6470,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— с низким поклоном.</stage>
+            <stage>— с низким поклоном.</stage>
             <l>Прости меня, великая царица!</l>
           </sp>
         </div>
@@ -6514,7 +6505,7 @@
           </sp>
           <sp who="#chetvertyj_nischij">
             <speaker>Четвертый</speaker>
-            <stage type="delivery">— на костылях, протесняется вперед.</stage>
+            <stage>— на костылях, протесняется вперед.</stage>
             <p>— Братие! Слышали что на Красной площади деется?</p>
           </sp>
           <sp who="#slepoj">
@@ -6552,8 +6543,8 @@
           <sp who="#vse_5-2">
             <speaker>Все</speaker>
             <p>— Место! Место! Царица идет!</p>
-            <stage type="delivery">Нищие сторонятся. — ИРИНА подходит со МСТИСЛАВСКОЙ; за ней
-              боярыни. — Стольник идет впереди и раздает милостыню.</stage>
+            <stage>Нищие сторонятся. — ИРИНА подходит со МСТИСЛАВСКОЙ; за ней боярыни. — Стольник
+              идет впереди и раздает милостыню.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
@@ -6581,7 +6572,7 @@
             <speaker>Княжна</speaker>
             <p>— Не видала я его, царица, с той самой ночи, с того часа, как —</p>
           </sp>
-          <stage type="delivery">Закрывает лицо и рыдает.</stage>
+          <stage>Закрывает лицо и рыдает.</stage>
           <sp who="#irina">
             <speaker></speaker>
             <p>— Бедная ты! И ему-то каково! Чай, теперь умереть бы рад, чтобы свое дело
@@ -6590,12 +6581,12 @@
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
             <p>— Воздай тебе  Божия, что жалеешь ты нась!</p>
-            <stage type="delivery">Трезвон во все колокола. Бояре выходят из собора. Двое из них
-              раздают милостыню. За ними идет ФЕДОР.</stage>
+            <stage>Трезвон во все колокола. Бояре выходят из собора. Двое из них раздают милостыню.
+              За ними идет ФЕДОР.</stage>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
-            <stage type="delivery">— вполголоса.</stage>
+            <stage>— вполголоса.</stage>
             <p>— Теперь, царица?</p>
           </sp>
           <sp who="#irina">
@@ -6604,23 +6595,23 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— становится на колени, лицом к собору.</stage>
+            <stage>— становится на колени, лицом к собору.</stage>
             <l>Царь-батюшка! Ты, стольким покаяньем,</l>
             <l>Раскаяньем и мукой искупивший</l>
             <l>Свои грехи! Ты, с Богом ныне сущий!</l>
             <l>Ты царствовать умел! Наставь меня!</l>
             <l>Вдохни в меня твоей частицу силы,</l>
             <l>И быть царем меня ты научи!</l>
-            <stage type="delivery">Встает и хочет идти.</stage>
+            <stage>Встает и хочет идти.</stage>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— ко .</stage>
+            <stage>— ко .</stage>
             <l>Княжна, теперь!</l>
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
-            <stage type="delivery">— бросается в ноги .</stage>
+            <stage>— бросается в ноги .</stage>
             <l>Царь-государь, помилуй!</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -6647,7 +6638,7 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— становятся на колени.</stage>
+            <stage>— становятся на колени.</stage>
             <l>Свет-государь!</l>
             <l>Она тебя со мною вместе молит.</l>
             <l>За князь  !</l>
@@ -6673,7 +6664,7 @@
             <l>Хотел послать за ним — немного позже</l>
             <l>Хотел послать — но для тебя, ,</l>
             <l>шлю сейчас.</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>, пошли за ним!</l>
           </sp>
           <sp who="#boris_godunov">
@@ -6710,14 +6701,14 @@
           <sp who="#kleshnin">
             <speaker></speaker>
             <l>, он идет!</l>
-            <stage type="delivery">дходит ТУРЕНИН.</stage>
+            <stage>дходит ТУРЕНИН.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— к Туренину.</stage>
+            <stage>— к Туренину.</stage>
             <l>Сейчас всех  свободить!  ж</l>
             <l> ко мне прислать!</l>
-            <stage type="delivery">Туренин не трогается с места.</stage>
+            <stage>Туренин не трогается с места.</stage>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
@@ -6770,17 +6761,17 @@
             <l>Да кабы я не застрелил его,</l>
             <l>Вломились бы!</l>
           </sp>
-          <stage type="delivery">Княжна падает в обморок.</stage>
+          <stage>Княжна падает в обморок.</stage>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— смотрит страшно на Туренина.</stage>
+            <stage>— смотрит страшно на Туренина.</stage>
             <l>Князь  удавился?</l>
             <l> ? Лжешь! Не удавился —</l>
             <l>Удавлен он!</l>
-            <stage type="delivery">Хватает Туренина обеими руками заАкут ворот.</stage>
+            <stage>Хватает Туренина обеими руками заАкут ворот.</stage>
             <l>Ты удавил его!</l>
             <l>Убийца! Зверь!</l>
-            <stage type="delivery">К .</stage>
+            <stage>К .</stage>
             <l>Ты ведал это?</l>
           </sp>
           <sp who="#boris_godunov">
@@ -6797,8 +6788,7 @@
             <l>Чья кровь во мне! Не вдруг отец покойный</l>
             <l>Стал грозным государем! Чрез окольных</l>
             <l>Он грозен стал — вы вспомните его!</l>
-            <stage type="delivery">ГОНЕЦ, весь запыленный, с грамотой в руках, поспешно подходит к
-              ГОДУНОВУ.</stage>
+            <stage>ГОНЕЦ, весь запыленный, с грамотой в руках, поспешно подходит к ГОДУНОВУ.</stage>
           </sp>
           <sp who="#gonets_5-2">
             <speaker>Гонец</speaker>
@@ -6807,11 +6797,11 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— вырывая грамоту у гонца.</stage>
+            <stage>— вырывая грамоту у гонца.</stage>
             <l>Дай!</l>
-            <l>гда сам царь стоит перед тобой,</l>
+            <l>Когда сам царь стоит перед тобой,</l>
             <l>Так нету здесь боярина !</l>
-            <stage type="delivery">Глядит в грамоту и начинает дрожать.</stage>
+            <stage>Глядит в грамоту и начинает дрожать.</stage>
             <l> — мое неясно зренье —</l>
             <l>Не вижу я — мне кажется, я что-то</l>
             <l>Не так прочел — в глазах моих рябит —</l>
@@ -6819,7 +6809,7 @@
           </sp>
           <sp who="#irina">
             <speaker></speaker>
-            <stage type="delivery">— взглянув в грамоту.</stage>
+            <stage>— взглянув в грамоту.</stage>
             <l>Боже милосердый!</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -6843,7 +6833,7 @@
             <l>В падучем он недуге</l>
             <l>Упал на нож? Да точно ль так, ?</l>
             <l>Ты, может быть, не так прочла — дай лист!</l>
-            <stage type="delivery">Смотрит в грамоту и роняет ее из рук.</stage>
+            <stage>Смотрит в грамоту и роняет ее из рук.</stage>
             <l>До смерти — да — до смерти закололся!</l>
             <l>Не верится! Не сон ли это все?</l>
             <l>Брат  мне заместо сына был —</l>
@@ -6864,7 +6854,7 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— который, между тем, поднял и прочел грамоту.</stage>
+            <stage>— который, между тем, поднял и прочел грамоту.</stage>
             <l>Великий царь —</l>
           </sp>
           <sp who="#fedor_ivanovich">
@@ -6877,14 +6867,14 @@
             <speaker></speaker>
             <l>Государь,</l>
             <l>Тебе сейчас отправить в  надо</l>
-            <l>го-нибудь....</l>
+            <l>Кого-нибудь....</l>
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Зачем? Я сам отправлюсь!</l>
             <l>Я сам хочу увидеть ! м!</l>
             <l>Я никому не верю!</l>
-            <stage type="delivery">РАТНИК подходит к .</stage>
+            <stage>РАТНИК подходит к .</stage>
           </sp>
           <sp who="#ratnik">
             <speaker>Ратник</speaker>
@@ -6916,12 +6906,12 @@
           </sp>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
-            <stage type="delivery">— с недоумением.</stage>
+            <stage>— с недоумением.</stage>
             <l>Вправду? Вправду хочешь</l>
             <l>слать ты в  , ?</l>
             <l>слать племянника того, кого ты —</l>
-            <l>го они сегодня ночью —</l>
-            <stage type="delivery">Бросается  на шею.</stage>
+            <l>Кого они сегодня ночью —</l>
+            <stage>Бросается  на шею.</stage>
             <l>Шурин!</l>
             <l>Прости меня! Я грешен пред тобой!</l>
             <l>Прости меня — мои смешались мысли —</l>
@@ -6938,7 +6928,7 @@
           </sp>
           <sp who="#knjazhna_mstislavskaja">
             <speaker>Княжна</speaker>
-            <stage type="delivery">— которую подводят боярыни.</stage>
+            <stage>— которую подводят боярыни.</stage>
             <l>Жених застрелен — дядя</l>
             <l>В тюрьме удавлен —</l>
           </sp>
@@ -6961,7 +6951,7 @@
             <l>Хотел уйти — мне страшно в нем —  —</l>
             <l>Спаси меня, !</l>
           </sp>
-          <stage type="delivery">Боярыни уводят КНЯЖНУ.</stage>
+          <stage>Боярыни уводят КНЯЖНУ.</stage>
           <sp who="#irina">
             <speaker></speaker>
             <l>Свет мой, ,</l>
@@ -6999,25 +6989,25 @@
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— тихо к .</stage>
+            <stage>— тихо к .</stage>
             <l>Пути сошлися наши!</l>
           </sp>
           <sp who="#irina">
             <speaker></speaker>
             <l>О, если б им сойтись не довелось!</l>
-            <stage type="delivery">Звон труб. Входит МСТИСЛАВСКИЙ в броне и в шлеме. Оружничий
-               приносит ему вооруженье.</stage>
+            <stage>Звон труб. Входит МСТИСЛАВСКИЙ в броне и в шлеме. Оружничий  приносит ему
+              вооруженье.</stage>
           </sp>
           <sp who="#mstislavskij">
             <speaker></speaker>
-            <stage type="delivery">— к .</stage>
+            <stage>— к .</stage>
             <l>лки тебя, боярин, в поле ждут!</l>
           </sp>
           <sp who="#boris_godunov">
             <speaker></speaker>
-            <stage type="delivery">— вооружаясь.</stage>
+            <stage>— вооружаясь.</stage>
             <l>Все по местам!</l>
-            <stage type="delivery">Бояре уходят.</stage>
+            <stage>Бояре уходят.</stage>
           </sp>
           <sp who="#mstislavskij">
             <speaker></speaker>
@@ -7032,15 +7022,15 @@
             <l>За честь Руси, как вождь, веди нас в бой —</l>
             <l>Я ж следую, как ратник, за тобой!</l>
           </sp>
-          <stage type="delivery">Уходит со . Народ бежит за ними. На сцене остаются
-            только ФЕДОР, ИРИНА и нищие.</stage>
+          <stage>Уходит со . Народ бежит за ними. На сцене остаются только ФЕДОР, ИРИНА
+            и нищие.</stage>
           <sp who="#fedor_ivanovich">
             <speaker></speaker>
             <l>Бездетны мы с тобой, , стали!</l>
             <l>Моей виной лишились брата мы!</l>
             <l>Князей варяжских царствующей ветви</l>
             <l>следний я потомок. Род мой вместе</l>
-            <l> мной умрет. гда бы князь </l>
+            <l> мной умрет. Когда бы князь </l>
             <l>  жив был, я б ему</l>
             <l>Мой завещал престол; теперь же он</l>
             <l>Бог весть кому достанется! Моею,</l>

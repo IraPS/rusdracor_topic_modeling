@@ -9,17 +9,17 @@ m = Mystem()
 # удаляем предыдущие результаты (чтобы не делать это руками, так как файлы открывается в режиме append)
 files = glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/speech_corpus_no_prop_char_names_POS_restriction/*/*.txt') + \
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*.txt') + \
         glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/speech_corpus_no_prop_char_names_POS_restriction/*/*/*.txt')
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*/*.txt')
 
 for f in files:
     os.remove(f)
 
 files = glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/speech_corpus_no_prop_char_names_POS_restriction/*/*/*.txt')
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*/*.txt')
 
 for f in files:
     os.remove(f)
@@ -27,9 +27,10 @@ for f in files:
 ## определяем input -- output
 infolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
            'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-           'TopicModelling/tei_without_proper_names'
+           'TopicModelling/rusdracor_topic_modeling/tei_without_proper_names'
 results = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
-          'Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/speech_corpus_no_prop_char_names_POS_restriction'
+          'Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/' \
+          'rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS'
 bycharacter = results+'/bycharacter/' #'/bycharacter'
 bysex = results+'/bysex/'
 #outfilename = 'stats_per_play_with_dirtext_and_more_stats_07_02_2018.csv'
@@ -40,7 +41,7 @@ ns = {'tei': 'http://www.tei-c.org/ns/1.0','xml':'http://www.w3.org/XML/1998/nam
 
 genre_by_us = open('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                    'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                   'TopicModelling/Genre_by_us.txt', 'r', encoding='utf-8')
+                   'TopicModelling/rusdracor_topic_modeling/Genre_by_us.txt', 'r', encoding='utf-8')
 play_genre_dict = dict()
 for play_line in genre_by_us:
     play, genre = play_line.split('	')[0], play_line.split('	')[1].split('\n')[0]
@@ -130,12 +131,19 @@ def checknotmult(speaker):
         return True
 
 def getsex (speaker, root):
-    #print (speaker)
+    # print (speaker)
     thisperson = root.find('.//tei:listPerson/tei:person[@xml:id="'+speaker+'"]',ns) #', ns)
-    if 'sex' in thisperson.attrib:
-        return (thisperson.attrib['sex'])
-    else:
-        return 'undefined'
+    try:
+        if 'sex' in thisperson.attrib:
+            return (thisperson.attrib['sex'])
+        else:
+            return 'undefined'
+    except:
+        thisperson = root.find('.//tei:listPerson/tei:personGrp[@xml:id="'+speaker+'"]',ns) #', ns)
+        if 'sex' in thisperson.attrib:
+            return (thisperson.attrib['sex'])
+        else:
+            return 'undefined'
     #return root.find('.//tei:listPerson/tei:person[@id="'+speaker+'"]/@sex', ns)
 
 def getspeakerandsex(somesp, root):
@@ -197,8 +205,8 @@ def parse_xml(path, filename):
                 if 'analysis' in l:
                     if len(l['analysis']) > 0:
                         lemmas_with_POS.append(l['analysis'][0])
-            speechtext = ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(A|ADV|S|V)(,|=)', l['gr'])]) + '\n'
-            # speechtext = '\n' + ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(ADV)(,|=)', l['gr'])]) + '\n'
+            # speechtext = ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(A|ADV|S|V)(,|=)', l['gr'])]) + '\n'
+            speechtext = '\n' + ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(ADV)(,|=)', l['gr'])]) + '\n'
             speechcode = '_'.join([speakersex,author,name,speaker])
             textbyplay = codecs.open(results+'/byplay/byplay/'+name+'.txt','a','utf-8')
             textbyauthor = codecs.open(results+'/byauthor/'+author+'.txt','a','utf-8')

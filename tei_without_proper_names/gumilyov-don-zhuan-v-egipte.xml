@@ -97,7 +97,7 @@
       <div type="configuration">
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(выходя из глубокой расселины между плит)</stage>
+          <stage>(выходя из глубокой расселины между плит)</stage>
           <l>Как странно! Где я? Что за бред?</l>
           <l>Ага! Я ставлю три червонца,</l>
           <l>Что наконец я вижу свет</l>
@@ -114,7 +114,7 @@
           <l>Его схватили, жгли, терзали,</l>
           <l> ловко я укрылся в тень</l>
           <l>И выждал срок в подземной зале.</l>
-          <l>гда ж загрезил сатана</l>
+          <l>Когда ж загрезил сатана</l>
           <l>С больной усмешкой, с томным взором,</l>
           <l>Я подниматься стал со дна</l>
           <l> лестницам и коридорам.</l>
@@ -152,7 +152,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(тихо)</stage>
+          <stage>(тихо)</stage>
           <l>Ах да, пожалуйста, молчите.</l>
         </sp>
         <sp who="#DonZhuan">
@@ -161,7 +161,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker> </speaker>
-          <stage type="delivery">(тихо)</stage>
+          <stage>(тихо)</stage>
           <l part="F">Я объясню</l>
           <l part="I">Вам всё…</l>
           <stage>(обнимая его, громко)</stage>
@@ -181,7 +181,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker> </speaker>
-          <stage type="delivery">(Американцу и Американке)</stage>
+          <stage>(Американцу и Американке)</stage>
           <l>Всё тот же он, манеры те же.</l>
         </sp>
         <sp who="#DonZhuan">
@@ -190,7 +190,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker> </speaker>
-          <stage type="delivery">(продолжая его обнимать, тихо)</stage>
+          <stage>(продолжая его обнимать, тихо)</stage>
           <l part="F">Молчите! О!</l>
           <l part="I">Не бейте…</l>
           <stage>(громко)</stage>
@@ -201,7 +201,7 @@
         </sp>
         <sp who="#Amerikanets">
           <speaker>Американец </speaker>
-          <stage type="delivery">(тихо )</stage>
+          <stage>(тихо )</stage>
           <l> кто он? Как его зовут?</l>
         </sp>
         <sp who="#DonZhuan">
@@ -210,12 +210,12 @@
         </sp>
         <sp who="#Amerikanka">
           <speaker>Американка</speaker>
-          <stage type="delivery">(тихо ему же, указывая на дон )</stage>
+          <stage>(тихо ему же, указывая на дон )</stage>
           <l>Как он красив! Зачем он тут?</l>
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(тихо, то тем, то другим)</stage>
+          <stage>(тихо, то тем, то другим)</stage>
           <l>Сейчас, сейчас, я всё устрою.</l>
           <stage>(Громко, становясь в позу)</stage>
           <l>Я был его секретарём,</l>
@@ -233,7 +233,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(примиряюще)</stage>
+          <stage>(примиряюще)</stage>
           <l part="F">Да, для меня.</l>
           <l>Я стал студентом </l>
           <l>И позабыл день ото дня</l>
@@ -249,7 +249,7 @@
         </sp>
         <sp who="#Amerikanets">
           <speaker>Американец</speaker>
-          <stage type="delivery">(почтительно)</stage>
+          <stage>(почтительно)</stage>
           <l part="I">Мы знаем, да.</l>
         </sp>
         <sp who="#Leporello">
@@ -301,22 +301,22 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(подходя к Американке)</stage>
+          <stage>(подходя к Американке)</stage>
           <l part="I">ьора!</l>
         </sp>
         <sp who="#Amerikanka">
           <speaker>Американка</speaker>
-          <stage type="delivery">(поправляя его)</stage>
+          <stage>(поправляя его)</stage>
           <l part="M">сс.</l>
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(настаивая)</stage>
+          <stage>(настаивая)</stage>
           <l part="M">ьора!</l>
         </sp>
         <sp who="#Amerikanka">
           <speaker>Американка</speaker>
-          <stage type="delivery">(по-прежнему)</stage>
+          <stage>(по-прежнему)</stage>
           <l part="F">сс!</l>
           <l>Я не желаю быть сеньорой!</l>
         </sp>
@@ -348,7 +348,7 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(мечтательно)</stage>
+          <stage>(мечтательно)</stage>
           <l part="F">Земля во мгле;</l>
           <l>Задумчивое устье ,</l>
           <l>И я плыву на корабле,</l>
@@ -360,7 +360,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(подозрительно)</stage>
+          <stage>(подозрительно)</stage>
           <l part="I">О чём здесь речь?</l>
         </sp>
         <sp who="#DonZhuan">
@@ -374,7 +374,7 @@
         </sp>
         <sp who="#Amerikanets">
           <speaker>Американец</speaker>
-          <stage type="delivery">(рассматривая памятник)</stage>
+          <stage>(рассматривая памятник)</stage>
           <l>Какие странные листы!</l>
           <stage>( отходит к нему)</stage>
         </sp>
@@ -406,7 +406,7 @@
         </sp>
         <sp who="#Amerikanets">
           <speaker>Американец</speaker>
-          <stage type="delivery">(, указывая на саркофаг)</stage>
+          <stage>(, указывая на саркофаг)</stage>
           <l>Скажите, мой учёный друг,</l>
           <l part="I">Кто здесь положен?</l>
         </sp>
@@ -430,7 +430,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(хочет отойти)</stage>
+          <stage>(хочет отойти)</stage>
           <l part="M">Сейчас!</l>
         </sp>
         <sp who="#Amerikanets">
@@ -452,7 +452,7 @@
           <speaker></speaker>
           <l>А это сын , бог Тот</l>
           <l>И, кажется, времён Хеопса.</l>
-          <l>нечно! Сделан лоб горбом,</l>
+          <l>Конечно! Сделан лоб горбом,</l>
           <l>А темя плоским и покатым,</l>
           <l>Таких не делали потом,</l>
           <l>Хотя б при  пятом.</l>
@@ -463,7 +463,7 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(Американке)</stage>
+          <stage>(Американке)</stage>
           <l part="F">Он ваш жених?</l>
         </sp>
         <sp who="#Amerikanka">
@@ -521,12 +521,12 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(схватывая ее за руку)</stage>
+          <stage>(схватывая ее за руку)</stage>
           <l part="I">Я вас люблю!</l>
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(Американцу, косясь на Дон )</stage>
+          <stage>(Американцу, косясь на Дон )</stage>
           <l part="F">Пройдём сюда.</l>
           <l>Я вам скажу про Дон ;</l>
           <l>Мне кажется, на путь труда</l>
@@ -551,14 +551,14 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(Американке)</stage>
+          <stage>(Американке)</stage>
           <l>Я вас люблю! Уйдём! Уйдём!</l>
           <l>Вы знаете ль, как пахнут розы,</l>
-          <l>гда их нюхают вдвоем</l>
+          <l>Когда их нюхают вдвоем</l>
           <l>И в небесах поют стрекозы,</l>
           <l>Вы знаете ль, как странен луг,</l>
           <l>Как призрачен туман молочный,</l>
-          <l>гда в него вас вводит друг</l>
+          <l>Когда в него вас вводит друг</l>
           <l>Для наслаждений, в час урочный.</l>
           <l>бедоносная любовь</l>
           <l>Нас коронует без короны</l>
@@ -566,7 +566,7 @@
           <l>И в песню лепет иступлённый.</l>
           <l>Мой конь — удача из удач,</l>
           <l>Он белоснежный, величавый,</l>
-          <l>гда пускается он вскачь,</l>
+          <l>Когда пускается он вскачь,</l>
           <l>То гул копыт зовётся славой.</l>
           <l>Я был в аду, я сатане</l>
           <l>Смотрел в лицо, и вновь я в мире,</l>
@@ -589,7 +589,7 @@
         </sp>
         <sp who="#DonZhuan">
           <speaker>Дон </speaker>
-          <stage type="delivery">(обнимая ее)</stage>
+          <stage>(обнимая ее)</stage>
           <l>Тебя я счастью научу</l>
           <l>И над твоей умру могилой.</l>
           <stage>(Уходят)</stage>
@@ -598,7 +598,7 @@
       <div type="configuration">
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(оглядываясь)</stage>
+          <stage>(оглядываясь)</stage>
           <l> где мисс кэр, где ?</l>
         </sp>
         <sp who="#Amerikanets">
@@ -607,7 +607,7 @@
         </sp>
         <sp who="#Leporello">
           <speaker></speaker>
-          <stage type="delivery">(хватаясь за голову)</stage>
+          <stage>(хватаясь за голову)</stage>
           <l>Ах, я разиня, ах, болван,</l>
           <l>Всё прозевал, они бежали.</l>
         </sp>
@@ -645,7 +645,7 @@
           <l> я их видел здесь, минут</l>
           <l>Ну пять тому назад, не боле…</l>
           <stage>(закрывает лицо руками)</stage>
-          <l>гда настанет Страшный Суд,</l>
+          <l>Когда настанет Страшный Суд,</l>
           <l>Что я моей отвечу лли?</l>
           <l part="I">Идём, идём скорей.</l>
         </sp>

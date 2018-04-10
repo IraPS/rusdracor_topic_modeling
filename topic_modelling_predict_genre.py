@@ -129,10 +129,10 @@ test_documents_titles = list()
 # FOR DOCUMENT = PLAY
 train_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_POS_restriction/byplay/byplay/'
 test_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/bygenre/'
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_POS_restriction/bygenre/'
 # FOR DOCUMENT = One Characters speech
 #texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/speech_corpus/bycharacter'
 all_train_texts = glob.glob(train_texts_path+'*.txt')

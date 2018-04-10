@@ -57,9 +57,9 @@
           <person xml:id="Luiza" sex="FEMALE">
             <persName>Луиза</persName>
           </person>
-          <person xml:id="Mnogie" sex="UNKNOWN">
-            <persName>Многие</persName>
-          </person>
+          <personGrp xml:id="Mnogie" sex="UNKNOWN">
+            <name>Многие</name>
+          </personGrp>
           <person xml:id="Svjaschennik" sex="MALE">
             <persName>Священник</persName>
           </person>
@@ -83,6 +83,7 @@
           formatted front page; configuration changes</change>
         <change who="#ff" when="2017-06-26">connected continued verses with part attribute;
           formatted front page; configuration changes</change>
+        <change who="#zh" when="2018-04-07">group tag</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -326,7 +327,7 @@
           <speaker>Председатель</speaker>
           <stage>(поет)</stage>
           <lg>
-            <l>гда могущая Зима,</l>
+            <l>Когда могущая Зима,</l>
             <l>Как бодрый вождь, ведет сама</l>
             <l>На нас косматые дружины</l>
             <l>Своих морозов и снегов, —</l>
@@ -389,7 +390,7 @@
             <l>А ваши ненавистные восторги</l>
             <l>Смущают тишину гробов — и землю</l>
             <l>Над мертвыми телами потрясают!</l>
-            <l>гда бы стариков и жен моленья</l>
+            <l>Когда бы стариков и жен моленья</l>
             <l>Не освятили общей, смертной ямы, —</l>
             <l>думать мог бы я, что нынче бесы</l>
             <l>гибший дух безбожника терзают</l>
@@ -446,7 +447,7 @@
             <l>Отчаяньем, воспоминаньем страшным,</l>
             <l>знаньем беззаконья моего,</l>
             <l>И ужасом той мертвой пустоты,</l>
-            <l>торую в моем дому встречаю —</l>
+            <l>Которую в моем дому встречаю —</l>
             <l>И новостью сих бешеных веселий,</l>
             <l>И благодатным ядом этой чаши,</l>
             <l>И ласками (прости меня, господь)</l>

@@ -68,15 +68,15 @@
           <person xml:id="Karl" sex="MALE">
             <persName>Карл</persName>
           </person>
-          <person xml:id="Kosari" sex="MALE">
-            <persName>Косари</persName>
-          </person>
-          <person xml:id="Rytsari" sex="MALE">
-            <persName>Рыцари</persName>
-          </person>
-          <person xml:id="Vassaly" sex="MALE">
-            <persName>Вассалы</persName>
-          </person>
+          <personGrp xml:id="Kosari" sex="MALE">
+            <name>Косари</name>
+          </personGrp>
+          <personGrp xml:id="Rytsari" sex="MALE">
+            <name>Рыцари</name>
+          </personGrp>
+          <personGrp xml:id="Vassaly" sex="MALE">
+            <name>Вассалы</name>
+          </personGrp>
           <person xml:id="OdinRytsar" sex="MALE">
             <persName>Один рыцарь</persName>
           </person>
@@ -129,6 +129,7 @@
         <change who="#GG" when="2017-06-03">gender info</change>
         <change who="#ff" when="2017-12-03">formalities; delete duplicate of poem; work on
           IDs</change>
+        <change who="#zh" when="2018-04-07">group tag</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -155,7 +156,7 @@
             пятьдесят, и пора бы уж отдохнуть да тебе передать и счетные книги и весь дом. А могу ли
             о том и подумать? Какую могу иметь к тебе доверенность? Тебе бы только гулять с
             господами, которые нас презирают да забирают в долг товары. Я знаю тебя, ты стыдишься
-            своего состояния.  слушай, . ли ты не переменишься, не отстанешь от дворян, да
+            своего состояния.  слушай, . Коли ты не переменишься, не отстанешь от дворян, да
             не примешься порядком за свое дело – то, видит бог, выгоню тебя из дому, а своим
             наследником назначу  , моего подмастерья.</p>
         </sp>
@@ -213,7 +214,7 @@
         </sp>
         <sp who="#Martyn">
           <speaker>.</speaker>
-          <p>Эх, отец ! ли бы ты не побросал в алхимический огонь всех денег, которые
+          <p>Эх, отец ! Коли бы ты не побросал в алхимический огонь всех денег, которые
             прошли через твои руки, то был бы богат. Ты сулишь мне сокровища, а сам приходишь ко мне
             за милостыней. Какой тут смысл?</p>
         </sp>
@@ -482,7 +483,7 @@
         </sp>
         <sp who="#Frants">
           <speaker></speaker>
-          <stage type="delivery">(почесывается).</stage>
+          <stage>(почесывается).</stage>
           <p>Вашим конюшим?</p>
         </sp>
         <sp who="#Alber">
@@ -513,7 +514,7 @@
         </sp>
         <sp who="#Alber">
           <speaker>Альбер.</speaker>
-          <p>нечно. – Ну, согласен?</p>
+          <p>Конечно. – Ну, согласен?</p>
         </sp>
         <sp who="#Frants">
           <speaker>.</speaker>
@@ -639,7 +640,7 @@
           <speaker>.</speaker>
           <p>Граф, я рада, что имею честь принимать вас у себя... Братец, я буду вас ожидать в
             северной башне...</p>
-          <stage type="delivery">(Уходит.)</stage>
+          <stage>(Уходит.)</stage>
         </sp>
         <sp who="#Rotenfeld">
           <speaker>Граф.</speaker>
@@ -663,7 +664,7 @@
         <sp who="#Alber">
           <speaker>Альбер.</speaker>
           <p>Грубиян!</p>
-          <stage type="delivery">(Замахивается.)</stage>
+          <stage>(Замахивается.)</stage>
           <p>Я тебя прогоню!</p>
         </sp>
         <sp who="#Frants">
@@ -673,7 +674,7 @@
         <sp who="#Alber">
           <speaker>Альбер.</speaker>
           <p>Мужик, подлая тварь! Извините, граф, я с ним управлюсь... Вон!...</p>
-          <stage type="delivery">(Толкает его в спину.)</stage>
+          <stage>(Толкает его в спину.)</stage>
           <p>Чтобы духа твоего здесь не было.</p>
         </sp>
         <sp who="#Rotenfeld">
@@ -736,15 +737,15 @@
             кончилось? – боже... кровь кидается в лицо – кулаки мои сжимаются... О, я им отомщу,
             отомщу...</p>
           <p>Как-то примет меня отец!</p>
-          <stage type="delivery">(Стучится.)</stage>
+          <stage>(Стучится.)</stage>
         </sp>
       </div>
       <div type="configuration">
         <sp who="#Karl">
           <speaker></speaker>
-          <stage type="delivery">(выходит).</stage>
+          <stage>(выходит).</stage>
           <p>Кто там так бодро стучится? – A! , это ты!</p>
-          <stage type="delivery">(Про себя.)</stage>
+          <stage>(Про себя.)</stage>
           <p>Вот черт принес!</p>
         </sp>
         <sp who="#Frants">
@@ -776,7 +777,7 @@
         </sp>
         <sp who="#Frants">
           <speaker>.</speaker>
-          <p>му?</p>
+          <p>Кому?</p>
         </sp>
         <sp who="#Karl">
           <speaker>.</speaker>
@@ -841,8 +842,8 @@
         </sp>
         <stage> с частью вассалов скрывается за лес.</stage>
         <sp who="#Kosari">
-          <speaker>сари</speaker>
-          <stage type="delivery">(поют)</stage>
+          <speaker>Косари</speaker>
+          <stage>(поют)</stage>
           <lg>
             <l>Ходит во́ поле коса,</l>
             <l>Зелена́я полоса</l>
@@ -868,18 +869,18 @@
           <p>А вот пришпорим лошадей да потопчем их порядком....</p>
         </sp>
         <sp who="#Kosari">
-          <speaker>сари.</speaker>
+          <speaker>Косари.</speaker>
           <p>Ребята, не робеть...</p>
         </sp>
         <stage>Лошади раненые падают с седоками, другие бесятся.</stage>
         <sp who="#Frants">
           <speaker></speaker>
-          <stage type="delivery">(бросается из засады).</stage>
+          <stage>(бросается из засады).</stage>
           <p>Вперед, ребята! У! у!..</p>
         </sp>
         <sp who="#OdinRytsar">
           <speaker>Один рыцарь</speaker>
-          <stage type="delivery">(другому).</stage>
+          <stage>(другому).</stage>
           <p>Плохо, брат, – их более ста человек...</p>
         </sp>
         <sp who="#DrugojRytsar">
@@ -897,12 +898,12 @@
         <stage>Сражение. Все рыцари падают один за другим.</stage>
         <sp who="#Vassaly">
           <speaker>Вассалы</speaker>
-          <stage type="delivery">(бьют их дубинами, косами).</stage>
+          <stage>(бьют их дубинами, косами).</stage>
           <p>Наша взяла!.. Кровопийцы! разбойники! гордецы поганые! Теперь вы в наших руках...</p>
         </sp>
         <sp who="#Frants">
           <speaker>.</speaker>
-          <p>торый из них Ротенфельд? – Друзья! подымите забрала, – где Альбер?</p>
+          <p>Который из них Ротенфельд? – Друзья! подымите забрала, – где Альбер?</p>
         </sp>
       </div>
       <div type="configuration">
@@ -923,7 +924,7 @@
         <sp who="#Vassaly">
           <speaker>Вассалы.</speaker>
           <p>Беда! Беда! Это рыцари!..</p>
-          <stage type="delivery">(Разбегаются.)</stage>
+          <stage>(Разбегаются.)</stage>
         </sp>
         <sp who="#Frants">
           <speaker>.</speaker>
@@ -1002,7 +1003,7 @@
         <sp who="#Klotilda">
           <speaker>.</speaker>
           <p>Благодарю вас, рыцари. За здоровье ваших дам...</p>
-          <stage type="delivery">(Пьет.)</stage>
+          <stage>(Пьет.)</stage>
         </sp>
         <sp who="#Rotenfeld">
           <speaker>Ротенфельд.</speaker>
@@ -1068,7 +1069,7 @@
         </sp>
         <sp who="#Frants">
           <speaker></speaker>
-          <stage type="delivery">(поет)</stage>
+          <stage>(поет)</stage>
           <lg>
             <l>Жил на свете рыцарь бедный,</l>
             <l>Молчаливый и простой,</l>
@@ -1156,7 +1157,7 @@
         </sp>
         <sp who="#Rytsari #Rytsari_2">
           <speaker>Рыцари.</speaker>
-          <p>нечно – песня песнию, а веревка веревкой. Одно другому не мешает.</p>
+          <p>Конечно – песня песнию, а веревка веревкой. Одно другому не мешает.</p>
         </sp>
         <sp who="#Klotilda">
           <speaker>.</speaker>
@@ -1187,7 +1188,7 @@
         </sp>
         <sp who="#Frants">
           <speaker></speaker>
-          <stage type="delivery">(в чрезвычайном смущении).</stage>
+          <stage>(в чрезвычайном смущении).</stage>
           <p>Сударыня... Сударыня...</p>
         </sp>
         <sp who="#Rytsar_2">

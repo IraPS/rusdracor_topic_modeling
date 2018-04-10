@@ -54,24 +54,24 @@
           <person xml:id="blez" sex="MALE">
             <persName>Блез</persName>
           </person>
-          <person xml:id="muzhiki" sex="MALE">
-            <persName>Мужики</persName>
-          </person>
+          <personGrp xml:id="muzhiki" sex="MALE">
+            <name>Мужики</name>
+          </personGrp>
           <person xml:id="nineta" sex="FEMALE">
             <persName>Нинета</persName>
           </person>
           <person xml:id="zhaneta" sex="FEMALE">
             <persName>Жанета</persName>
           </person>
-          <person xml:id="hor" sex="UNKNOWN">
-            <persName>Хор</persName>
-          </person>
+          <personGrp xml:id="hor" sex="UNKNOWN">
+            <name>Хор</name>
+          </personGrp>
           <person xml:id="zhuleta" sex="FEMALE">
             <persName>Жульета</persName>
           </person>
-          <person xml:id="rabotniki" sex="UNKNOWN">
-            <persName>Работники</persName>
-          </person>
+          <personGrp xml:id="rabotniki" sex="UNKNOWN">
+            <name>Работники</name>
+          </personGrp>
           <person xml:id="graf" sex="MALE">
             <persName>Граф</persName>
           </person>
@@ -98,6 +98,7 @@
         <change who="#ff" when="2017-06-07">correct one ID; front matter</change>
         <change who="#GG" when="2017-09-07">correct IDs ("vse")</change>
         <change who="#ff" when="2018-02-16">add missing stage directions</change>
+        <change who="#zh" when="2018-04-07">group tag</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -898,7 +899,7 @@
             <l>Мучит тайно подозренье,</l>
             <l> не надобно казать.</l>
           </sp>
-          <stage>нец первого акта</stage>
+          <stage>Конец первого акта</stage>
         </div>
       </div>
       <div type="act">
@@ -1079,7 +1080,7 @@
             <speaker></speaker>
             <l>К подозренью тебе нет и виду,</l>
             <l>Мне велику творишь тем обиду,</l>
-            <l>гда я за тебя завтра выду,</l>
+            <l>Когда я за тебя завтра выду,</l>
             <l>То неверке какой уже быть,</l>
             <l>С твоего лба сгони ты морщины,</l>
             <l>К подозренью тебе нет причины,</l>
@@ -1280,7 +1281,7 @@
             <l>А она еще громчей,</l>
             <l>В рожу хлоп рукой своей!</l>
             <l>С кем то ж будет приключенье,</l>
-            <l>ль удастся испытать,</l>
+            <l>Коль удастся испытать,</l>
             <l>Вам полезней взять терпенье,</l>
             <l>Так терпенье замолчать,</l>
             <l>Замолчать, принять смиренье.</l>
@@ -1353,7 +1354,7 @@
           <sp who="#zhuleta">
             <speaker></speaker>
             <l>В бедство я могу предаться,</l>
-            <l>ль  мной насмехаться</l>
+            <l>Коль  мной насмехаться</l>
             <l>Станет, мною презирать —</l>
             <l>Не могла б я воздержаться!</l>
             <l>Жаль, да нечего сказать!</l>
@@ -1789,7 +1790,7 @@
             <l>с себе разбить,</l>
             <l>Скорее в дом, скорей уйтить.</l>
           </sp>
-          <stage>нец второго акта.</stage>
+          <stage>Конец второго акта.</stage>
         </div>
       </div>
       <div type="act">
@@ -1920,7 +1921,7 @@
           <stage>№ 14</stage>
           <sp who="#zhuleta">
             <speaker></speaker>
-            <l>ль не варвар ты родился,</l>
+            <l>Коль не варвар ты родился,</l>
             <l>Тот приказ твой, чем разлучился,</l>
             <l> мной разлучился мил, со мною,</l>
             <l>Оставь его, это нам милость.</l>
@@ -2015,7 +2016,7 @@
           </sp>
           <sp who="#filipp">
             <speaker></speaker>
-            <p>фе, кофе, вот те чорт, — что это такое? <stage>(Вслух.)</stage> Да, да, кофе, кофе,
+            <p>Кофе, кофе, вот те чорт, — что это такое? <stage>(Вслух.)</stage> Да, да, кофе, кофе,
               дай! дай! О, я люблю кофе.</p>
             <stage>Паулин отходит.</stage>
           </sp>
@@ -2052,7 +2053,7 @@
           </sp>
           <sp who="#graf">
             <speaker>Граф</speaker>
-            <p>нечно.</p>
+            <p>Конечно.</p>
           </sp>
           <sp who="#filipp">
             <speaker></speaker>
@@ -2218,7 +2219,7 @@
           <sp who="#paulin">
             <speaker>Паулин</speaker>
             <l>Я в шею протолкаю,</l>
-            <l>гда нейдешь ты вон.</l>
+            <l>Когда нейдешь ты вон.</l>
           </sp>
           <sp who="#zhuleta">
             <speaker></speaker>
@@ -2507,7 +2508,7 @@
           </sp>
           <sp who="#filipp">
             <speaker></speaker>
-            <l>ль сердце то ж страстно,</l>
+            <l>Коль сердце то ж страстно,</l>
             <l>Могла ты всечасно</l>
             <l>Меня понимать.</l>
           </sp>
@@ -2564,7 +2565,7 @@
             <l>С такою усмешкою,</l>
             <l>Как бы мне с насмешкой,</l>
             <l>Зачем руку взять?</l>
-            <l>гда сердце страстно,</l>
+            <l>Когда сердце страстно,</l>
             <l>Ты мог бы всечасно</l>
             <l>Меня понимать.</l>
             <l>А! страстно всечасно</l>
@@ -2586,7 +2587,7 @@
             <l>Равно тобою, как я по мне,</l>
             <l>Не вздыхаешь тобою, как я,</l>
             <l>Сколь ты не забываешь,</l>
-            <l>ль ты моя, мы благополучны.</l>
+            <l>Коль ты моя, мы благополучны.</l>
             <l>И век неразлучны, ты моя, я твой.</l>
           </sp>
         </div>
@@ -2828,7 +2829,7 @@
             <l>Нечего нам время длить.</l>
             <l>За двери пора иттить.</l>
           </sp>
-          <stage>нец оперы</stage>
+          <stage>Конец оперы</stage>
         </div>
       </div>
     </body>
