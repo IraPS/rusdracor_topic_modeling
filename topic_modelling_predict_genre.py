@@ -129,10 +129,10 @@ test_documents_titles = list()
 # FOR DOCUMENT = PLAY
 train_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                   'TopicModelling/speech_corpus_no_prop_char_names_POS_restriction/byplay/byplay/'
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
 test_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
-                  'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                  'TopicModelling/speech_corpus_no_prop_char_names_POS_restriction/bygenre/'
+                   'Programming/github desktop/RusDraCor/Ira_Scripts/' \
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/bygenre/'
 # FOR DOCUMENT = One Characters speech
 #texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/speech_corpus/bycharacter'
 all_train_texts = glob.glob(train_texts_path+'*.txt')
@@ -141,7 +141,7 @@ all_test_texts = glob.glob(test_texts_path+'*.txt')
 n = 0
 k = 0
 chunk_size = 700
-min_chunk_size = 250
+min_chunk_size = 200
 for doc in all_train_texts:
     train_documents_titles.append(doc.split('/')[-1].split('.txt')[0])
     doc_text = re.sub('[\.,!\?\(\)\-:;—…́«»–]', '', open(doc, 'r', encoding='utf-8').read()).split()
@@ -151,7 +151,7 @@ for doc in all_train_texts:
             train_documents.append(one_chunk)
         if min_chunk_size < len(one_chunk.split()) < chunk_size:
             k += 1
-        else:
+        if len(one_chunk.split()) < min_chunk_size:
             n += 1
 print('TAKING CHUNKS OF LENGTH {0} WORDS'.format(chunk_size))
 print('Chunks with length less than {0} (did not take):'.format(min_chunk_size), n)
@@ -261,7 +261,8 @@ def run_TM(n_topics, doprint, doreturn):
         return doc_topicsprobs_dict
 
 
-run_TM(7, 0, 0)
+for n in range(5, 16):
+    run_TM(n, 0, 0)
 
 
 '''

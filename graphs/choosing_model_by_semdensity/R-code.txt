@@ -1,0 +1,3 @@
+data <- read.csv(‘’)
+
+ggplot(data = data, aes(x=numtopics, y=average_topic_semdensity_for_10_topwords)) + geom_line(aes(colour=model)) + scale_x_continuous(breaks = seq(5, 15, 1)) + labs(x="Number of topics", y="Average topic semdensity for 10 top-words")
