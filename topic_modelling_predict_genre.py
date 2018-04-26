@@ -15,11 +15,13 @@ from pymystem3 import Mystem
 
 m = Mystem()
 
+# LOADING W2V MODEL FOR CALCULATING SEMANTIC SIMILARITY
+'''
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 ncrl_model = 'ruscorpora_upos_skipgram_300_5_2018.vec'
 ncrl_model = gensim.models.KeyedVectors.load_word2vec_format(ncrl_model, binary=False)
 ncrl_model.init_sims(replace=True)
-
+'''
 
 def get_pos_for_semvector(mystem_pos):
     if mystem_pos.startswith('S,'): pos = '_NOUN'
@@ -71,6 +73,9 @@ def display_topics(model, feature_names, no_top_words, n_topics):
         print("Topic {}:".format(topic_idx))
         print(", ".join([feature_names[i]
                         for i in topic.argsort()[:-no_top_words - 1:-1]]))
+
+        # CALCULATING SEMANTIC SIMILARITY OF 10 TOP-WORDS
+        '''
         topwords = [feature_names[i] for i in topic.argsort()[:-no_top_words_for_semantics - 1:-1]]
         topwords_similarity = list()
         not_in_model = 0
@@ -103,6 +108,7 @@ def display_topics(model, feature_names, no_top_words, n_topics):
 
     print('\nMean topics semantic similarity for {0} topics is {1}'.
           format(n_topics, np.mean(all_topics_topwords_similarity)))
+    '''
 
 
 
@@ -129,10 +135,17 @@ test_documents_titles = list()
 # FOR DOCUMENT = PLAY
 train_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_POS_restriction/byplay/byplay/'
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
 test_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
-                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_POS_restriction/bygenre/'
+                   'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
+
+genre_by_us = open('Genre_by_us.txt', 'r', encoding='utf-8')
+play_genre_dict = dict()
+for play_line in genre_by_us:
+    play, genre = play_line.split('	')[0], play_line.split('	')[1]
+    play_genre_dict[play] = genre
+
 # FOR DOCUMENT = One Characters speech
 #texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/speech_corpus/bycharacter'
 all_train_texts = glob.glob(train_texts_path+'*.txt')
@@ -140,8 +153,8 @@ all_test_texts = glob.glob(test_texts_path+'*.txt')
 
 n = 0
 k = 0
-chunk_size = 700
-min_chunk_size = 200
+chunk_size = 500
+min_chunk_size = 100
 for doc in all_train_texts:
     train_documents_titles.append(doc.split('/')[-1].split('.txt')[0])
     doc_text = re.sub('[\.,!\?\(\)\-:;—…́«»–]', '', open(doc, 'r', encoding='utf-8').read()).split()
@@ -257,12 +270,41 @@ def run_TM(n_topics, doprint, doreturn):
                 display_one_topic(lda, tf_feature_names, no_top_words, int(topic))
             print('\n')
 
+        num_of_dramas = 0
+        dramas_probs = list()
+        num_of_comedies = 0
+        comedies_probs = list()
+        num_of_tragedies = 0
+        tragedies_probs = list()
+        print('\n\nTOPICS PER GENRE (MEAN VALUES)')
+        for play in sorted(list(doc_topic_dict)):
+            good_entry = re.sub('й', 'й', play)
+            if play_genre_dict[good_entry].startswith('драма'):
+                dramas_probs.append(doc_topicsprobs_dict[play])
+                num_of_dramas += 1
+            if play_genre_dict[good_entry].startswith('комедия'):
+                comedies_probs.append(doc_topicsprobs_dict[play])
+                num_of_comedies += 1
+            if play_genre_dict[good_entry].startswith('трагедия'):
+                tragedies_probs.append(doc_topicsprobs_dict[play])
+                num_of_tragedies += 1
+        dramas_probs = [sum(i) for i in zip(*dramas_probs)]
+        comedies_probs = [sum(i) for i in zip(*comedies_probs)]
+        tragedies_probs = [sum(i) for i in zip(*tragedies_probs)]
+        mean_dramas_probs = [round(i/num_of_dramas, 2) for i in dramas_probs]
+        mean_comedies_probs = [round(i/num_of_comedies, 2) for i in comedies_probs]
+        mean_tragedies_probs = [round(i/num_of_tragedies, 2) for i in tragedies_probs]
+        print('MEAN DRAMAS PROBS', mean_dramas_probs)
+        print('MEAN COMEDIES PROBS', mean_comedies_probs)
+        print('MEAN TRAGEDIES PROBS', mean_tragedies_probs)
+
+
     if doreturn:
         return doc_topicsprobs_dict
 
 
-for n in range(5, 16):
-    run_TM(n, 0, 0)
+for n in range(5, 6):
+    run_TM(n, 1, 0)
 
 
 '''

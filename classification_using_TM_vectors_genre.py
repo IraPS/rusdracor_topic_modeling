@@ -18,7 +18,7 @@ for play_line in genre_by_us:
     play_genre_dict[play] = genre
 
 
-for n_topics in range(5, 10):
+for n_topics in range(5, 6):
     print('\n\nNEW REPORT\n\n')
 
     TM_results = run_TM(n_topics, 0, 1)
