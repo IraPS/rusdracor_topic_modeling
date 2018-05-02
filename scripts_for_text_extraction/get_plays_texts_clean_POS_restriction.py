@@ -9,17 +9,17 @@ m = Mystem()
 # удаляем предыдущие результаты (чтобы не делать это руками, так как файлы открывается в режиме append)
 files = glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*.txt') + \
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/*/*.txt') + \
         glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*/*.txt')
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/*/*/*.txt')
 
 for f in files:
     os.remove(f)
 
 files = glob.glob('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                   'Programming/github desktop/RusDraCor/Ira_Scripts/'
-                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS/*/*/*.txt')
+                  'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/*/*/*.txt')
 
 for f in files:
     os.remove(f)
@@ -30,7 +30,7 @@ infolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
            'TopicModelling/rusdracor_topic_modeling/tei_without_proper_names'
 results = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
           'Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/' \
-          'rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_ADVS'
+          'rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS'
 bycharacter = results+'/bycharacter/' #'/bycharacter'
 bysex = results+'/bysex/'
 #outfilename = 'stats_per_play_with_dirtext_and_more_stats_07_02_2018.csv'
@@ -206,23 +206,25 @@ def parse_xml(path, filename):
                     if len(l['analysis']) > 0:
                         lemmas_with_POS.append(l['analysis'][0])
             # speechtext = ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(A|ADV|S|V)(,|=)', l['gr'])]) + '\n'
-            speechtext = '\n' + ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(ADV)(,|=)', l['gr'])]) + '\n'
+            speechtext = '\n' + ' '.join([l['lex'] for l in lemmas_with_POS if re.match('^(S)(,|=)', l['gr'])]) + '\n'
             speechcode = '_'.join([speakersex,author,name,speaker])
-            textbyplay = codecs.open(results+'/byplay/byplay/'+name+'.txt','a','utf-8')
-            textbyauthor = codecs.open(results+'/byauthor/'+author+'.txt','a','utf-8')
-            textbyyear = codecs.open(results+'/byyear/'+str(year_category)+'.txt','a','utf-8')
+            textbyplay = codecs.open(results+'/byplay/byplay/'+str(date_definite) +'_'+name+'.txt','a','utf-8')
+            author = author.split(' ')[0]
+            textbyauthor = codecs.open(results+'/byauthor/'+author+'_'+name+'.txt','a','utf-8')
+            textbyyear_range = codecs.open(results+'/byyear_range/'+str(year_category)+'.txt','a','utf-8')
             textbygenre = codecs.open(results+'/bygenre/'+genre+'.txt','a','utf-8')
             textbycharacter = codecs.open(bycharacter+speechcode+'.txt','a','utf-8')
             textbygender = codecs.open(bysex+speakersex+'.txt','a','utf-8')
             textbyplay.write(speechtext)
             textbyauthor.write(speechtext)
-            textbyyear.write(speechtext)
+            textbyyear_range.write(speechtext)
+            textbyyear_range.write(speechtext)
             textbygenre.write(speechtext)
             textbycharacter.write(speechtext)
             textbygender.write(speechtext)
             textbyplay.close()
             textbyauthor.close()
-            textbyyear.close()
+            textbyyear_range.close()
             textbygenre.close()
             textbycharacter.close()
             textbygender.close()
