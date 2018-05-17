@@ -132,6 +132,7 @@ def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_t
 
 
 def print_topic_gender_dist(doc_topic_dict, doc_topicsprobs_dict):
+    """Calculates and prints mean topics' distribution for three genders"""
     num_of_females = 0
     females_probs = list()
     num_of_males = 0
@@ -140,7 +141,6 @@ def print_topic_gender_dist(doc_topic_dict, doc_topicsprobs_dict):
     unknown_probs = list()
     print('\n\nTOPICS PER GENDER (MEAN VALUES)')
     for play in sorted(list(doc_topic_dict)):
-        print(play)
         if play.startswith('FEMALE'):
             females_probs.append(doc_topicsprobs_dict[play])
             num_of_females += 1
@@ -156,9 +156,9 @@ def print_topic_gender_dist(doc_topic_dict, doc_topicsprobs_dict):
     mean_females_probs = [round(i/num_of_females, 2) for i in females_probs]
     mean_males_probs = [round(i/num_of_males, 2) for i in males_probs]
     mean_unknown_probs = [round(i/num_of_unknown, 2) for i in unknown_probs]
-    print('MEAN FEMALE PROBS', mean_females_probs)
-    print('MEAN MALE PROBS', mean_males_probs)
-    print('MEAN UNKNOWN PROBS', mean_unknown_probs)
+    print('MEAN FEMALE PROBS', mean_females_probs,
+          '\nMEAN MALE PROBS', mean_males_probs,
+          '\nMEAN UNKNOWN PROBS', mean_unknown_probs)
 
 
 def run_TM(n_topics, doprint, doreturn):

@@ -138,7 +138,7 @@ def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_t
 
 
 def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
-    """Writes mean topics' probabilities per author into a csv-file (for 13 particular authors)"""
+    """Calculates and writes mean topics' probabilities per author into a csv-file (for 13 particular authors)"""
     author_prob_dict = dict()
     for play in sorted(list(doc_topic_dict)):
         author = play_author_dict[play]
