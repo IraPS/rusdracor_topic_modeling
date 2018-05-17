@@ -187,11 +187,6 @@ def run_TM(n_topics, doprint, doreturn):
     lda = LatentDirichletAllocation(n_topics=n_topics, max_iter=100, random_state=42)
     lda_doc_topic = lda.fit_transform(tf)
 
-    print('LDA doc-topic shape:', lda_doc_topic.shape)
-    print('\nTOPICS\nLDA top terms:')
-    display_topics(lda, tf_feature_names, no_top_words)
-    print('\n\n')
-
     tf1 = tf_vectorizer.transform(test_documents)
     doc_topic_dist_unnormalized = np.matrix(lda.transform(tf1))
 
@@ -213,8 +208,13 @@ def run_TM(n_topics, doprint, doreturn):
     # Writing down the author-topic probabilities to a csv-file
     write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict)
 
-    # Printing topics' 40 top-words and displaying word-clouds for 100 topics' top-words if needed
+    # Printing topics' 40 top-words, printing topics' distribution in all test documents,
+    # displaying word-clouds for 100 topics' top-words if needed
     if doprint:
+        print('LDA doc-topic shape:', lda_doc_topic.shape)
+        print('\nTOPICS\nLDA top terms:')
+        display_topics(lda, tf_feature_names, no_top_words)
+        print('\n\n')
         print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_topic_dict, doc_topicsprobs_dict)
         display_wordclouds(lda, tf_feature_names, 100, n_topics)
 
