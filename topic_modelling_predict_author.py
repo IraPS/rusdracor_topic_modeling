@@ -10,15 +10,15 @@ import random
 
 
 def display_topics(model, feature_names, no_top_words):
-    """Display all topics' top-words"""
+    """Displays all topics' top-words"""
     for topic_idx, topic in enumerate(model.components_):
         print("Topic {}:".format(topic_idx))
         print(", ".join([feature_names[i]
-                for i in topic.argsort()[:-no_top_words - 1:-1]]))
+                         for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
 
 def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
-    """Display one particular topic's top-words"""
+    """Displays one particular topic's top-words"""
     for topic_idx, topic in enumerate(model.components_):
         if topic_idx == topic_idx_needed:
             print("Topic {}:".format(topic_idx))
@@ -27,12 +27,12 @@ def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
 
 
 def grey_color_func():
-    """Establish colour range for word-clouds"""
+    """Establishes colour range for word-clouds"""
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
 
 def display_wordclouds(model, feature_names, no_top_words, n_topics):
-    """Display word-clouds"""
+    """Displays word-clouds for n topics' top-words"""
     top_words_weight_dicts = list()
     for topic_idx, topic in enumerate(model.components_):
         top_words_weight_dict = dict()
@@ -46,15 +46,15 @@ def display_wordclouds(model, feature_names, no_top_words, n_topics):
         plt.title("Topic #" + str(t))
         plt.show()
 
-# Open a stop-words list for Russian
+# Opening a stop-words list for Russian
 stopwords_ru = open('./stopwords_and_others/stop_ru.txt', 'r', encoding='utf-8').read().split('\n')
 
-# Determine train texts path (txt-files)
+# Determining train texts path (txt-files)
 train_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
                    'TopicModelling/rusdracor_topic_modeling/corpora/' \
                    'speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
-# Determine test texts path for model application (txt-files)
+# Determining test texts path for model application (txt-files)
 test_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
                   'Programming/github desktop/RusDraCor/Ira_Scripts/' \
                   'TopicModelling/rusdracor_topic_modeling/corpora/' \
@@ -69,7 +69,7 @@ test_documents_titles = list()
 all_train_texts = glob.glob(train_texts_path+'*.txt')
 all_test_texts = glob.glob(test_texts_path+'*.txt')
 
-# Split train texts into word-chunks
+# Splitting train texts into word-chunks
 n = 0
 k = 0
 chunk_size = 500
@@ -89,7 +89,7 @@ print('Taking chunks of length {0} WORDS'.format(chunk_size))
 print('Chunks with length less than {0} (did not take):'.format(min_chunk_size), n)
 print('Chunks with length more than {0} and less than {1} (took):'.format(min_chunk_size, chunk_size), k)
 
-# Create a play-author dictionary
+# Creating a play-author dictionary
 play_author_dict = dict()
 
 for doc in all_test_texts:
@@ -100,7 +100,7 @@ for doc in all_test_texts:
     doc_text = re.sub('[\.,!\?\(\)\-:;—…́«»–]', '', open(doc, 'r', encoding='utf-8').read())
     test_documents.append(doc_text)
 
-# Report statistics on the model
+# Reporting statistics on the model
 print('\nTopic modeling train text collection size: ', len(train_documents))
 print('Median length of train collection\'s documents: ', np.median([len(d.split()) for d in train_documents]))
 print('Mean length of train collection\'s documents: ', np.mean([len(d.split()) for d in train_documents]))
@@ -109,7 +109,7 @@ print('Maximum length of train collection\'s documents: ', np.max([len(d.split()
 
 
 def create_doc_topic_dict_for_plays(doc_topic_dist):
-    """Create a doc-topic dictionary with topics' probabilities and a dictionary with 3-top topics per document"""
+    """Creates a doc-topic dictionary with topics' probabilities and a dictionary with 3-top topics per document"""
     doc_3toptopic_dict = dict()
     doc_topicsprobs_dict = dict()
     for play in range(len(doc_topic_dist)):
@@ -124,7 +124,7 @@ def create_doc_topic_dict_for_plays(doc_topic_dist):
 
 
 def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_topic_dict, doc_topicsprobs_dict):
-    """Print the topics (top-words) of a model"""
+    """Prints the topics (top-words) of a model"""
     print('\nDOCUMENTS PER TOPIC')
     for topic in topic_topdocs_dict:
         display_one_topic(lda, tf_feature_names, no_top_words, int(topic))
@@ -138,7 +138,7 @@ def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_t
 
 
 def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
-    """Write mean topics' probabilities per author into a csv-file (for 13 particular authors)"""
+    """Writes mean topics' probabilities per author into a csv-file (for 13 particular authors)"""
     author_prob_dict = dict()
     for play in sorted(list(doc_topic_dict)):
         author = play_author_dict[play]
@@ -173,7 +173,7 @@ def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
 
 
 def run_TM(n_topics, doprint, doreturn):
-    """Perform Topic Modeling, present topics and return/print/write in a file model's application results"""
+    """Performs Topic Modeling, present topics and return/print/write in a file model's application results"""
     n_topics = n_topics
     no_top_words = 40
 
@@ -195,7 +195,7 @@ def run_TM(n_topics, doprint, doreturn):
     tf1 = tf_vectorizer.transform(test_documents)
     doc_topic_dist_unnormalized = np.matrix(lda.transform(tf1))
 
-    # normalize the distribution
+    # Normalising the distribution
     doc_topic_dist = doc_topic_dist_unnormalized/doc_topic_dist_unnormalized.sum(axis=1)
     topic_topdocs_dict = dict()
 
@@ -210,13 +210,17 @@ def run_TM(n_topics, doprint, doreturn):
         else:
             topic_topdocs_dict[top_topic].append(test_documents_titles[play])
 
+    # Writing down the author-topic probabilities to a csv-file
     write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict)
 
+    # Printing topics' 40 top-words and displaying word-clouds for 100 topics' top-words if needed
     if doprint:
         print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_topic_dict, doc_topicsprobs_dict)
+        display_wordclouds(lda, tf_feature_names, 100, n_topics)
 
+    # Returning test-documents topics' probabilities for classification task
     if doreturn:
         return doc_topicsprobs_dict
 
-# Run topic modeling task to build a model with 5 topics
-run_TM(5, 1, 0)
+# Running topic modeling task to build a model with 5 topics
+run_TM(5, 0, 0)
