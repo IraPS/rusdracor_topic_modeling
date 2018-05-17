@@ -52,6 +52,7 @@ shakhovskoy <- data[data$Author=='Шаховской', ]
 sumarokov <- data[data$Author=='Сумароков', ]
 tolstoylev <- data[data$Author=='ТолстойЛев', ]
 tolstoyalexey <- data[data$Author=='ТолстойАлексей', ]
+fonvizin <- data[data$Author=='Фонвизин', ]
 
 krylov_graph <- ggplot(krylov, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Topics' probabilities in Krylov's plays") + scale_y_continuous(limits=c(0,100))
 
@@ -77,4 +78,6 @@ tolstoylev_graph <- ggplot(tolstoylev, aes(x=Topic, y=Probability)) + geom_bar(s
 
 tolstoyalexey_graph <- ggplot(tolstoyalexey, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Topics' probabilities in Alexey Tolstoy's plays") + scale_y_continuous(limits=c(0,100))
 
-multiplot(krylov_graph , suhovo_kobylin_graph , chekhov_graph , pushkin_graph , turgenev_graph,  bulgakov_graph , gogol_graph , ostrovskiy_graph , shakhovskoy_graph , sumarokov_graph , tolstoylev_graph,  tolstoyalexey_graph,cols=2)
+fonvizin_graph <- ggplot(fonvizin, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Topics' probabilities in Fonvizin's plays") + scale_y_continuous(limits=c(0,100))
+
+multiplot(krylov_graph , suhovo_kobylin_graph , chekhov_graph , pushkin_graph , turgenev_graph,  bulgakov_graph , gogol_graph , ostrovskiy_graph , shakhovskoy_graph , sumarokov_graph , tolstoylev_graph,  tolstoyalexey_graph, fonvizin_graph, cols=2)

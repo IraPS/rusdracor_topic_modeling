@@ -253,7 +253,7 @@ def run_TM(n_topics, doprint, doreturn):
 
     if doprint:
 
-        # display_wordclouds(lda, tf_feature_names, 100, n_topics)
+        #display_wordclouds(lda, tf_feature_names, 100, n_topics)
 
         print('\nDOCUMENTS PER TOPIC')
         for topic in topic_topdocs_dict:
@@ -269,12 +269,16 @@ def run_TM(n_topics, doprint, doreturn):
             print('\n')
 
         author_prob_dict = dict()
+        authors = list()
 
         print('\n\nTOPICS PER AUTHOR (MEAN VALUES)')
         for play in sorted(list(doc_topic_dict)):
             author = play_author_dict[play]
+            author = re.sub('й', 'й', author)
+            authors.append(author)
             if author in ['Сумароков', 'Крылов', 'Шаховской', 'Пушкин', 'Островский',
-                          'Гоголь', 'Сухово-Кобылин', 'Тургенев', 'Чехов', 'Булгаков']:
+                          'Гоголь', 'Сухово-Кобылин', 'Тургенев', 'Чехов', 'Булгаков',
+                          'ТолстойЛев', 'ТолстойАлексей', 'Фонвизин']:
                 if author not in author_prob_dict:
                     author_prob_dict[author] = list()
                     author_prob_dict[author].append(doc_topicsprobs_dict[play])
@@ -301,6 +305,9 @@ def run_TM(n_topics, doprint, doreturn):
             author_probs_for_R.write(author+';'+probs[3]+';Topic3'+'\n')
             author_probs_for_R.write(author+';'+probs[4]+';Topic4'+'\n')
         author_probs_for_R.close()
+        authors=set(authors)
+        print(authors)
+        print(len(authors))
 
 
 

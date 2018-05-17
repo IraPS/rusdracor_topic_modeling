@@ -140,7 +140,7 @@ test_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2
                    'Programming/github desktop/RusDraCor/Ira_Scripts/' \
                    'TopicModelling/rusdracor_topic_modeling/speech_corpus_no_prop_char_names_ONLY_NOUNS/byplay/byplay/'
 
-genre_by_us = open('Genre_by_us.txt', 'r', encoding='utf-8')
+genre_by_us = open('Genre_by_us_1.txt', 'r', encoding='utf-8')
 play_genre_dict = dict()
 for play_line in genre_by_us:
     play, genre = play_line.split('	')[0], play_line.split('	')[1]
@@ -255,7 +255,7 @@ def run_TM(n_topics, doprint, doreturn):
 
     if doprint:
 
-        display_wordclouds(lda, tf_feature_names, 100, n_topics)
+        #display_wordclouds(lda, tf_feature_names, 100, n_topics)
 
         print('\nDOCUMENTS PER TOPIC')
         for topic in topic_topdocs_dict:
@@ -279,15 +279,17 @@ def run_TM(n_topics, doprint, doreturn):
         print('\n\nTOPICS PER GENRE (MEAN VALUES)')
         for play in sorted(list(doc_topic_dict)):
             good_entry = re.sub('й', 'й', play)
-            if play_genre_dict[good_entry].startswith('драма'):
-                dramas_probs.append(doc_topicsprobs_dict[play])
-                num_of_dramas += 1
-            if play_genre_dict[good_entry].startswith('комедия'):
-                comedies_probs.append(doc_topicsprobs_dict[play])
-                num_of_comedies += 1
-            if play_genre_dict[good_entry].startswith('трагедия'):
-                tragedies_probs.append(doc_topicsprobs_dict[play])
-                num_of_tragedies += 1
+            good_entry = good_entry.split('_')[1]
+            if good_entry in play_genre_dict:
+                if play_genre_dict[good_entry].startswith('драма'):
+                    dramas_probs.append(doc_topicsprobs_dict[play])
+                    num_of_dramas += 1
+                if play_genre_dict[good_entry].startswith('комедия'):
+                    comedies_probs.append(doc_topicsprobs_dict[play])
+                    num_of_comedies += 1
+                if play_genre_dict[good_entry].startswith('трагедия'):
+                    tragedies_probs.append(doc_topicsprobs_dict[play])
+                    num_of_tragedies += 1
         dramas_probs = [sum(i) for i in zip(*dramas_probs)]
         comedies_probs = [sum(i) for i in zip(*comedies_probs)]
         tragedies_probs = [sum(i) for i in zip(*tragedies_probs)]
