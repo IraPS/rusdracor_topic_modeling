@@ -14,7 +14,7 @@ def display_topics(model, feature_names, no_top_words):
     for topic_idx, topic in enumerate(model.components_):
         print("Topic {}:".format(topic_idx))
         print(", ".join([feature_names[i]
-                        for i in topic.argsort()[:-no_top_words - 1:-1]]))
+                for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
 
 def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
@@ -109,12 +109,14 @@ print('Maximum length of train collection\'s documents: ', np.max([len(d.split()
 
 
 def create_doc_topic_dict_for_plays(doc_topic_dist):
+    """Create a doc-topic dictionary with topics' probabilities and a dictionary with 3-top topics per document"""
     doc_3toptopic_dict = dict()
     doc_topicsprobs_dict = dict()
     for play in range(len(doc_topic_dist)):
         play_title = test_documents_titles[play]
         play_topic_dist = (doc_topic_dist[play].tolist()[0])
-        play_topic_dist = [round(100*float('{:f}'.format(item)), 3) for item in play_topic_dist]  # creating a list with probs per topic (in 100-notation)
+        # creating a list with probs per topic (in 100-notation)
+        play_topic_dist = [round(100*float('{:f}'.format(item)), 3) for item in play_topic_dist]
         doc_topicsprobs_dict[play_title] = play_topic_dist
         play_top3_topics = reversed(doc_topic_dist.argsort()[play].tolist()[0][-3::])
         doc_3toptopic_dict[play_title] = play_top3_topics
@@ -122,6 +124,7 @@ def create_doc_topic_dict_for_plays(doc_topic_dist):
 
 
 def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_topic_dict, doc_topicsprobs_dict):
+    """Print the topics (top-words) of a model"""
     print('\nDOCUMENTS PER TOPIC')
     for topic in topic_topdocs_dict:
         display_one_topic(lda, tf_feature_names, no_top_words, int(topic))
@@ -135,6 +138,7 @@ def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_t
 
 
 def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
+    """Write mean topics' probabilities per author into a csv-file (for 13 particular authors)"""
     author_prob_dict = dict()
     for play in sorted(list(doc_topic_dict)):
         author = play_author_dict[play]
@@ -163,11 +167,8 @@ def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
     author_probs_for_R.write('Author;Probability;Topic\n')
     for author in authors_mean_probs:
         probs = authors_mean_probs[author]
-        author_probs_for_R.write(author+';'+probs[0]+';Topic0'+'\n')
-        author_probs_for_R.write(author+';'+probs[1]+';Topic1'+'\n')
-        author_probs_for_R.write(author+';'+probs[2]+';Topic2'+'\n')
-        author_probs_for_R.write(author+';'+probs[3]+';Topic3'+'\n')
-        author_probs_for_R.write(author+';'+probs[4]+';Topic4'+'\n')
+        for p in range(len(probs)):
+            author_probs_for_R.write(author+';'+probs[p]+';Topic'+str(p)+'\n')
     author_probs_for_R.close()
 
 
@@ -217,4 +218,5 @@ def run_TM(n_topics, doprint, doreturn):
     if doreturn:
         return doc_topicsprobs_dict
 
+# Run topic modeling task to build a model with 5 topics
 run_TM(5, 1, 0)
