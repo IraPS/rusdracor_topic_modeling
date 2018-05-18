@@ -21,7 +21,7 @@ The workflow was organised by following these steps:
 | stopwords_and_others/extract_capitalised_words.py     | Extracting all capitalised words not in the beginning of a sentence |
 | stopwords_and_others/characters(proper)\_names.txt    | Filtering the list to keep only character's proper names      |
 | stopwords_and_others/remove_characters(proper)\_names_from_TEI.py | Removing proper names from the TEI documents     |
-| scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents with POS restictions (difference options available)|
+| scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents with POS restictions (different options available)|
 | classification_using_TM_vectors_gender.py | Trying to choose the best model with a character's gender classificaton task |
 | semantic_vectors.py | Choosing the best model by calculating "semdensity" of topics |
 | topic_modeling_predict_year.py | Applying the model to spot topics' temporal distribution |
