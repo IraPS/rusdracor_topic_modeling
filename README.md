@@ -1,19 +1,26 @@
 ## This is a repository for the project "Topic Modeling 200 Years of Russian Drama"
 
-### The goal of the project is to perform a TM on 90 Russian plays written from 1747 to 1943. The algorithms can be improved or modified and reapplied to the updated corpus.
+### The goal of the project is to perform a TM on 90 Russian plays written from 1747 to 1943 (RusDraCor, https://dracor.org/rus). The plays are encoded in the TEI standard. The algorithms can be improved or modified and reapplied to the updated corpus.
 
 Here you can find the data and scripts used in the work.
 
-The processed TEI-xml files with excluded proper names of the characters can be found here: https://github.com/IraPS/rusdracor_topic_modeling/tree/master/tei_without_proper_names
+The processed TEI-xml files with excluded proper names of the characters can be found at https://github.com/IraPS/rusdracor_topic_modeling/tree/master/tei_without_proper_names
+
+The script for text-extraction from the TEI-file is located at https://github.com/IraPS/rusdracor_topic_modeling/tree/master/scripts_for_text_extraction
+
+The stop-words and proper-names lists and the script revoming them can be found at https://github.com/IraPS/rusdracor_topic_modeling/tree/master/stopwords_and_others
 
 The preprocessed corpus of 90 Russian plays: https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora. Each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
 
-The final version that was used for the project is located in this folder: https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS. It also includes subfolders **bygenre** and **byyear_range**.
+The final version that was used for the project is located in this folder: https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS. It also includes subfolders **bygenre** and **byyear_range**. To checkout the TM (modeling only nouns-based topics) you will need only this folder.
 
-Data:
+The workflow was organised by following these steps:
 
-| File          | Description   |
+| Action          | Description   |
 | ------------- |:-------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
+| stopwords_and_others/extract_capitalised_words.py     | Extracting all capitalised words not in the beginning of a sentence |
+| stopwords_and_others/characters(proper)\_names.txt    | Filtering the list to keep only character's proper names      |
+| stopwords_and_others/remove_characters(proper)\_names_from_TEI.py | Removing proper names from the TEI documents     |
+| scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents |
+| zebra stripes | are neat      |
 | zebra stripes | are neat      |
