@@ -22,5 +22,10 @@ The workflow was organised by following these steps:
 | stopwords_and_others/characters(proper)\_names.txt    | Filtering the list to keep only character's proper names      |
 | stopwords_and_others/remove_characters(proper)\_names_from_TEI.py | Removing proper names from the TEI documents     |
 | scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents |
-| zebra stripes | are neat      |
-| zebra stripes | are neat      |
+| classification_using_TM_vectors_gender.py | Trying to choose the best model with a character's gender classificaton task |
+| semantic_vectors.py | Choosing the best model by calculating "semdensity" of topics |
+| topic_modeling_predict_year.py | Applying the model to spot topics' temporal distribution |
+| topic_modeling_predict_genre.py | Applying the model to spot topics' distribution by genre |
+| topic_modeling_predict_author.py | Applying the model to spot topics' distribution by author |
+| topic_modeling_predict_gender.py | Applying the model to spot topics' distribution by character's gender |
+
