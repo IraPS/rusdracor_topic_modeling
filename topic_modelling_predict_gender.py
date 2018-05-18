@@ -132,7 +132,7 @@ def print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_t
 
 
 def print_topic_gender_dist(doc_topic_dict, doc_topicsprobs_dict):
-    """Calculates and prints mean topics' distribution for three genders"""
+    """Calculates and prints mean topics' distribution for three genders (female, male, unknown)"""
     num_of_females = 0
     females_probs = list()
     num_of_males = 0
@@ -195,6 +195,7 @@ def run_TM(n_topics, doprint, doreturn):
             topic_topdocs_dict[top_topic].append(test_documents_titles[play])
 
     # Printing the gender-topic probabilities
+    print('The TM is finished, the model is applied to genders the data')
     print_topic_gender_dist(doc_topic_dict, doc_topicsprobs_dict)
 
     # Printing topics' 40 top-words, printing topics' distribution in all test documents,

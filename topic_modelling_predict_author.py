@@ -222,5 +222,8 @@ def run_TM(n_topics, doprint, doreturn):
     if doreturn:
         return doc_topicsprobs_dict
 
+    print('The TM is finished, the model is applied to the authors data, '
+          'you can find topics\'s per authors distribution in "author_probs_for_R.csv"')
+
 # Running topic modeling task to build a model with 5 topics
 run_TM(5, 0, 0)
