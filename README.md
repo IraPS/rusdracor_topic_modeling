@@ -1,6 +1,6 @@
 ## This is a repository for the project "Topic Modeling 200 Years of Russian Drama"
 
-### The goal of the project is to perform a TM on 90 Russian plays written from 1747 to 1943 (RusDraCor, https://dracor.org/rus). The plays are encoded in the TEI standard. The algorithms can be improved or modified and reapplied to the updated corpus.
+### The goal of the project is to perform a TM on 90 Russian plays written from 1747 to 1943 (RusDraCor, https://dracor.org/rus). The plays are encoded in the TEI standard. The algorithms can be reproduced and reapplied to the updated corpus.
 
 Here you can find the data and scripts used in the work:
 
