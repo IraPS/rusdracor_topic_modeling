@@ -10,9 +10,13 @@ Here you can find the data and scripts used in the work:
 
 * [the stop-words and proper-names lists and the script revoming them](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/stopwords_and_others)
 
-* [the preprocessed corpus of 90 Russian plays](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora). Each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
+* [the preprocessed corpus of 90 Russian plays](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora)
 
-* [the final version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS). It also includes subfolders **bygenre** and **byyear_range**. To checkout the TM (modeling only nouns-based topics) you will need only this folder.
+   each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
+
+* [the final version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS). It also includes subfolders **bygenre** and **byyear_range**
+
+   checkout the TM (modeling only nouns-based topics) you will need only this folder.
 
 The workflow was organised by following these steps:
 
