@@ -4,15 +4,15 @@
 
 Here you can find the data and scripts used in the work.
 
-[The processed TEI-xml files with excluded proper names of the characters](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/tei_without_proper_names)
+* [The processed TEI-xml files with excluded proper names of the characters](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/tei_without_proper_names)
 
-[The script for text-extraction from the TEI-file](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/scripts_for_text_extraction)
+* [The script for text-extraction from the TEI-file](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/scripts_for_text_extraction)
 
-[The stop-words and proper-names lists and the script revoming them](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/stopwords_and_others)
+* [The stop-words and proper-names lists and the script revoming them](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/stopwords_and_others)
 
-[The preprocessed corpus of 90 Russian plays](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora). Each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
+* [The preprocessed corpus of 90 Russian plays](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora). Each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
 
-[The final version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS). It also includes subfolders **bygenre** and **byyear_range**. To checkout the TM (modeling only nouns-based topics) you will need only this folder.
+* [The final version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS). It also includes subfolders **bygenre** and **byyear_range**. To checkout the TM (modeling only nouns-based topics) you will need only this folder.
 
 The workflow was organised by following these steps:
 
@@ -29,3 +29,4 @@ The workflow was organised by following these steps:
 | topic_modeling_predict_author.py | Applying the model to spot topics' distribution by author |
 | topic_modeling_predict_gender.py | Applying the model to spot topics' distribution by character's gender |
 
+ 
