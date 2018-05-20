@@ -26,7 +26,8 @@ def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
                                                    for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
 
-def grey_color_func():
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
     """Establishes colour range for word-clouds"""
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
@@ -213,4 +214,4 @@ def run_TM(n_topics, doprint, doreturn):
         return doc_topicsprobs_dict
 
 # Running topic modeling task to build a model with 5 topics
-run_TM(5, 0, 0)
+run_TM(6, 0, 0)

@@ -26,7 +26,8 @@ def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
                                                    for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
 
-def grey_color_func():
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
     """Establishes colour range for word-clouds"""
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
@@ -145,7 +146,7 @@ def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
         author = re.sub('й', 'й', author)
         if author in ['Сумароков', 'Крылов', 'Шаховской', 'Пушкин', 'Островский',
                       'Гоголь', 'Сухово-Кобылин', 'Тургенев', 'Чехов', 'Булгаков',
-                      'ТолстойЛев', 'ТолстойАлексей', 'Фонвизин']:
+                      'ТолстойЛев', 'ТолстойАлексей', 'Фонвизин', 'Блок', 'Гумилёв']:
             if author not in author_prob_dict:
                 author_prob_dict[author] = list()
                 author_prob_dict[author].append(doc_topicsprobs_dict[play])
@@ -162,7 +163,7 @@ def write_topic_author_dist(doc_topic_dict, doc_topicsprobs_dict):
     author_probs_for_R = open('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                             'Programming/github desktop/'
                             'RusDraCor/Ira_Scripts/TopicModelling/'
-                            'rusdracor_topic_modeling/graphs/by_author/author_probs_for_R.csv', 'w',
+                            'rusdracor_topic_modeling/graphs_6_topics/by_author/author_probs_for_R.csv', 'w',
                             encoding='utf-8')
     author_probs_for_R.write('Author;Probability;Topic\n')
     for author in authors_mean_probs:
@@ -216,7 +217,7 @@ def run_TM(n_topics, doprint, doreturn):
         display_topics(lda, tf_feature_names, no_top_words)
         print('\n\n')
         print_results(topic_topdocs_dict, lda, tf_feature_names, no_top_words, doc_topic_dict, doc_topicsprobs_dict)
-        display_wordclouds(lda, tf_feature_names, 100, n_topics)
+        # display_wordclouds(lda, tf_feature_names, 100, n_topics)
 
     # Returning test-documents topics' probabilities for classification task
     if doreturn:
@@ -226,4 +227,4 @@ def run_TM(n_topics, doprint, doreturn):
           'you can find topics\'s per authors distribution in "author_probs_for_R.csv"')
 
 # Running topic modeling task to build a model with 5 topics
-run_TM(5, 0, 0)
+run_TM(6, 1, 0)

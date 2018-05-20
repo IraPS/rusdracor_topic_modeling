@@ -1,5 +1,0 @@
-library('ggplot2')
-
-data <- read.csv('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/rusdracor_topic_modeling/graphs/choosing_model_by_semdensity/semdensity_for_different_models_90_plays.csv', sep=';')
-
-ggplot(data = data, aes(x=numtopics, y=average_topic_semdensity_for_10_topwords)) + geom_line(aes(colour=model)) + scale_x_continuous(breaks = seq(4, 15, 1)) + labs(x="Number of topics", y="Average topic semdensity for 10 top-words")

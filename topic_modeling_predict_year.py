@@ -26,7 +26,8 @@ def display_one_topic(model, feature_names, no_top_words, topic_idx_needed):
                                                    for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
 
-def grey_color_func():
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
     """Establishes colour range for word-clouds"""
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
@@ -158,7 +159,7 @@ def write_topic_year_dist(doc_topic_dict, doc_topicsprobs_dict):
     year_probs_for_R = open('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                             'Programming/github desktop/'
                             'RusDraCor/Ira_Scripts/TopicModelling/'
-                            'rusdracor_topic_modeling/graphs/by_year/year_probs_for_R.csv', 'w', encoding='utf-8')
+                            'rusdracor_topic_modeling/graphs_6_topics/by_year/year_probs_for_R.csv', 'w', encoding='utf-8')
     year_probs_for_R.write('Year;Probability;Topic\n')
     for year in years_mean_probs:
         probs = years_mean_probs[year]
@@ -221,4 +222,4 @@ def run_TM(n_topics, doprint, doreturn):
           'you can find topics\'s per year distribution in "year_probs_for_R.csv"')
 
 # Running topic modeling task to build a model with 5 topics
-run_TM(5, 0, 0)
+run_TM(6, 1, 0)

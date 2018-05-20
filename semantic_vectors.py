@@ -7,8 +7,10 @@ import re
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import random
-import gensim,logging
+import gensim
+import logging
 from pymystem3 import Mystem
+
 
 def get_pos_for_semvector(mystem_pos):
     mystemtag_pos_dict = {'S,': '_NOUN', 'S=': '_NOUN',
@@ -58,6 +60,7 @@ def display_topics(model, feature_names, no_top_words, n_topics):
         all_topics_topwords_similarity.append(topwords_similarity)
     print('\nMean topics semantic similarity for {0} topics is {1}'.
           format(n_topics, np.mean(all_topics_topwords_similarity)))
+    return np.mean(all_topics_topwords_similarity)
 
 
 def grey_color_func(word, font_size, position, orientation, random_state=None,
@@ -122,6 +125,12 @@ print('Mean length of train collection\'s documents: ', np.mean([len(d.split()) 
 print('Minimum length of train collection\'s documents: ', np.min([len(d.split()) for d in train_documents]))
 print('Maximum length of train collection\'s documents: ', np.max([len(d.split()) for d in train_documents]))
 
+write_semdensity = open('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
+                        'Programming/github desktop/RusDraCor/Ira_Scripts/'
+                        'TopicModelling/rusdracor_topic_modeling/graphs_6_topics/semdensity_2/Only Nouns 500-100.csv', 'w',
+                        encoding='utf-8')
+write_semdensity.write('numtopics;average_topic_semdensity_for_10_topwords;model\n')
+
 
 def run_TM(n_topics, doprint):
     """Performs Topic Modeling, present topics and return/print/write in a file model's application results"""
@@ -146,10 +155,13 @@ def run_TM(n_topics, doprint):
         display_topics(lda, tf_feature_names, no_top_words, n_topics)
         print('\n\n')
         # display_wordclouds(lda, tf_feature_names, 100, n_topics)
-
+        model = 'Only Nouns 500-100'
+        mean_semdensity = display_topics(lda, tf_feature_names, no_top_words, n_topics)
+        write_semdensity.write(str(n_topics)+';'+str(mean_semdensity)+';'+model+'\n')
 
     print('The TM is finished, the model is applied to the  data, '
-          'the semdensity per topc is calculated.')
+          'the semdensity per topic is calculated.')
 
 # Running topic modeling task to build a model with 5 topics
-run_TM(5, 1)
+for t in range(4, 11):
+    run_TM(t, 1)

@@ -1,10 +1,7 @@
-from sklearn.svm import SVC, LinearSVC
-from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import GaussianNB
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score
 from sklearn import metrics
-from topic_modelling_predict_gender import run_TM
+from topic_modeling_predict_gender import run_TM
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
@@ -15,7 +12,7 @@ for n_topics in range(2, 20):
     TM_results = run_TM(n_topics, 0, 1)
 
     X = list()
-    y = list()  # MALE 0, FEMALE 1, UNKNOWN 2
+    y = list()  # MALE 0, FEMALE 1
     for entry in TM_results:
         if entry.startswith('MALE'):
             y.append(0)

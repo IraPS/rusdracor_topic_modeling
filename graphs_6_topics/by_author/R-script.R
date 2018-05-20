@@ -1,0 +1,90 @@
+# Export image with width=700 and height=1300
+
+library('ggplot2')
+
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+  
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+  
+  numPlots = length(plots)
+  
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                     ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+  
+  if (numPlots==1) {
+    print(plots[[1]])
+    
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+    
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+      
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+
+data <- read.csv('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/github desktop/RusDraCor/Ira_Scripts/TopicModelling/rusdracor_topic_modeling/graphs_6_topics/by_author/author_probs_for_R.csv',sep=';')
+
+krylov <- data[data$Author=='Крылов', ]
+suhovo_kobylin <- data[data$Author=='Сухово-Кобылин', ]
+chekhov <- data[data$Author=='Чехов', ]
+pushkin <- data[data$Author=='Пушкин', ]
+turgenev <- data[data$Author=='Тургенев', ]
+bulgakov <- data[data$Author=='Булгаков', ]
+gogol <- data[data$Author=='Гоголь', ]
+ostrovskiy <- data[data$Author=='Островский', ]
+shakhovskoy <- data[data$Author=='Шаховской', ]
+sumarokov <- data[data$Author=='Сумароков', ]
+tolstoylev <- data[data$Author=='ТолстойЛев', ]
+tolstoyalexey <- data[data$Author=='ТолстойАлексей', ]
+fonvizin <- data[data$Author=='Фонвизин', ]
+blok <- data[data$Author=='Блок', ]
+gumilev <- data[data$Author=='Гумилёв', ]
+
+krylov_graph <- ggplot(krylov, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Krylov") + scale_y_continuous(limits=c(0,100))
+
+suhovo_kobylin_graph <- ggplot(suhovo_kobylin, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Suhovo-Kobylin") + scale_y_continuous(limits=c(0,100))
+
+chekhov_graph <- ggplot(chekhov, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Chekhov") + scale_y_continuous(limits=c(0,100))
+
+pushkin_graph <- ggplot(pushkin, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Pushkin") + scale_y_continuous(limits=c(0,100))
+
+turgenev_graph <- ggplot(turgenev, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Turgenev") + scale_y_continuous(limits=c(0,100))
+
+bulgakov_graph <- ggplot(bulgakov, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Bulgakov") + scale_y_continuous(limits=c(0,100))
+
+gogol_graph <- ggplot(gogol, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Gogol") + scale_y_continuous(limits=c(0,100))
+
+ostrovskiy_graph <- ggplot(ostrovskiy, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Ostrovskiy") + scale_y_continuous(limits=c(0,100))
+
+shakhovskoy_graph <- ggplot(shakhovskoy, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Shakhovskoy") + scale_y_continuous(limits=c(0,100))
+
+sumarokov_graph <- ggplot(sumarokov, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Sumarokov") + scale_y_continuous(limits=c(0,100))
+
+tolstoylev_graph <- ggplot(tolstoylev, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Leo Tolstoy") + scale_y_continuous(limits=c(0,100))
+
+tolstoyalexey_graph <- ggplot(tolstoyalexey, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Alexey Tolstoy") + scale_y_continuous(limits=c(0,100))
+
+fonvizin_graph <- ggplot(fonvizin, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Fonvizin") + scale_y_continuous(limits=c(0,100))
+
+blok_graph <- ggplot(blok, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Blok") + scale_y_continuous(limits=c(0,100))
+
+gumilev_graph <- ggplot(gumilev, aes(x=Topic, y=Probability)) + geom_bar(stat='identity') + labs(title="Gumilev") + scale_y_continuous(limits=c(0,100))
+
+multiplot(krylov_graph , suhovo_kobylin_graph , chekhov_graph , pushkin_graph , turgenev_graph,  bulgakov_graph , gogol_graph , ostrovskiy_graph , shakhovskoy_graph , sumarokov_graph , tolstoylev_graph,  tolstoyalexey_graph, fonvizin_graph, blok_graph, gumilev_graph, cols=3)
+
