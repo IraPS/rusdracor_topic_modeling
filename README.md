@@ -12,26 +12,27 @@ Here you can find the data and scripts used in the work:
 
 * [the preprocessed corpus of 90 Russian plays](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora)
 
-   - each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**. 
+   - each folder has subfolders **byauthor**, **bycharacter**, **byplay**, **bysex**
+   - the POS-tagging was done with pymystem3 Python module (wrapped [Mystem](https://tech.yandex.ru/mystem/))
 
-* [the final version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS)
+* [the corpus version that was used for the project](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/corpora/speech_corpus_no_prop_char_names_ONLY_NOUNS)
    - it also includes subfolders **bygenre** and **byyear_range**
 
    - checkout the TM (modeling only nouns-based topics) you will need only this folder.
 
 The workflow was organised by following these steps:
 
-| Action          | Description   |
-| ------------- |:-------------:|
-| stopwords_and_others/extract_capitalised_words.py     | Extracting all capitalised words not in the beginning of a sentence |
-| stopwords_and_others/characters(proper)\_names.txt    | Filtering the list to keep only character's proper names      |
-| stopwords_and_others/remove_characters(proper)\_names_from_TEI.py | Removing proper names from the TEI documents     |
-| scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents with POS restictions (different options available)|
-| classification_using_TM_vectors_gender.py | Trying to choose the best model with a character's gender classificaton task |
-| semantic_vectors.py | Choosing the best model by calculating "semdensity" of topics |
-| topic_modeling_predict_year.py | Applying the model to spot topics' temporal distribution |
-| topic_modeling_predict_genre.py | Applying the model to spot topics' distribution by genre |
-| topic_modeling_predict_author.py | Applying the model to spot topics' distribution by author |
-| topic_modeling_predict_gender.py | Applying the model to spot topics' distribution by character's gender |
+| Action          | Description   | Dependencies   |
+| ------------- |:-------------:| ------------- |
+| stopwords_and_others/extract_capitalised_words.py     | Extracting all capitalised words not in the beginning of a sentence | os, re, nltk   |
+| stopwords_and_others/characters(proper)\_names.txt    | Filtering the list to keep only character's proper names      |    |
+| stopwords_and_others/remove_characters(proper)\_names_from_TEI.py | Removing proper names from the TEI documents     | os, re   |
+| scripts_for_text_extraction/get_plays_texts_clean_POS_restriction.py | Extracting characters' speech-texts from the TEI documents with POS restictions (different options available)| os, re, codecs, glob, lxml, pymystem3 |
+| classification_using_TM_vectors_gender.py | Trying to choose the best model with a character's gender classificaton task | sklearn |
+| semantic_vectors.py | Choosing the best model by calculating "semdensity" of topics | sklearn, mu,py, glob, re, matplotlib, wordcloud, random, gensim, logging, pymystem3, [pre-downloaded vectors' model](http://rusvectores.org/ru/models/) |
+| topic_modeling_predict_year.py | Applying the model to spot topics' temporal distribution | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
+| topic_modeling_predict_genre.py | Applying the model to spot topics' distribution by genre | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
+| topic_modeling_predict_author.py | Applying the model to spot topics' distribution by author | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
+| topic_modeling_predict_gender.py | Applying the model to spot topics' distribution by character's gender | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
 
  
