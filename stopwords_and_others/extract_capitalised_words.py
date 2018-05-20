@@ -2,9 +2,11 @@ import os
 import re
 from nltk import tokenize
 
+# Setting the path to the corpus of txt-files (not lemmatised)
 plays_texts_path = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/' \
                    'github desktop/RusDraCor/Ira_Scripts/TopicModelling/' \
                    'speech_corpus/byplay/byplay_not_lemmatised/'
+# Setting the output file
 all_capitalised_words_file = open('/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/'
                              'Programming/github desktop/RusDraCor/Ira_Scripts/'
                              'TopicModelling/all_capitalised_words.txt', 'w', encoding='utf-8')

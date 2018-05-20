@@ -1,8 +1,10 @@
 import os
 import re
 
+# Setting the original TEI-files path
 infolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/Programming/' \
            'github desktop/dracor-rusdracor/tei/'
+# Setting the path for a new TEI-files' location
 outfolder = '/Users/IrinaPavlova/Desktop/Uni/Бакалавриат/2015-2016/' \
             'Programming/github desktop/RusDraCor/Ira_Scripts/' \
             'TopicModelling/rusdracor_topic_modeling/tei_without_proper_names/'
