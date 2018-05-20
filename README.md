@@ -2,7 +2,7 @@
 
 ### The goal of the project is to perform a TM on 90 Russian plays written from 1747 to 1943 (RusDraCor, https://dracor.org/rus). The plays are encoded in the TEI standard. The algorithms can be reproduced and reapplied to the updated corpus.
 
-Here you can find the data and scripts used in the work:
+#### Here you can find the data and scripts used in the work:
 
 * [the processed TEI-xml files with excluded proper names of the characters](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/tei_without_proper_names)
 
@@ -20,7 +20,7 @@ Here you can find the data and scripts used in the work:
 
    - checkout the TM (modeling only nouns-based topics) you will need only this folder.
 
-The workflow was organised by following these steps:
+#### The workflow was organised by following these steps:
 
 | Action          | Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Dependencies   |
 | ------------- |-------------| ------------- |
@@ -35,4 +35,4 @@ The workflow was organised by following these steps:
 | [topic_modeling_predict_author.py](https://github.com/IraPS/rusdracor_topic_modeling/blob/master/topic_modeling_predict_author.py) | Applying the model to spot topics' distribution by author | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
 | [topic_modeling_predict_gender.py](https://github.com/IraPS/rusdracor_topic_modeling/blob/master/topic_modeling_predict_genre.py) | Applying the model to spot topics' distribution by character's gender | sklearn, numpy, glob, re, matplotlib, wordcloud, random |
 
-The results of the experiments are demonstarted on the graphs made in R that be found [here](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/graphs_6_topics) (with R-scripts available).
+#### The results of the experiments are demonstarted on the graphs made in R that be found [here](https://github.com/IraPS/rusdracor_topic_modeling/tree/master/graphs_6_topics) (with R-scripts available).
